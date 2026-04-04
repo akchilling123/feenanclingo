@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Feenancelingo Question",
+  "type": "object",
+  "required": ["id", "topic", "difficulty", "type", "question_text", "correct_answer", "explanation"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z]+-[0-9]{3}$",
+      "description": "Unique ID in format {topic-abbrev}-{number}, e.g. acct-015"
+    },
+    "topic": {
+      "type": "string",
+      "enum": ["accounting", "valuation", "dcf", "mergers-acquisitions", "lbo", "ev-equity-value"]
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["Easy", "Medium", "Hard"]
+    },
+    "type": {
+      "type": "string",
+      "enum": ["multiple_choice", "numeric", "true_false", "conceptual"]
+    },
+    "question_text": {
+      "type": "string",
+      "minLength": 10
+    },
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["text", "isCorrect"],
+        "properties": {
+          "text": { "type": "string" },
+          "isCorrect": { "type": "boolean" }
+        }
+      }
+    },
+    "correct_answer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "explanation": {
+      "type": "string",
+      "minLength": 20
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "if": {
+    "properties": { "type": { "const": "multiple_choice" } }
+  },
+  "then": {
+    "required": ["options"]
+  }
+}
