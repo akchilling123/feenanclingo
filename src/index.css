@@ -1,24 +1,101 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy: #0F1419;
-  --color-navy-light: #1A2332;
-  --color-gold: #FFD700;
-  --color-correct: #00C853;
-  --color-incorrect: #FF1744;
-  --color-interactive: #2979FF;
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  /* Core palette — Succession: deep, muted, old money */
+  --color-navy: #0B0F13;
+  --color-navy-light: #141B24;
+  --color-navy-mid: #1C2530;
+  --color-gold: #C9A84C;
+  --color-gold-light: #D4B866;
+  --color-gold-muted: rgba(201, 168, 76, 0.12);
+  --color-correct: #4A9D6E;
+  --color-incorrect: #C4534A;
+  --color-interactive: #5B8DB8;
+  --color-cream: #E8E0D0;
+  --color-cream-dark: #B8AFA3;
+
+  /* Typography */
+  --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Cormorant Garamond', 'Georgia', serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   background-color: var(--color-navy);
-  color: #e5e7eb;
+  color: var(--color-cream-dark);
   font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
   min-height: 100svh;
+}
+
+/* Succession-style typography utilities */
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--color-cream);
+}
+
+/* Refined scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(201, 168, 76, 0.15);
+  border-radius: 3px;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(201, 168, 76, 0.25);
+  color: var(--color-cream);
+}
+
+/* Subtle page transition */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page-enter {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* XP floating animation */
+@keyframes floatUp {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-40px); }
+}
+
+.xp-float {
+  animation: floatUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Tailwind animation utilities */
+@utility animate-xp-float {
+  animation: floatUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@utility animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Subtle divider */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.15), transparent);
 }
