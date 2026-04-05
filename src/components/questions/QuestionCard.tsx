@@ -12,9 +12,9 @@ interface QuestionCardProps {
 }
 
 const difficultyConfig = {
-  Easy: 'bg-correct/20 text-correct border-correct/30',
-  Medium: 'bg-gold/20 text-gold border-gold/30',
-  Hard: 'bg-incorrect/20 text-incorrect border-incorrect/30',
+  Easy: 'text-correct',
+  Medium: 'text-gold',
+  Hard: 'text-incorrect',
 } as const
 
 const questionComponents = {
@@ -33,15 +33,17 @@ export function QuestionCard({
   const QuestionComponent = questionComponents[question.type]
 
   return (
-    <div className="rounded-xl bg-navy p-5 space-y-4">
-      {/* Header: difficulty badge + topic tag */}
-      <div className="flex items-center gap-2 flex-wrap">
-        <span
-          className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold border ${difficultyConfig[question.difficulty]}`}
-        >
+    <div
+      className="py-5 space-y-4"
+      role="article"
+      aria-label={question.question_text}
+    >
+      {/* Header: difficulty + topic */}
+      <div className="flex items-center gap-3 flex-wrap">
+        <span className={`text-xs font-semibold ${difficultyConfig[question.difficulty]}`}>
           {question.difficulty}
         </span>
-        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-navy-light text-gray-400 border border-gray-700">
+        <span className="text-cream-dark/50 text-xs uppercase tracking-wider">
           {question.topic.replace(/-/g, ' ')}
         </span>
       </div>
@@ -56,9 +58,9 @@ export function QuestionCard({
 
       {/* Explanation shown after answering (non-conceptual types) */}
       {showResult && question.type !== 'conceptual' && question.explanation && (
-        <div className="rounded-lg bg-navy-light px-4 py-3 border border-gray-700 transition-all duration-200">
-          <p className="text-sm font-medium text-gold mb-1">Explanation</p>
-          <p className="text-gray-300 text-sm leading-relaxed">
+        <div className="border-t border-gold/30 pt-4 transition-all duration-200">
+          <p className="font-serif text-sm text-gold mb-1">Why:</p>
+          <p className="text-cream text-sm leading-relaxed">
             {question.explanation}
           </p>
         </div>

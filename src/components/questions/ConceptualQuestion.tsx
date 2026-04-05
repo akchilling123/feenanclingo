@@ -20,14 +20,14 @@ export function ConceptualQuestion({
 
   return (
     <div className="space-y-4">
-      <p className="text-gray-200 text-lg leading-relaxed">
+      <p className="font-serif text-xl text-cream leading-relaxed">
         {question.question_text}
       </p>
 
       {!showAnswer && (
         <button
           onClick={() => setRevealed(true)}
-          className="w-full min-h-[48px] px-4 py-3 rounded-lg bg-interactive text-white font-semibold transition-all duration-200 hover:brightness-110 cursor-pointer"
+          className="border-b border-gold/30 text-gold text-sm pb-0.5 transition-all duration-200 hover:border-gold hover:text-gold-light cursor-pointer"
         >
           Show Answer
         </button>
@@ -35,42 +35,36 @@ export function ConceptualQuestion({
 
       {showAnswer && (
         <div className="space-y-4">
-          <div className="rounded-lg bg-navy-light px-4 py-4 border border-gray-700">
-            <p className="text-sm font-medium text-gold mb-2">Answer</p>
-            <p className="text-gray-200 leading-relaxed">
+          <div className="border-t border-gold/30 pt-4">
+            <p className="font-serif text-cream leading-relaxed">
               {question.correct_answer}
             </p>
             {question.explanation && (
-              <>
-                <p className="text-sm font-medium text-gold mt-4 mb-2">
-                  Explanation
-                </p>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  {question.explanation}
-                </p>
-              </>
+              <p className="text-cream-dark text-sm leading-relaxed mt-3">
+                {question.explanation}
+              </p>
             )}
           </div>
 
           {!showResult && (
-            <div className="flex gap-3">
+            <div className="space-y-2 pt-2">
               <button
                 onClick={() => onAnswer('correct')}
-                className="flex-1 min-h-[48px] px-4 py-3 rounded-lg bg-correct text-white font-semibold transition-all duration-200 hover:brightness-110 cursor-pointer"
+                className="w-full min-h-[48px] px-4 py-3 rounded-lg bg-navy-mid text-cream border-l-[3px] border-gold text-left transition-all duration-200 hover:brightness-110 cursor-pointer"
               >
-                I Got It Right
+                Got it
               </button>
               <button
                 onClick={() => onAnswer('incorrect')}
-                className="flex-1 min-h-[48px] px-4 py-3 rounded-lg bg-incorrect text-white font-semibold transition-all duration-200 hover:brightness-110 cursor-pointer"
+                className="w-full min-h-[48px] px-4 py-3 rounded-lg bg-navy-mid text-cream-dark border-l-[3px] border-incorrect text-left transition-all duration-200 hover:brightness-110 cursor-pointer"
               >
-                I Got It Wrong
+                Missed it
               </button>
             </div>
           )}
 
           {showResult && (
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-cream-dark">
               You marked:{' '}
               <span
                 className={
@@ -79,7 +73,7 @@ export function ConceptualQuestion({
                     : 'text-incorrect font-medium'
                 }
               >
-                {userAnswer === 'correct' ? 'Got it right' : 'Got it wrong'}
+                {userAnswer === 'correct' ? 'Got it' : 'Missed it'}
               </span>
             </p>
           )}

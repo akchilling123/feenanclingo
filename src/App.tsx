@@ -9,13 +9,16 @@ import BottomNav from './components/navigation/BottomNav'
 function App() {
   return (
     <div className="pb-16">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/practice" element={<Practice />} />
-        <Route path="/review" element={<Review />} />
-        <Route path="/progress" element={<Progress />} />
-        <Route path="/daily" element={<DailyChallenge />} />
-      </Routes>
+      <a href="#main-content" className="skip-link">Skip to content</a>
+      <main id="main-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/practice" element={<Practice />} />
+          <Route path="/review" element={<Review />} />
+          <Route path="/progress" element={<Progress />} />
+          <Route path="/daily" element={<DailyChallenge />} />
+        </Routes>
+      </main>
       <BottomNav />
     </div>
   )
