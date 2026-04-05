@@ -1,0 +1,10 @@
+{
+  "id": "ev-102",
+  "topic": "ev-equity-value",
+  "difficulty": "Medium",
+  "type": "numeric",
+  "question_text": "A company has a market cap of $800M, total debt of $300M, cash of $50M, preferred stock of $40M, and minority interest of $10M. What is the Enterprise Value (in $M)?",
+  "correct_answer": "1100",
+  "explanation": "EV = Equity Value + Total Debt + Preferred Stock + Minority Interest - Cash = $800M + $300M + $40M + $10M - $50M = $1,100M. Each component makes intuitive sense: debt holders have a claim on the company's value (add it), preferred stockholders have a claim (add it), minority interest represents outside ownership of subsidiaries that contributes to consolidated EBITDA (add it), and cash is a non-operating asset that would transfer to the buyer (subtract it).",
+  "tags": ["ev-bridge"]
+}

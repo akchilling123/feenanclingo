@@ -1,0 +1,10 @@
+{
+  "id": "lbo-108",
+  "topic": "lbo",
+  "difficulty": "Medium",
+  "type": "conceptual",
+  "question_text": "What is the difference between mandatory and optional (voluntary) debt repayment in an LBO, and how does a cash flow sweep work?",
+  "correct_answer": "Mandatory repayment (amortization) is a fixed scheduled payment required by the loan agreement. Optional repayment is additional paydown the company chooses to make. A cash flow sweep requires a percentage of excess cash flow to be used for debt repayment, sitting between mandatory and fully optional.",
+  "explanation": "LBO debt typically has three repayment mechanisms: (1) Mandatory amortization -- fixed quarterly or annual payments (e.g., 1-5% of original principal per year for Term Loans); (2) Cash flow sweeps -- a contractual requirement to apply a percentage (often 50-75%) of excess cash flow (FCF after mandatory payments, CapEx, and other permitted uses) to additional debt repayment; (3) Optional prepayment -- voluntary paydown from any available cash, sometimes subject to prepayment penalties in the first 1-2 years. The cash flow sweep is particularly important because it automatically accelerates repayment in good years when the company generates excess cash. Banks structure these provisions to ensure debt deleveraging while still allowing the company to retain some cash for operations and growth.",
+  "tags": ["debt-paydown"]
+}

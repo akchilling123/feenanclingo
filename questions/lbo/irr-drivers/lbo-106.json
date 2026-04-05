@@ -1,0 +1,10 @@
+{
+  "id": "lbo-106",
+  "topic": "lbo",
+  "difficulty": "Medium",
+  "type": "numeric",
+  "question_text": "A PE firm invests $200M in equity for an LBO. After 5 years, it exits and receives $600M in equity proceeds. What is the approximate MOIC?",
+  "correct_answer": "3.0",
+  "explanation": "MOIC (Multiple on Invested Capital) = Exit Equity Proceeds / Initial Equity Investment = $600M / $200M = 3.0x. This means the PE firm tripled its money over the 5-year hold period. MOIC is a simple and intuitive return metric that complements IRR. A 3.0x MOIC over 5 years translates to approximately a 25% IRR. PE firms typically target a minimum of 2.0-2.5x MOIC and 20%+ IRR on their investments, though actual returns vary widely based on the deal, market conditions, and the firm's operational capabilities.",
+  "tags": ["irr-drivers"]
+}

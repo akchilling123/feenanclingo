@@ -1,0 +1,10 @@
+{
+  "id": "ev-105",
+  "topic": "ev-equity-value",
+  "difficulty": "Medium",
+  "type": "true_false",
+  "question_text": "True or False: If a company takes on more debt (with no other changes), its Enterprise Value increases.",
+  "correct_answer": "False",
+  "explanation": "Enterprise Value should remain approximately unchanged when a company merely takes on more debt (assuming it keeps the cash on the balance sheet). Here's why: EV = Equity Value + Debt - Cash. If the company borrows $100M, debt increases by $100M but cash also increases by $100M. These offset each other, leaving EV unchanged. If the company uses the cash for a share buyback, equity value drops by approximately $100M while debt increases by $100M -- again, EV stays roughly the same. EV represents the value of the operating business, which doesn't change just because of a financing decision. In practice, there may be small changes due to tax shield effects or changes in risk perception.",
+  "tags": ["ev-vs-equity"]
+}

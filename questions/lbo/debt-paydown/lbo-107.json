@@ -1,0 +1,16 @@
+{
+  "id": "lbo-107",
+  "topic": "lbo",
+  "difficulty": "Easy",
+  "type": "multiple_choice",
+  "question_text": "In an LBO, mandatory debt repayment is typically funded by:",
+  "options": [
+    { "text": "Additional equity contributions from the PE sponsor", "isCorrect": false },
+    { "text": "The company's free cash flow", "isCorrect": true },
+    { "text": "Issuing additional debt", "isCorrect": false },
+    { "text": "Selling the company's equity stake in other businesses", "isCorrect": false }
+  ],
+  "correct_answer": "The company's free cash flow",
+  "explanation": "In an LBO, the acquired company uses its own operating cash flows to service and repay the debt taken on to fund the acquisition. This is the fundamental mechanism of an LBO: the PE firm contributes equity (typically 30-50% of the purchase price), the rest is funded by debt, and the company's cash flows are used to pay down that debt over time. As debt decreases, the equity value increases (since EV = Equity + Net Debt), creating returns for the PE sponsor without needing EBITDA growth or multiple expansion. This is why LBO candidates need stable, predictable cash flows.",
+  "tags": ["debt-paydown"]
+}

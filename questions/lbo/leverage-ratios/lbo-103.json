@@ -1,0 +1,10 @@
+{
+  "id": "lbo-103",
+  "topic": "lbo",
+  "difficulty": "Hard",
+  "type": "conceptual",
+  "question_text": "Explain the difference between senior secured debt, senior unsecured debt, and subordinated debt in an LBO capital structure, and how their interest rates typically compare.",
+  "correct_answer": "Senior secured debt has the highest priority claim and is backed by company assets (collateral), so it carries the lowest interest rate. Senior unsecured debt has the same legal priority as secured but lacks collateral, carrying a higher rate. Subordinated debt ranks below senior debt in repayment priority and carries the highest interest rate to compensate for greater risk.",
+  "explanation": "In an LBO capital structure, debt is layered by seniority: (1) Senior Secured (e.g., revolving credit facility, Term Loan A/B) is backed by the company's assets and gets paid first in bankruptcy -- typical rates are SOFR + 200-400bps; (2) Senior Unsecured (e.g., high-yield bonds) ranks equally with secured debt legally but has no collateral backing, so rates are higher at roughly 6-10%; (3) Subordinated/Mezzanine debt explicitly ranks below senior debt and is paid last, commanding rates of 10-15% and sometimes including equity kickers (warrants). This priority structure means that in a bankruptcy, senior secured lenders recover the most (often 70-90%), unsecured lenders recover less (40-60%), and subordinated lenders recover the least (10-30%). The interest rate spread compensates each tier for its incremental risk.",
+  "tags": ["leverage-ratios"]
+}

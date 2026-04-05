@@ -1,0 +1,10 @@
+{
+  "id": "ev-106",
+  "topic": "ev-equity-value",
+  "difficulty": "Hard",
+  "type": "conceptual",
+  "question_text": "Can a company have a negative Enterprise Value? If so, what does it mean and when might this occur?",
+  "correct_answer": "Yes. A negative EV occurs when cash and cash equivalents exceed the sum of equity value and debt. This typically happens with small-cap companies that have large cash balances relative to their market cap, or companies trading below their net cash position.",
+  "explanation": "A negative Enterprise Value means the market is pricing the company's operating business at less than zero -- essentially saying the cash on the balance sheet is worth more than the total claims on the company plus the value of its operations. This can occur when: (1) A company has a very low or declining market cap but maintains a large cash balance; (2) The market expects the company to burn through its cash and expects future operating losses; (3) The company is in distress and the market questions management's ability to deploy cash effectively. Negative EV situations sometimes attract value investors who believe they are getting the operating business 'for free' plus excess cash. However, it often signals deep fundamental problems -- if the business were truly valuable, the stock price wouldn't be so depressed relative to the cash balance.",
+  "tags": ["ev-vs-equity"]
+}

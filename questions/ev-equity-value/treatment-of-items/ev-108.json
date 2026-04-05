@@ -1,0 +1,16 @@
+{
+  "id": "ev-108",
+  "topic": "ev-equity-value",
+  "difficulty": "Medium",
+  "type": "multiple_choice",
+  "question_text": "How should unfunded pension obligations be treated in the Enterprise Value bridge?",
+  "options": [
+    { "text": "Ignored -- they are operational expenses", "isCorrect": false },
+    { "text": "Subtracted from EV like cash", "isCorrect": false },
+    { "text": "Added to EV as a debt-like obligation", "isCorrect": true },
+    { "text": "Included only if the company is in bankruptcy", "isCorrect": false }
+  ],
+  "correct_answer": "Added to EV as a debt-like obligation",
+  "explanation": "Unfunded pension obligations represent a liability the company owes to its employees, similar to debt. An acquirer would need to satisfy these obligations, so they increase the effective cost of acquiring the business. In the EV bridge, unfunded pensions are treated like debt and added to equity value (along with total debt) to arrive at Enterprise Value. The unfunded amount is the difference between the pension benefit obligation (PBO) and the fair value of plan assets. Other items treated similarly include operating leases (now on-balance sheet under ASC 842), capital lease obligations, and other long-term liabilities that represent debt-like claims on the business.",
+  "tags": ["treatment-of-items"]
+}

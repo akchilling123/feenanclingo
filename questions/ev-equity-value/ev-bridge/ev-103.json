@@ -1,0 +1,10 @@
+{
+  "id": "ev-103",
+  "topic": "ev-equity-value",
+  "difficulty": "Medium",
+  "type": "conceptual",
+  "question_text": "Why do we subtract cash when calculating Enterprise Value from Equity Value?",
+  "correct_answer": "Cash is subtracted because it is a non-operating asset that reduces the net cost of acquiring the business. An acquirer effectively gets the target's cash upon closing, so the true cost of the operating business is the purchase price minus the cash acquired.",
+  "explanation": "Think of buying a house with $10,000 hidden in the walls. If you pay $500,000 for the house, your net cost for the property itself is really $490,000 because you get the $10,000 cash. Similarly, Enterprise Value represents the net cost of acquiring a company's operating business. Since the acquirer takes control of the target's cash balance at closing, that cash offsets the total price paid. This is also why EV-based multiples (EV/EBITDA) are more useful than equity-based multiples for comparing companies -- a company that hoards $5B in cash shouldn't look 'more expensive' just because its market cap is inflated by that cash balance.",
+  "tags": ["ev-bridge"]
+}

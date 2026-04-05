@@ -1,0 +1,16 @@
+{
+  "id": "ev-101",
+  "topic": "ev-equity-value",
+  "difficulty": "Easy",
+  "type": "multiple_choice",
+  "question_text": "What is the basic formula to calculate Enterprise Value from Equity Value?",
+  "options": [
+    { "text": "EV = Equity Value + Total Debt + Preferred Stock + Minority Interest - Cash", "isCorrect": true },
+    { "text": "EV = Equity Value - Total Debt + Cash", "isCorrect": false },
+    { "text": "EV = Equity Value + Cash - Total Debt", "isCorrect": false },
+    { "text": "EV = Equity Value x (1 + Debt/Equity Ratio)", "isCorrect": false }
+  ],
+  "correct_answer": "EV = Equity Value + Total Debt + Preferred Stock + Minority Interest - Cash",
+  "explanation": "Enterprise Value represents the total value of a company's operations to ALL capital providers. Starting from equity value (market cap), you add debt and debt-like items (preferred stock, minority interest) because an acquirer would need to pay off or assume these obligations, and you subtract cash because the acquirer effectively gets this cash upon acquisition, reducing the net cost. Think of it as: the total price to buy the whole business and take the cash home.",
+  "tags": ["ev-bridge"]
+}

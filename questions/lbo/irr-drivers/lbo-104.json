@@ -1,0 +1,16 @@
+{
+  "id": "lbo-104",
+  "topic": "lbo",
+  "difficulty": "Easy",
+  "type": "multiple_choice",
+  "question_text": "What are the three primary drivers of returns in a leveraged buyout?",
+  "options": [
+    { "text": "Revenue growth, margin expansion, and multiple expansion", "isCorrect": false },
+    { "text": "EBITDA growth, multiple expansion, and debt paydown", "isCorrect": true },
+    { "text": "Cost cutting, asset sales, and dividends", "isCorrect": false },
+    { "text": "Leverage, synergies, and tax optimization", "isCorrect": false }
+  ],
+  "correct_answer": "EBITDA growth, multiple expansion, and debt paydown",
+  "explanation": "LBO returns are driven by three levers: (1) EBITDA growth -- growing the company's earnings through revenue growth and/or margin expansion; (2) Multiple expansion -- selling the company at a higher EV/EBITDA multiple than the purchase multiple, often achieved by improving growth profile, reducing risk, or selling into a better market; (3) Debt paydown -- using the company's cash flows to repay debt over the hold period, increasing the equity value since Enterprise Value = Equity + Debt. The PE firm's skill lies in maximizing all three levers simultaneously over a typical 3-7 year hold period.",
+  "tags": ["irr-drivers"]
+}

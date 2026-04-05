@@ -1,0 +1,16 @@
+{
+  "id": "ev-107",
+  "topic": "ev-equity-value",
+  "difficulty": "Easy",
+  "type": "multiple_choice",
+  "question_text": "How are stock options treated when calculating Enterprise Value?",
+  "options": [
+    { "text": "They are ignored since they haven't been exercised", "isCorrect": false },
+    { "text": "They are added to Enterprise Value as a debt-like item", "isCorrect": false },
+    { "text": "In-the-money options increase equity value (diluted shares) and thus increase Enterprise Value", "isCorrect": true },
+    { "text": "They reduce Enterprise Value since they represent future cash inflows", "isCorrect": false }
+  ],
+  "correct_answer": "In-the-money options increase equity value (diluted shares) and thus increase Enterprise Value",
+  "explanation": "When calculating equity value for the EV bridge, you should use diluted shares outstanding, which includes the effect of in-the-money stock options (using the treasury stock method). In-the-money options will be exercised, creating additional shares and increasing equity value. The treasury stock method assumes option proceeds are used to buy back shares at the current price, giving you the net additional shares. This diluted equity value then flows into the EV calculation. Out-of-the-money options (exercise price above current stock price) are excluded since they wouldn't rationally be exercised.",
+  "tags": ["treatment-of-items"]
+}

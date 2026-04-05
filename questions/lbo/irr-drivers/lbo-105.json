@@ -1,0 +1,10 @@
+{
+  "id": "lbo-105",
+  "topic": "lbo",
+  "difficulty": "Medium",
+  "type": "true_false",
+  "question_text": "True or False: A shorter hold period generally results in a higher IRR (assuming the same MOIC).",
+  "correct_answer": "True",
+  "explanation": "IRR is a time-weighted return metric. If you invest $100M and receive $250M back (2.5x MOIC), achieving that in 3 years yields a ~36% IRR, while achieving it in 5 years yields a ~20% IRR. The same dollar return compressed into a shorter time frame produces a higher annualized return. This is why PE firms sometimes pursue quick exits (dividend recaps, secondary sales) when possible. However, IRR alone can be misleading -- a 50% IRR on a small, quick deal may generate less total profit than a 20% IRR on a larger, longer deal. This is why PE firms also track MOIC (multiple on invested capital) alongside IRR.",
+  "tags": ["irr-drivers"]
+}

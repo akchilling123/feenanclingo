@@ -1,0 +1,16 @@
+{
+  "id": "ev-109",
+  "topic": "ev-equity-value",
+  "difficulty": "Hard",
+  "type": "multiple_choice",
+  "question_text": "A company has a 60% stake in a subsidiary that is fully consolidated. How should the 40% minority interest be treated in the EV bridge?",
+  "options": [
+    { "text": "Subtract it from Enterprise Value since the parent doesn't own 100%", "isCorrect": false },
+    { "text": "Add it to Enterprise Value because 100% of the subsidiary's EBITDA is in the financials but only 60% is owned", "isCorrect": true },
+    { "text": "Ignore it -- consolidated financials already account for it", "isCorrect": false },
+    { "text": "Subtract 40% of the subsidiary's revenue from consolidated revenue", "isCorrect": false }
+  ],
+  "correct_answer": "Add it to Enterprise Value because 100% of the subsidiary's EBITDA is in the financials but only 60% is owned",
+  "explanation": "When a company consolidates a subsidiary, 100% of that subsidiary's revenue, EBITDA, and other financial metrics appear in the parent's consolidated financials, even if the parent only owns 60%. Since we use 100% of the subsidiary's EBITDA in our EV/EBITDA multiple, we need to include the full claim on that EBITDA in the numerator (EV). The 40% minority interest represents outside shareholders' claim on the subsidiary's value, so it must be added in the EV bridge to maintain consistency between numerator and denominator. If you excluded minority interest, you would understate EV relative to EBITDA, making the company appear cheaper than it actually is.",
+  "tags": ["treatment-of-items"]
+}

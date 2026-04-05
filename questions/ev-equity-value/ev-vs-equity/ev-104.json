@@ -1,0 +1,16 @@
+{
+  "id": "ev-104",
+  "topic": "ev-equity-value",
+  "difficulty": "Easy",
+  "type": "multiple_choice",
+  "question_text": "Which of the following is an equity value multiple (not an enterprise value multiple)?",
+  "options": [
+    { "text": "EV / EBITDA", "isCorrect": false },
+    { "text": "EV / Revenue", "isCorrect": false },
+    { "text": "Price / Earnings (P/E)", "isCorrect": true },
+    { "text": "EV / EBIT", "isCorrect": false }
+  ],
+  "correct_answer": "Price / Earnings (P/E)",
+  "explanation": "Price/Earnings (P/E) is an equity value multiple because the numerator (share price or market cap) represents equity value, and the denominator (net income or EPS) is a metric available only to equity holders (it is after interest expense and taxes). The rule for matching: Enterprise Value multiples use metrics available to all capital providers (pre-interest: Revenue, EBITDA, EBIT), while Equity Value multiples use metrics available only to equity holders (post-interest: Net Income, EPS, Free Cash Flow to Equity). Mixing them (e.g., EV/Net Income) creates a mismatch and produces meaningless results.",
+  "tags": ["ev-vs-equity"]
+}
