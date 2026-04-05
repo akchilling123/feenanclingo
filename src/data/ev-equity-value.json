@@ -1,1 +1,188 @@
-[]
+[
+  {
+    "id": "ev-001",
+    "topic": "ev-equity-value",
+    "difficulty": "Easy",
+    "type": "multiple_choice",
+    "question_text": "What is the formula to calculate Enterprise Value starting from Equity Value?",
+    "options": [
+      { "text": "Equity Value + Net Debt + Preferred Stock + Minority Interest", "isCorrect": true },
+      { "text": "Equity Value - Net Debt + Preferred Stock + Minority Interest", "isCorrect": false },
+      { "text": "Equity Value + Total Debt - Total Cash", "isCorrect": false },
+      { "text": "Equity Value + Net Debt - Preferred Stock - Minority Interest", "isCorrect": false }
+    ],
+    "correct_answer": "Equity Value + Net Debt + Preferred Stock + Minority Interest",
+    "explanation": "Enterprise Value represents the total price to acquire a company's core operations. Starting from Equity Value (what equity holders own), you add Net Debt (since an acquirer assumes the debt but gets the cash), Preferred Stock (a debt-like claim that must be repaid or assumed), and Minority Interest (you consolidate 100% of the subsidiary's operations on the income statement, so you must pay for the portion you don't own). Each addition reflects a claim on the enterprise's operating assets beyond common equity.",
+    "tags": ["ev-bridge", "core-formula"]
+  },
+  {
+    "id": "ev-002",
+    "topic": "ev-equity-value",
+    "difficulty": "Easy",
+    "type": "true_false",
+    "question_text": "Cash and cash equivalents are subtracted when calculating Enterprise Value from Equity Value.",
+    "correct_answer": "True",
+    "explanation": "Cash is subtracted because it is a non-operating asset. Enterprise Value measures the value of a company's core operations. When an acquirer buys a company, they effectively get the cash on the balance sheet, which offsets part of the purchase price. Think of it this way: if you buy a house for $500K and it has $50K stuffed in a safe, the net cost of the house itself is $450K. Similarly, EV captures the net cost of the operating business by removing cash.",
+    "tags": ["cash", "ev-bridge"]
+  },
+  {
+    "id": "ev-003",
+    "topic": "ev-equity-value",
+    "difficulty": "Easy",
+    "type": "multiple_choice",
+    "question_text": "Why is Minority Interest added when calculating Enterprise Value?",
+    "options": [
+      { "text": "Because the parent company does not consolidate the minority subsidiary's revenue", "isCorrect": false },
+      { "text": "Because 100% of the subsidiary's operations are consolidated in the parent's financials, so EV must reflect the full claim", "isCorrect": true },
+      { "text": "Because minority interest is a form of debt financing", "isCorrect": false },
+      { "text": "Because minority interest increases the parent's cash flow", "isCorrect": false }
+    ],
+    "correct_answer": "Because 100% of the subsidiary's operations are consolidated in the parent's financials, so EV must reflect the full claim",
+    "explanation": "When a parent owns more than 50% of a subsidiary, it consolidates 100% of that subsidiary's revenue, EBITDA, and other operating metrics in its financial statements. But the parent doesn't actually own 100% -- the minority shareholders own a piece. To keep EV consistent with the operating metrics in the numerator of EV-based multiples, you must add Minority Interest. Otherwise, you'd have 100% of EBITDA in the denominator but less than 100% of the value in the numerator, making the multiple artificially low.",
+    "tags": ["minority-interest", "ev-bridge"]
+  },
+  {
+    "id": "ev-004",
+    "topic": "ev-equity-value",
+    "difficulty": "Medium",
+    "type": "numeric",
+    "question_text": "A company has a share price of $25, 100 million diluted shares outstanding, $500 million in total debt, $200 million in cash, $50 million in preferred stock, and $30 million in minority interest. What is its Enterprise Value in $ millions?",
+    "correct_answer": "2880",
+    "explanation": "Equity Value = $25 x 100M shares = $2,500M. Enterprise Value = Equity Value + Debt - Cash + Preferred Stock + Minority Interest = $2,500 + $500 - $200 + $50 + $30 = $2,880M. Each component matters: debt and preferred are claims that an acquirer assumes, cash is a non-operating asset that offsets the price, and minority interest accounts for the unconsolidated ownership in subsidiaries whose operations are fully reflected in the company's financials.",
+    "tags": ["ev-calculation", "numeric"]
+  },
+  {
+    "id": "ev-005",
+    "topic": "ev-equity-value",
+    "difficulty": "Medium",
+    "type": "conceptual",
+    "question_text": "Explain why you would use EV/EBITDA instead of P/E when comparing companies with different capital structures.",
+    "correct_answer": "EV/EBITDA is capital-structure-neutral because Enterprise Value includes all funding sources and EBITDA is pre-interest, while P/E is distorted by leverage differences since net income is after interest expense.",
+    "explanation": "P/E (Price / Earnings Per Share) is an equity-level metric -- both the numerator (stock price) and denominator (EPS, which is after interest) are affected by how much debt a company carries. A highly leveraged company might have lower EPS simply because of interest expense, inflating its P/E. EV/EBITDA strips out capital structure effects: EV captures all claims (equity + debt + other), and EBITDA is before interest, so the ratio measures operating value relative to operating cash flow regardless of how the company is financed. This makes it far more useful for apples-to-apples comparisons across companies with different debt levels.",
+    "tags": ["ev-vs-equity-multiples", "ebitda"]
+  },
+  {
+    "id": "ev-006",
+    "topic": "ev-equity-value",
+    "difficulty": "Easy",
+    "type": "true_false",
+    "question_text": "Convertible bonds should be treated as equity (not debt) in the Enterprise Value bridge when they are in-the-money -- i.e., the stock price exceeds the conversion price.",
+    "correct_answer": "True",
+    "explanation": "When convertible bonds are in-the-money, it is economically rational for holders to convert to equity rather than accept repayment at par. In that scenario, you treat the convertible as equity: the shares it would convert into are added to the diluted share count (increasing Equity Value), and you do NOT also add the debt to the EV bridge -- that would be double-counting. When the converts are out-of-the-money, holders will take the cash repayment, so you treat them as straight debt. The key principle: never count the same claim in both equity and the EV bridge.",
+    "tags": ["convertible-debt", "dilution", "ev-bridge"]
+  },
+  {
+    "id": "ev-007",
+    "topic": "ev-equity-value",
+    "difficulty": "Easy",
+    "type": "multiple_choice",
+    "question_text": "A company has 50 million basic shares outstanding and 5 million stock options with an exercise price of $10. The current stock price is $20. Using the Treasury Stock Method, how many diluted shares should be used to calculate Equity Value?",
+    "options": [
+      { "text": "50.0 million", "isCorrect": false },
+      { "text": "52.5 million", "isCorrect": true },
+      { "text": "55.0 million", "isCorrect": false },
+      { "text": "47.5 million", "isCorrect": false }
+    ],
+    "correct_answer": "52.5 million",
+    "explanation": "The Treasury Stock Method assumes in-the-money options are exercised and the company uses the proceeds to buy back shares at the current market price. Step 1: 5M options are exercised, creating 5M new shares. Step 2: The company receives 5M x $10 = $50M in proceeds. Step 3: At $20/share, the company buys back $50M / $20 = 2.5M shares. Net new shares = 5M - 2.5M = 2.5M. Diluted shares = 50M + 2.5M = 52.5M. The TSM reflects the real dilutive impact -- not the full 5M shares, because the exercise proceeds partially offset dilution.",
+    "tags": ["treasury-stock-method", "diluted-shares", "options"]
+  },
+  {
+    "id": "ev-008",
+    "topic": "ev-equity-value",
+    "difficulty": "Easy",
+    "type": "multiple_choice",
+    "question_text": "Under current accounting standards (ASC 842 / IFRS 16), how should operating lease liabilities be treated in the Enterprise Value calculation?",
+    "options": [
+      { "text": "Ignored entirely -- operating leases are not debt", "isCorrect": false },
+      { "text": "Added to Enterprise Value as a debt-like obligation", "isCorrect": true },
+      { "text": "Subtracted from Enterprise Value like cash", "isCorrect": false },
+      { "text": "Included only if the lease term exceeds 10 years", "isCorrect": false }
+    ],
+    "correct_answer": "Added to Enterprise Value as a debt-like obligation",
+    "explanation": "Under ASC 842 and IFRS 16, operating leases are capitalized on the balance sheet as right-of-use assets and corresponding lease liabilities. These lease liabilities represent binding future payment obligations that function like debt -- the company must make regular payments or face default. To maintain consistency in EV-based multiples, you add operating lease liabilities to EV. This is especially important because EBITDA (and EBITDAR) in the denominator no longer captures lease expense the same way it did under the old standard. If you use EBITDA that excludes lease costs, you must include lease liabilities in EV to keep numerator and denominator consistent.",
+    "tags": ["operating-leases", "ev-bridge", "ASC-842"]
+  },
+  {
+    "id": "ev-009",
+    "topic": "ev-equity-value",
+    "difficulty": "Easy",
+    "type": "multiple_choice",
+    "question_text": "Which of the following is the correct way to calculate Equity Value from Enterprise Value?",
+    "options": [
+      { "text": "EV + Net Debt + Preferred Stock + Minority Interest", "isCorrect": false },
+      { "text": "EV - Net Debt - Preferred Stock - Minority Interest", "isCorrect": true },
+      { "text": "EV - Total Debt + Preferred Stock - Minority Interest", "isCorrect": false },
+      { "text": "EV + Cash - Debt - Preferred Stock + Minority Interest", "isCorrect": false }
+    ],
+    "correct_answer": "EV - Net Debt - Preferred Stock - Minority Interest",
+    "explanation": "Since EV = Equity Value + Net Debt + Preferred Stock + Minority Interest, you simply reverse the equation: Equity Value = EV - Net Debt - Preferred Stock - Minority Interest. Intuitively, this makes sense: start with the total value of the operating business (EV), then strip away all non-equity claims to arrive at what belongs to common shareholders. This reversal is used frequently in practice -- for example, in a DCF where you calculate EV from projected cash flows and then back into Equity Value (and thus implied share price) by subtracting these items.",
+    "tags": ["equity-from-ev", "ev-bridge"]
+  },
+  {
+    "id": "ev-010",
+    "topic": "ev-equity-value",
+    "difficulty": "Easy",
+    "type": "numeric",
+    "question_text": "A company has an Enterprise Value of $1,200 million, total debt of $300 million, cash of $100 million, preferred stock of $50 million, and minority interest of $25 million. What is its Equity Value in $ millions?",
+    "correct_answer": "925",
+    "explanation": "Equity Value = EV - Net Debt - Preferred Stock - Minority Interest. Net Debt = $300M - $100M = $200M. Equity Value = $1,200 - $200 - $50 - $25 = $925M. You reverse the EV bridge: Enterprise Value captures all claims on the operating business, so subtracting the non-equity claims (debt net of cash, preferred stock, minority interest) isolates the residual value that belongs to common equity holders.",
+    "tags": ["equity-from-ev", "numeric", "ev-bridge"]
+  },
+  {
+    "id": "ev-011",
+    "topic": "ev-equity-value",
+    "difficulty": "Medium",
+    "type": "true_false",
+    "question_text": "Unfunded pension obligations should be added to Enterprise Value because they represent a debt-like claim on the company's future cash flows.",
+    "correct_answer": "True",
+    "explanation": "An unfunded pension obligation is a legally binding commitment to pay retirees in the future, and the company hasn't set aside enough assets to cover it. This shortfall functions exactly like debt: it's a fixed claim on future cash flows that must be honored before equity holders see returns. In an acquisition, the buyer inherits this obligation, increasing the true cost of buying the enterprise. For consistency in EV-based multiples, you add the net unfunded pension liability (total pension obligation minus plan assets) to Enterprise Value, just as you would add financial debt.",
+    "tags": ["pension-obligations", "ev-bridge", "debt-like-items"]
+  },
+  {
+    "id": "ev-012",
+    "topic": "ev-equity-value",
+    "difficulty": "Medium",
+    "type": "conceptual",
+    "question_text": "A company has a market cap of $50 million, no debt, and $80 million in cash. Its Enterprise Value is negative $30 million. What does a negative Enterprise Value signal, and why should an analyst be cautious?",
+    "correct_answer": "A negative EV means the market values the company's operating business below zero, implying the cash exceeds the perceived value of the enterprise. It can signal deep distress, expected cash burn, or market mispricing, and analysts should investigate whether the cash is truly accessible and whether the business is destroying value.",
+    "explanation": "Negative Enterprise Value is rare and should trigger skepticism, not excitement. It means: EV = $50M equity - $0 debt - $80M cash = -$30M. The market is essentially saying the operating business is worth less than nothing -- investors are pricing the stock purely for the cash, minus some implied liability or expected losses. Common causes include: (1) the company is burning cash rapidly and the market expects the $80M to shrink, (2) there are large off-balance-sheet liabilities, (3) the cash is trapped in foreign jurisdictions or restricted, or (4) genuine market mispricing. Some quantitative investors screen for negative EV as a deep-value signal, but it requires careful diligence. You should never blindly apply EV multiples to a negative-EV company -- the ratios become meaningless or misleading.",
+    "tags": ["negative-ev", "valuation-edge-cases", "cash"]
+  },
+  {
+    "id": "ev-013",
+    "topic": "ev-equity-value",
+    "difficulty": "Medium",
+    "type": "multiple_choice",
+    "question_text": "A company has 200 million basic shares at $15/share, 10 million options (exercise price $8), and 5 million options (exercise price $20). What is its Equity Value using the Treasury Stock Method?",
+    "options": [
+      { "text": "$3,000 million", "isCorrect": false },
+      { "text": "$3,070 million", "isCorrect": true },
+      { "text": "$3,150 million", "isCorrect": false },
+      { "text": "$3,225 million", "isCorrect": false }
+    ],
+    "correct_answer": "$3,070 million",
+    "explanation": "Only in-the-money options (exercise price below the current $15 stock price) are dilutive. The $8-strike options are in-the-money; the $20-strike options are out-of-the-money and ignored. TSM for the 10M in-the-money options: 10M new shares are issued, generating 10M x $8 = $80M in proceeds. Buyback: $80M / $15 = 5.33M shares repurchased. Net dilution: 10M - 5.33M = 4.67M shares. Diluted shares: 200M + 4.67M = 204.67M. Equity Value = 204.67M x $15 = $3,070M. The TSM correctly captures that out-of-the-money options have zero dilutive impact, and the exercise proceeds from in-the-money options partially offset dilution.",
+    "tags": ["treasury-stock-method", "diluted-shares", "equity-value", "in-the-money-options"]
+  },
+  {
+    "id": "ev-014",
+    "topic": "ev-equity-value",
+    "difficulty": "Easy",
+    "type": "conceptual",
+    "question_text": "Explain why Net Operating Losses (NOLs) affect Equity Value but generally are NOT added or subtracted in the Enterprise Value bridge.",
+    "correct_answer": "NOLs reduce future tax payments, which benefits equity holders through higher after-tax earnings. Since EV is based on pre-tax operating metrics like EBITDA, NOLs don't directly affect the EV bridge. Their value flows through to equity holders via higher after-tax cash flows, which is captured in DCF-based Equity Value.",
+    "explanation": "Net Operating Losses allow a company to offset future taxable income, reducing cash taxes paid. This is a real economic benefit -- but it accrues specifically to equity holders, not to all capital providers. In an EV-based framework, the core multiples (EV/EBITDA, EV/Revenue) use pre-tax operating metrics, so NOLs don't belong in the bridge. However, when doing a DCF, you project lower cash taxes in the years the NOLs are utilized, which increases free cash flow and ultimately Enterprise Value. When you then bridge from EV to Equity Value, the NOL benefit is already embedded in the higher EV. Some practitioners separately value NOLs as a tax asset when the DCF doesn't explicitly model their usage, adding the present value of the tax savings directly to Equity Value. The key insight: NOLs are a tax shield, and tax is an equity-level concept in the EV framework.",
+    "tags": ["NOLs", "tax-shield", "equity-value", "ev-bridge"]
+  },
+  {
+    "id": "ev-015",
+    "topic": "ev-equity-value",
+    "difficulty": "Hard",
+    "type": "numeric",
+    "question_text": "Company X has: 80M basic shares at $40/share, 4M options at $15 strike, 2M options at $50 strike, $600M total debt, $150M cash, $75M preferred stock, $40M minority interest, $120M capitalized operating lease liabilities, and $90M net unfunded pension obligations. What is its Enterprise Value in $ millions? (Use the Treasury Stock Method for dilution.)",
+    "correct_answer": "4075",
+    "explanation": "Step 1 -- Diluted shares via TSM: Only the $15-strike options are in-the-money (stock price = $40 > $15 strike). 4M options exercised, generating proceeds of 4M x $15 = $60M. Shares bought back at market price = $60M / $40 = 1.5M. Net new shares = 4M - 1.5M = 2.5M. The $50-strike options are out-of-the-money and ignored. Diluted shares = 80M + 2.5M = 82.5M. Step 2 -- Equity Value: 82.5M x $40 = $3,300M. Step 3 -- Enterprise Value: EV = Equity Value + Debt - Cash + Preferred + Minority Interest + Operating Leases + Unfunded Pensions = $3,300 + $600 - $150 + $75 + $40 + $120 + $90 = $4,075M. This question integrates every major component of the EV bridge: diluted equity value via TSM, financial debt, cash offset, preferred stock, minority interest, and the two most commonly tested debt-like items (operating leases and unfunded pensions). In interviews, methodically walking through each component shows the interviewer you understand not just the formula but why each item is included.",
+    "tags": ["ev-bridge", "treasury-stock-method", "operating-leases", "pension-obligations", "comprehensive"]
+  }
+]

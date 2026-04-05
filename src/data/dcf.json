@@ -1,1 +1,312 @@
-[]
+[
+  {
+    "id": "dcf-001",
+    "topic": "dcf",
+    "difficulty": "Easy",
+    "type": "conceptual",
+    "question_text": "What does a DCF analysis fundamentally try to determine?",
+    "correct_answer": "The present value of a company's expected future free cash flows",
+    "explanation": "A DCF values a company by projecting its future free cash flows and discounting them back to today's dollars using an appropriate discount rate (typically WACC). The core idea is that a dollar received in the future is worth less than a dollar today, so you need to account for the time value of money. This is considered an 'intrinsic' valuation method because it relies on the company's own fundamentals rather than market comparisons.",
+    "tags": ["dcf-fundamentals", "intrinsic-valuation"]
+  },
+  {
+    "id": "dcf-002",
+    "topic": "dcf",
+    "difficulty": "Easy",
+    "type": "multiple_choice",
+    "question_text": "In a DCF, what discount rate is used when projecting unlevered free cash flows?",
+    "options": [
+      { "text": "Cost of equity", "isCorrect": false },
+      { "text": "Cost of debt", "isCorrect": false },
+      { "text": "Weighted average cost of capital (WACC)", "isCorrect": true },
+      { "text": "Risk-free rate", "isCorrect": false }
+    ],
+    "correct_answer": "Weighted average cost of capital (WACC)",
+    "explanation": "Unlevered free cash flows represent cash available to ALL capital providers (both debt and equity holders), so you discount them at the blended cost of all capital -- the WACC. If you were projecting levered free cash flows (cash to equity only), you'd use cost of equity instead. This matching principle is critical: the discount rate must correspond to the cash flow stream being discounted.",
+    "tags": ["wacc", "discount-rate"]
+  },
+  {
+    "id": "dcf-003",
+    "topic": "dcf",
+    "difficulty": "Easy",
+    "type": "true_false",
+    "question_text": "True or False: In a DCF, the terminal value typically represents the majority of the total enterprise value.",
+    "correct_answer": "True",
+    "explanation": "Terminal value commonly accounts for 60-80%+ of total enterprise value in a DCF. This happens because the explicit projection period (usually 5-10 years) only captures a fraction of a company's total cash-generating life. The terminal value captures ALL value beyond the projection period into perpetuity. This heavy reliance on terminal value is actually one of the biggest criticisms of DCF analysis -- small changes in terminal value assumptions dramatically swing the output.",
+    "tags": ["terminal-value", "dcf-fundamentals"]
+  },
+  {
+    "id": "dcf-004",
+    "topic": "dcf",
+    "difficulty": "Medium",
+    "type": "numeric",
+    "question_text": "A company has Year 1 unlevered free cash flow of $100M and WACC of 10%. Using the perpetuity growth method with a 3% perpetual growth rate, what is the terminal value at the end of Year 1 (in $M)?",
+    "correct_answer": "1428.6",
+    "explanation": "Terminal Value = FCF x (1 + g) / (WACC - g) = $100M x 1.03 / (0.10 - 0.03) = $103M / 0.07 = ~$1,428.6M. The formula grows the final year's cash flow by the perpetuity growth rate to get the first cash flow of the terminal period, then divides by (WACC - g). The denominator (WACC - g) is the 'spread' between the discount rate and growth -- the smaller this spread, the higher the terminal value, which is why terminal value is so sensitive to these two assumptions.",
+    "tags": ["terminal-value", "gordon-growth"]
+  },
+  {
+    "id": "dcf-005",
+    "topic": "dcf",
+    "difficulty": "Medium",
+    "type": "multiple_choice",
+    "question_text": "Which of the following is NOT a component of unlevered free cash flow?",
+    "options": [
+      { "text": "EBIT x (1 - tax rate)", "isCorrect": false },
+      { "text": "Depreciation & amortization (added back)", "isCorrect": false },
+      { "text": "Interest expense", "isCorrect": true },
+      { "text": "Changes in working capital", "isCorrect": false }
+    ],
+    "correct_answer": "Interest expense",
+    "explanation": "Unlevered free cash flow (UFCF) is calculated as: EBIT x (1 - tax rate) + D&A - CapEx - changes in net working capital. Interest expense is deliberately excluded because UFCF represents cash flow available to ALL investors (debt + equity). Including interest would make it a 'levered' cash flow, only available to equity holders. By excluding financing costs, UFCF lets you value the business independently of its capital structure.",
+    "tags": ["ufcf", "cash-flow-calculation"]
+  },
+  {
+    "id": "dcf-006",
+    "topic": "dcf",
+    "difficulty": "Easy",
+    "type": "multiple_choice",
+    "question_text": "In the Capital Asset Pricing Model (CAPM), which of the following is the correct formula for cost of equity?",
+    "options": [
+      { "text": "Risk-free rate + Beta x (Market return - Risk-free rate)", "isCorrect": true },
+      { "text": "Risk-free rate + Market return x Beta", "isCorrect": false },
+      { "text": "Beta x (Market return - Risk-free rate)", "isCorrect": false },
+      { "text": "Risk-free rate + Equity risk premium / Beta", "isCorrect": false }
+    ],
+    "correct_answer": "Risk-free rate + Beta x (Market return - Risk-free rate)",
+    "explanation": "CAPM states: Cost of Equity = Rf + B x (Rm - Rf), where Rf is the risk-free rate, B is the stock's sensitivity to market movements, and (Rm - Rf) is the equity risk premium (ERP). The intuition is that investors deserve the risk-free rate as a baseline, plus additional compensation for taking on market risk, scaled by how much the stock moves with the market (beta). A stock with beta of 1.5 demands 1.5x the market risk premium because it's 50% more volatile than the market.",
+    "tags": ["capm", "cost-of-equity"]
+  },
+  {
+    "id": "dcf-007",
+    "topic": "dcf",
+    "difficulty": "Easy",
+    "type": "true_false",
+    "question_text": "True or False: The mid-year convention in a DCF assumes cash flows are received at the end of each year.",
+    "correct_answer": "False",
+    "explanation": "The mid-year convention assumes cash flows are received at the MIDDLE of each year (i.e., evenly throughout the year), not at the end. Without mid-year convention, Year 1 cash flows are discounted by a full year; with it, Year 1 is discounted by only 0.5 years, Year 2 by 1.5 years, etc. This is more realistic since companies generate cash continuously, not in a lump sum on December 31st. The mid-year convention increases the present value because cash flows are assumed to arrive sooner.",
+    "tags": ["mid-year-convention", "discount-periods"]
+  },
+  {
+    "id": "dcf-008",
+    "topic": "dcf",
+    "difficulty": "Easy",
+    "type": "conceptual",
+    "question_text": "Why do most DCFs use a 5-10 year projection period rather than projecting cash flows for 20+ years?",
+    "correct_answer": "Forecasting beyond 5-10 years becomes increasingly unreliable, so a terminal value is used to capture value beyond the explicit projection period",
+    "explanation": "The further out you project, the less confident you can be in your assumptions. Revenue growth, margins, competitive dynamics, and industry trends become speculative past 5-10 years. Instead of pretending to know exactly what will happen in Year 15, you project explicitly for a reasonable period (until the business reaches a 'steady state' with stable growth and margins), then use a terminal value to capture the remaining value in a single number. The projection period should be long enough for the business to reach normalized operations.",
+    "tags": ["projection-period", "dcf-fundamentals"]
+  },
+  {
+    "id": "dcf-009",
+    "topic": "dcf",
+    "difficulty": "Easy",
+    "type": "multiple_choice",
+    "question_text": "Which component of WACC is tax-affected?",
+    "options": [
+      { "text": "Cost of equity", "isCorrect": false },
+      { "text": "Cost of debt", "isCorrect": true },
+      { "text": "Both cost of equity and cost of debt", "isCorrect": false },
+      { "text": "Neither -- WACC is pre-tax", "isCorrect": false }
+    ],
+    "correct_answer": "Cost of debt",
+    "explanation": "In the WACC formula, cost of debt is multiplied by (1 - tax rate) because interest expense is tax-deductible, creating an 'interest tax shield.' If a company pays 6% interest and the tax rate is 25%, the after-tax cost of debt is only 4.5% (6% x 0.75). Cost of equity is NOT tax-affected because dividend payments and equity returns are not tax-deductible to the company. This tax benefit of debt is one reason companies use leverage -- it literally lowers their blended cost of capital.",
+    "tags": ["wacc", "cost-of-debt", "tax-shield"]
+  },
+  {
+    "id": "dcf-010",
+    "topic": "dcf",
+    "difficulty": "Easy",
+    "type": "numeric",
+    "question_text": "A company has $200M of debt at 5% interest, $800M of equity at 12% cost of equity, and a 25% tax rate. What is its WACC (as a percentage, to one decimal)?",
+    "correct_answer": "10.4",
+    "explanation": "WACC = (E/V x Ke) + (D/V x Kd x (1-t)). Total capital (V) = $200M + $800M = $1,000M. Equity weight = 800/1000 = 80%. Debt weight = 200/1000 = 20%. WACC = (0.80 x 12%) + (0.20 x 5% x (1 - 0.25)) = 9.6% + 0.75% = 10.35%, which rounds to 10.4%. Notice how the after-tax cost of debt (3.75%) is much cheaper than equity (12%), which is why the WACC is pulled below the cost of equity. More leverage would lower WACC, up to a point where financial risk increases both costs.",
+    "tags": ["wacc", "calculation"]
+  },
+  {
+    "id": "dcf-011",
+    "topic": "dcf",
+    "difficulty": "Easy",
+    "type": "multiple_choice",
+    "question_text": "What are the two most common methods for calculating terminal value in a DCF?",
+    "options": [
+      { "text": "Liquidation value and book value", "isCorrect": false },
+      { "text": "Gordon Growth Model (perpetuity growth) and exit multiple method", "isCorrect": true },
+      { "text": "P/E multiple and dividend discount model", "isCorrect": false },
+      { "text": "Replacement cost and net asset value", "isCorrect": false }
+    ],
+    "correct_answer": "Gordon Growth Model (perpetuity growth) and exit multiple method",
+    "explanation": "The two standard approaches are: (1) Gordon Growth Model -- assumes cash flows grow at a constant rate forever: TV = FCF x (1+g) / (WACC - g), and (2) Exit Multiple -- applies a multiple (typically EV/EBITDA) to the final year's metric: TV = Final Year EBITDA x Multiple. The perpetuity growth method is more theoretically pure since it's based on intrinsic fundamentals, while the exit multiple method is partly market-based. In practice, bankers calculate both and cross-check them against each other.",
+    "tags": ["terminal-value", "gordon-growth", "exit-multiple"]
+  },
+  {
+    "id": "dcf-012",
+    "topic": "dcf",
+    "difficulty": "Easy",
+    "type": "true_false",
+    "question_text": "True or False: A company with a higher beta will have a higher cost of equity, all else being equal.",
+    "correct_answer": "True",
+    "explanation": "Under CAPM, cost of equity = Rf + B x ERP. Beta measures how much a stock's returns move relative to the overall market. A higher beta means the stock is more volatile/risky relative to the market, so investors demand a higher return (higher cost of equity) to compensate. For example, with a risk-free rate of 4% and ERP of 6%, a stock with beta of 1.0 has cost of equity of 10%, while a stock with beta of 1.5 has 13%. In a DCF, higher cost of equity flows into a higher WACC, which means a lower present value.",
+    "tags": ["beta", "capm", "cost-of-equity"]
+  },
+  {
+    "id": "dcf-013",
+    "topic": "dcf",
+    "difficulty": "Medium",
+    "type": "conceptual",
+    "question_text": "What is the difference between levered and unlevered beta, and why does it matter in a DCF?",
+    "correct_answer": "Levered beta includes the effect of a company's debt (financial risk), while unlevered beta reflects only business/operating risk. In a DCF, you unlever comparable company betas to strip out their capital structures, then re-lever to the target's capital structure.",
+    "explanation": "A company's observed (levered) beta reflects both its business risk and its financial risk from debt. To compare betas across companies with different debt levels, you 'unlever' each beta using the Hamada equation: Bu = BL / (1 + (1-t) x D/E). You then take the median unlevered beta of the comp set and 're-lever' it to your target company's capital structure. This ensures the beta you use in CAPM reflects the target's actual leverage, not whatever random capital structure a comparable company happens to have.",
+    "tags": ["beta", "levered-unlevered", "capm"]
+  },
+  {
+    "id": "dcf-014",
+    "topic": "dcf",
+    "difficulty": "Easy",
+    "type": "multiple_choice",
+    "question_text": "A company's net working capital increases by $15M from one year to the next. What is the impact on unlevered free cash flow?",
+    "options": [
+      { "text": "UFCF increases by $15M", "isCorrect": false },
+      { "text": "UFCF decreases by $15M", "isCorrect": true },
+      { "text": "No impact -- working capital changes don't affect UFCF", "isCorrect": false },
+      { "text": "It depends on whether the change is from receivables or payables", "isCorrect": false }
+    ],
+    "correct_answer": "UFCF decreases by $15M",
+    "explanation": "An increase in net working capital is a USE of cash, so it reduces UFCF. Think of it concretely: if accounts receivable increase by $15M, that means $15M more in sales are sitting uncollected -- the company earned it on the income statement but hasn't received the cash yet. Similarly, if inventory increases, the company spent cash to build up stock. In the UFCF formula, you SUBTRACT increases in NWC. Conversely, a decrease in NWC is a source of cash (e.g., collecting receivables faster) and adds to UFCF.",
+    "tags": ["working-capital", "ufcf"]
+  },
+  {
+    "id": "dcf-015",
+    "topic": "dcf",
+    "difficulty": "Easy",
+    "type": "multiple_choice",
+    "question_text": "What is the equity risk premium (ERP) in the CAPM formula?",
+    "options": [
+      { "text": "The total expected return on the stock market", "isCorrect": false },
+      { "text": "The excess return investors expect for investing in equities over the risk-free rate", "isCorrect": true },
+      { "text": "The company's specific risk above its industry average", "isCorrect": false },
+      { "text": "The spread between corporate bond yields and treasury yields", "isCorrect": false }
+    ],
+    "correct_answer": "The excess return investors expect for investing in equities over the risk-free rate",
+    "explanation": "The ERP (Rm - Rf) represents the additional return investors demand for bearing the risk of the stock market versus a 'risk-free' investment like U.S. Treasuries. Historically, the ERP has been roughly 5-7% in the U.S. Practitioners often use estimates from sources like Duff & Phelps (Kroll) or Aswath Damodaran. The ERP is one of the most debated inputs in valuation -- a higher ERP means investors are more risk-averse, driving up cost of equity and WACC, which lowers DCF valuations.",
+    "tags": ["equity-risk-premium", "capm"]
+  },
+  {
+    "id": "dcf-016",
+    "topic": "dcf",
+    "difficulty": "Easy",
+    "type": "true_false",
+    "question_text": "True or False: The perpetuity growth rate used in a DCF terminal value should typically exceed long-term nominal GDP growth.",
+    "correct_answer": "False",
+    "explanation": "The perpetuity growth rate should NOT exceed long-term nominal GDP growth (roughly 2-4% in developed economies). If a company grew faster than the economy forever, it would eventually become larger than the entire economy -- which is impossible. In practice, most DCFs use a perpetuity growth rate of 2-3%. This rate reflects long-term inflation plus modest real growth. Using a rate even slightly above GDP growth can massively inflate terminal value because the denominator (WACC - g) shrinks, so this is a point interviewers test carefully.",
+    "tags": ["perpetuity-growth-rate", "terminal-value"]
+  },
+  {
+    "id": "dcf-017",
+    "topic": "dcf",
+    "difficulty": "Medium",
+    "type": "multiple_choice",
+    "question_text": "In a DCF, how are capital expenditures (CapEx) typically projected during the explicit forecast period?",
+    "options": [
+      { "text": "As a fixed dollar amount that never changes", "isCorrect": false },
+      { "text": "As a percentage of revenue, often guided by historical trends and management commentary", "isCorrect": true },
+      { "text": "Equal to depreciation in every year", "isCorrect": false },
+      { "text": "As a percentage of total assets", "isCorrect": false }
+    ],
+    "correct_answer": "As a percentage of revenue, often guided by historical trends and management commentary",
+    "explanation": "CapEx is most commonly projected as a percentage of revenue because it tends to scale with business size. Analysts look at historical CapEx/revenue ratios and management guidance to set assumptions. In early years, a growth company may have elevated CapEx (building capacity); over time, CapEx often converges toward maintenance levels (roughly equal to D&A). In the terminal year, CapEx should approximate depreciation to reflect a steady-state business that's just maintaining its asset base rather than aggressively expanding.",
+    "tags": ["capex", "projection-assumptions"]
+  },
+  {
+    "id": "dcf-018",
+    "topic": "dcf",
+    "difficulty": "Medium",
+    "type": "numeric",
+    "question_text": "Using the mid-year convention, what is the present value of $50M received in Year 3, assuming a 10% WACC? Round to one decimal place (in $M).",
+    "correct_answer": "42.1",
+    "explanation": "With the mid-year convention, Year 3 cash flows are discounted at period 2.5 (not 3.0). PV = $50M / (1.10)^2.5. Calculate (1.10)^2.5: take (1.10)^2 = 1.21, then (1.10)^0.5 = ~1.04881, so (1.10)^2.5 = 1.21 x 1.04881 = ~1.1881. PV = $50M / 1.1881 = ~$42.1M. Compare this to end-of-year convention: $50M / (1.10)^3 = $37.6M. The mid-year convention gives a higher present value ($42.1M vs $37.6M) because you're assuming the cash arrives six months earlier each year.",
+    "tags": ["mid-year-convention", "present-value", "calculation"]
+  },
+  {
+    "id": "dcf-019",
+    "topic": "dcf",
+    "difficulty": "Hard",
+    "type": "conceptual",
+    "question_text": "What is a sensitivity analysis in the context of a DCF, and which two variables are most commonly sensitized?",
+    "correct_answer": "A sensitivity analysis shows how the DCF output (e.g., implied share price) changes when you vary key assumptions. The two most commonly sensitized variables are the WACC (discount rate) and the perpetuity growth rate (or exit multiple).",
+    "explanation": "Because a DCF's output is only as good as its assumptions, bankers build sensitivity tables (also called 'data tables') that show a range of implied values. The WACC and terminal growth rate are the standard pair because they drive terminal value, which dominates total value. A typical sensitivity table has WACC along one axis (e.g., 8-12%) and perpetuity growth rate along the other (e.g., 1.5-3.5%), showing implied share prices at each intersection. This gives the reader a range of values rather than a single point estimate, which is much more intellectually honest.",
+    "tags": ["sensitivity-analysis", "wacc", "terminal-value"]
+  },
+  {
+    "id": "dcf-020",
+    "topic": "dcf",
+    "difficulty": "Medium",
+    "type": "multiple_choice",
+    "question_text": "A company operates in an emerging market with material political and economic risk. When building a DCF, how should an analyst adjust the cost of equity beyond the standard CAPM formula?",
+    "options": [
+      { "text": "Use a lower beta to reflect the diversification benefit", "isCorrect": false },
+      { "text": "Add a country risk premium (CRP) to the CAPM formula", "isCorrect": true },
+      { "text": "Use the local country's government bond yield as the risk-free rate without any other adjustments", "isCorrect": false },
+      { "text": "Reduce the equity risk premium to account for higher growth potential", "isCorrect": false }
+    ],
+    "correct_answer": "Add a country risk premium (CRP) to the CAPM formula",
+    "explanation": "For companies in emerging markets, the standard CAPM formula is modified to: Ke = Rf + B x ERP + CRP. The country risk premium compensates investors for risks like political instability, currency volatility, expropriation, and weaker legal protections that aren't captured by the standard ERP (which is based on developed market returns). CRPs are typically estimated using the spread between the country's sovereign bond yield and a benchmark developed-market bond, often adjusted by the relative volatility of equities vs. bonds in that market. Aswath Damodaran publishes widely-used CRP estimates.",
+    "tags": ["country-risk-premium", "capm", "emerging-markets"]
+  },
+  {
+    "id": "dcf-021",
+    "topic": "dcf",
+    "difficulty": "Medium",
+    "type": "numeric",
+    "question_text": "A company has final-year EBITDA of $500M. Comparable companies trade at an average EV/EBITDA of 8.0x. What is the terminal value under the exit multiple method (in $M)?",
+    "correct_answer": "4000",
+    "explanation": "Terminal Value = Final Year EBITDA x Exit Multiple = $500M x 8.0x = $4,000M. The exit multiple method is straightforward: you apply a valuation multiple to the final projected year's financial metric. The multiple is typically derived from comparable company trading multiples or precedent transaction multiples. One key consideration: the exit multiple is applied to a metric several years in the future, and multiples can change over time. Bankers usually sanity-check the implied perpetuity growth rate of the exit multiple against reasonable GDP growth to make sure the terminal value makes sense.",
+    "tags": ["exit-multiple", "terminal-value", "calculation"]
+  },
+  {
+    "id": "dcf-022",
+    "topic": "dcf",
+    "difficulty": "Easy",
+    "type": "conceptual",
+    "question_text": "Why do revenue growth rates in a DCF projection typically decline over the forecast period rather than staying constant?",
+    "correct_answer": "As companies get larger, it becomes mathematically and competitively harder to sustain high growth rates. Growth rates are tapered down toward a long-term sustainable rate by the terminal year.",
+    "explanation": "A $1B company growing at 20% needs to add $200M in revenue; a $5B company growing at 20% needs to add $1B. Finding that incremental revenue becomes progressively harder as markets saturate, competition intensifies, and the base gets larger. This is called the 'law of large numbers' in growth. In a DCF, analysts typically start with near-term growth guided by management or consensus estimates, then gradually step it down each year. By the terminal year, growth should be at a sustainable long-term rate (roughly in line with GDP) because the perpetuity formula assumes that rate continues forever.",
+    "tags": ["revenue-growth", "projection-assumptions"]
+  },
+  {
+    "id": "dcf-023",
+    "topic": "dcf",
+    "difficulty": "Easy",
+    "type": "true_false",
+    "question_text": "True or False: In a DCF, the cost of debt is calculated using the coupon rate on the company's existing bonds.",
+    "correct_answer": "False",
+    "explanation": "The cost of debt should reflect the CURRENT market yield on the company's debt (yield to maturity), not the historical coupon rate. Coupon rates are set when the bond is issued and may no longer reflect current market conditions or the company's current credit profile. If a company issued bonds at 4% five years ago but current market yields for similar-rated debt are 6%, the cost of debt in WACC should be closer to 6%. In practice, analysts look at the yield on the company's existing traded bonds, or estimate it using the company's credit rating and current spreads for that rating.",
+    "tags": ["cost-of-debt", "wacc"]
+  },
+  {
+    "id": "dcf-024",
+    "topic": "dcf",
+    "difficulty": "Medium",
+    "type": "multiple_choice",
+    "question_text": "In a scenario analysis for a DCF, what is the key difference from a sensitivity analysis?",
+    "options": [
+      { "text": "Scenario analysis changes only one variable at a time, while sensitivity analysis changes multiple", "isCorrect": false },
+      { "text": "Scenario analysis changes multiple assumptions simultaneously to reflect coherent real-world outcomes (e.g., recession case), while sensitivity analysis varies one or two inputs independently", "isCorrect": true },
+      { "text": "Scenario analysis is only used for LBOs, not DCFs", "isCorrect": false },
+      { "text": "There is no meaningful difference; the terms are interchangeable", "isCorrect": false }
+    ],
+    "correct_answer": "Scenario analysis changes multiple assumptions simultaneously to reflect coherent real-world outcomes (e.g., recession case), while sensitivity analysis varies one or two inputs independently",
+    "explanation": "Sensitivity analysis asks: 'What happens if WACC is 1% higher?' -- it varies one or two inputs mechanically. Scenario analysis asks: 'What happens in a recession?' -- it changes revenue growth, margins, working capital, and potentially WACC all at once in a way that tells a coherent story. For example, a downside scenario might pair slower revenue growth with margin compression and higher WACC, since those things would realistically occur together. Bankers typically present base, upside, and downside scenarios to give clients and the deal team a range of outcomes.",
+    "tags": ["scenario-analysis", "sensitivity-analysis"]
+  },
+  {
+    "id": "dcf-025",
+    "topic": "dcf",
+    "difficulty": "Hard",
+    "type": "numeric",
+    "question_text": "A company has a levered beta of 1.4, a debt-to-equity ratio of 0.6, and a tax rate of 25%. What is its unlevered beta (rounded to two decimal places)?",
+    "correct_answer": "0.97",
+    "explanation": "Using the Hamada equation: Unlevered Beta = Levered Beta / (1 + (1 - Tax Rate) x D/E) = 1.4 / (1 + (1 - 0.25) x 0.6) = 1.4 / (1 + 0.75 x 0.6) = 1.4 / (1 + 0.45) = 1.4 / 1.45 = ~0.97. Unlevering removes the financial risk component (leverage) from the observed beta, isolating just the business/operating risk. This is essential because when you look at comparable companies to derive a beta for your DCF, each comp has different leverage. You unlever all of them, take the median, then re-lever to YOUR target's capital structure to get the appropriate beta for CAPM.",
+    "tags": ["beta", "levered-unlevered", "hamada-equation", "calculation"]
+  }
+]
