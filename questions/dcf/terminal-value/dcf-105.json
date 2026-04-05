@@ -1,0 +1,10 @@
+{
+  "id": "dcf-105",
+  "topic": "dcf",
+  "difficulty": "Medium",
+  "type": "numeric",
+  "question_text": "A company's Year 5 free cash flow is $200M, the perpetuity growth rate is 2.5%, and the WACC is 10%. What is the terminal value at the end of Year 5 (in $M)?",
+  "correct_answer": "2733",
+  "explanation": "Using the Perpetuity Growth Method: Terminal Value = FCF x (1 + g) / (WACC - g) = $200M x (1.025) / (0.10 - 0.025) = $205M / 0.075 = $2,733.33M, approximately $2,733M. Note that this is the terminal value at the end of Year 5, which still needs to be discounted back to present value in the DCF. Terminal value typically represents 60-80% of total enterprise value in a DCF, which is why the growth rate and discount rate assumptions are so critical to the output.",
+  "tags": ["terminal-value"]
+}

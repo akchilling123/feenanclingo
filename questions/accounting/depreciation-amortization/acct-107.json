@@ -1,0 +1,16 @@
+{
+  "id": "acct-107",
+  "topic": "accounting",
+  "difficulty": "Easy",
+  "type": "multiple_choice",
+  "question_text": "What is the primary difference between depreciation and amortization?",
+  "options": [
+    { "text": "Depreciation applies to tangible assets; amortization applies to intangible assets", "isCorrect": true },
+    { "text": "Depreciation is a cash expense; amortization is non-cash", "isCorrect": false },
+    { "text": "Depreciation is tax-deductible; amortization is not", "isCorrect": false },
+    { "text": "Depreciation is reported on the balance sheet; amortization is not", "isCorrect": false }
+  ],
+  "correct_answer": "Depreciation applies to tangible assets; amortization applies to intangible assets",
+  "explanation": "Both depreciation and amortization are non-cash expenses that allocate the cost of an asset over its useful life. The difference is in what they apply to: depreciation is for tangible, physical assets like machinery, buildings, and equipment, while amortization is for intangible assets like patents, trademarks, and software. Both are tax-deductible and both reduce the carrying value of assets on the balance sheet.",
+  "tags": ["depreciation-amortization"]
+}

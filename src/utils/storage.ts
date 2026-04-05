@@ -3,6 +3,8 @@ const STORAGE_KEYS = {
   TOPIC_PROGRESS: 'feenancelingo_topic_progress',
   QUESTION_HISTORY: 'feenancelingo_question_history',
   ACTIVE_ROUND: 'feenancelingo_active_round',
+  HEARTS: 'feenancelingo_hearts',
+  DAILY_CHALLENGE: 'feenancelingo_daily_challenge',
 } as const
 
 export function getStorageItem<T>(key: string, fallback: T): T {

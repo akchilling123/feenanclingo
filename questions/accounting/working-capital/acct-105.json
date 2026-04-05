@@ -1,0 +1,16 @@
+{
+  "id": "acct-105",
+  "topic": "accounting",
+  "difficulty": "Medium",
+  "type": "multiple_choice",
+  "question_text": "A company's accounts payable increases by $20M while all other working capital items remain constant. What is the impact on free cash flow?",
+  "options": [
+    { "text": "FCF decreases by $20M", "isCorrect": false },
+    { "text": "FCF increases by $20M", "isCorrect": true },
+    { "text": "FCF is unchanged", "isCorrect": false },
+    { "text": "FCF increases by $15M", "isCorrect": false }
+  ],
+  "correct_answer": "FCF increases by $20M",
+  "explanation": "An increase in accounts payable means the company owes more to its suppliers but hasn't paid the cash yet. This is a source of cash because the company is effectively borrowing from suppliers. On the cash flow statement, an increase in a current liability is added to operating cash flow. Since FCF = Operating Cash Flow - CapEx, and CapEx hasn't changed, FCF increases by the full $20M. There is no tax effect here because the expense was already recognized on the income statement.",
+  "tags": ["working-capital"]
+}

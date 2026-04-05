@@ -1,0 +1,16 @@
+{
+  "id": "dcf-101",
+  "topic": "dcf",
+  "difficulty": "Easy",
+  "type": "multiple_choice",
+  "question_text": "In the WACC formula, why is the cost of debt multiplied by (1 - tax rate)?",
+  "options": [
+    { "text": "To account for the risk of default", "isCorrect": false },
+    { "text": "To reflect the tax deductibility of interest expense", "isCorrect": true },
+    { "text": "To convert the nominal rate to a real rate", "isCorrect": false },
+    { "text": "To adjust for the seniority of debt in the capital structure", "isCorrect": false }
+  ],
+  "correct_answer": "To reflect the tax deductibility of interest expense",
+  "explanation": "Interest payments on debt are tax-deductible, meaning they reduce a company's taxable income. If a company pays 6% interest and has a 25% tax rate, the after-tax cost of that debt is only 4.5% (6% x (1 - 0.25)). The (1 - tax rate) factor in WACC captures this tax shield benefit, which is one of the key advantages debt has over equity financing. This is why, up to a point, adding debt to a company's capital structure can lower its overall cost of capital.",
+  "tags": ["wacc"]
+}

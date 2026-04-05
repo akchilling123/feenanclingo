@@ -1,0 +1,10 @@
+{
+  "id": "ma-109",
+  "topic": "mergers-acquisitions",
+  "difficulty": "Easy",
+  "type": "true_false",
+  "question_text": "True or False: In a stock-for-stock merger, the target's shareholders can defer taxes on the gain until they sell the acquirer's shares.",
+  "correct_answer": "True",
+  "explanation": "If a stock-for-stock merger qualifies as a tax-free reorganization under IRC Section 368, the target's shareholders receive acquirer stock and do not recognize a taxable gain at the time of the deal. Instead, they take a carryover basis in the acquirer's shares and only pay taxes when they eventually sell those shares. This tax deferral is one of the key advantages of stock consideration from the seller's perspective. In contrast, cash consideration is immediately taxable to the target's shareholders. Many deals use a mix of cash and stock, where the cash portion is taxable and the stock portion can be tax-deferred.",
+  "tags": ["deal-structures"]
+}

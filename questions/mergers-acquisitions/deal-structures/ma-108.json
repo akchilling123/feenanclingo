@@ -1,0 +1,10 @@
+{
+  "id": "ma-108",
+  "topic": "mergers-acquisitions",
+  "difficulty": "Medium",
+  "type": "conceptual",
+  "question_text": "What is the difference between an asset deal and a stock deal, and when would a buyer prefer each?",
+  "correct_answer": "In a stock deal, the buyer acquires the target's equity (shares) and inherits all assets AND liabilities. In an asset deal, the buyer selects specific assets and liabilities to acquire. Buyers generally prefer asset deals because they can avoid unwanted liabilities and get a step-up in tax basis on the acquired assets.",
+  "explanation": "In a stock deal (or merger), the buyer acquires the target's shares and inherits everything -- all assets, liabilities, contracts, and potential legal claims. In an asset deal, the buyer cherry-picks which assets and liabilities to acquire, potentially leaving behind unwanted items like pending lawsuits or environmental liabilities. Buyers prefer asset deals for the liability protection and the tax step-up benefit (the acquired assets are revalued to fair market value, creating higher depreciation/amortization deductions). Sellers typically prefer stock deals for cleaner execution and potentially more favorable tax treatment (capital gains vs. ordinary income on asset sales). Most public company M&A is structured as stock deals or mergers for practical reasons, while private company deals are more often structured as asset purchases.",
+  "tags": ["deal-structures"]
+}

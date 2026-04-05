@@ -8,6 +8,8 @@ interface RoundCompleteProps {
   currentLevel: Level
   xpProgress: { current: number; required: number; progress: number }
   onPracticeAgain: () => void
+  timedMode?: boolean
+  timedBonusXP?: number
 }
 
 export function RoundComplete({
@@ -17,6 +19,8 @@ export function RoundComplete({
   currentLevel,
   xpProgress,
   onPracticeAgain,
+  timedMode,
+  timedBonusXP,
 }: RoundCompleteProps) {
   const navigate = useNavigate()
   const percentage = Math.round((score / total) * 100)
@@ -65,9 +69,23 @@ export function RoundComplete({
 
       <h2 className="font-serif text-2xl text-cream self-center mb-2">{resultMessage}</h2>
 
+      {/* Timed round label */}
+      {timedMode && (
+        <div className="self-center mb-2">
+          <span className="text-xs text-gold-light uppercase tracking-wider border border-gold/20 px-2.5 py-0.5 rounded-full">
+            Timed Round
+          </span>
+        </div>
+      )}
+
       {/* XP earned */}
-      <div className="self-center mb-10">
+      <div className="self-center mb-10 flex flex-col items-center">
         <span className="text-gold font-serif text-lg">+{xpEarned} XP</span>
+        {timedMode && timedBonusXP != null && timedBonusXP > 0 && (
+          <span className="text-gold-light text-xs mt-1">
+            includes +{timedBonusXP} bonus XP (1.5x)
+          </span>
+        )}
       </div>
 
       {/* Level progress */}

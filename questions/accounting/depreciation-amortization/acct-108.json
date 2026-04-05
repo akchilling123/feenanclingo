@@ -1,0 +1,16 @@
+{
+  "id": "acct-108",
+  "topic": "accounting",
+  "difficulty": "Medium",
+  "type": "multiple_choice",
+  "question_text": "A company switches from straight-line to accelerated depreciation for tax purposes. In the first year after the switch, what happens to the deferred tax liability?",
+  "options": [
+    { "text": "It decreases", "isCorrect": false },
+    { "text": "It increases", "isCorrect": true },
+    { "text": "It stays the same", "isCorrect": false },
+    { "text": "It is eliminated", "isCorrect": false }
+  ],
+  "correct_answer": "It increases",
+  "explanation": "Accelerated depreciation front-loads more depreciation expense in the early years for tax purposes compared to straight-line on the book side. This means taxable income is lower than book income in the early years, so the company pays less tax now than its book tax expense suggests. The difference creates a deferred tax liability because the company will owe more taxes in later years when tax depreciation is lower. The DTL increases because the temporary difference between book and tax carrying values of the asset widens.",
+  "tags": ["depreciation-amortization"]
+}

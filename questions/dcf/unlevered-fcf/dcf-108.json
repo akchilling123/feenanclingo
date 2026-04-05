@@ -1,0 +1,16 @@
+{
+  "id": "dcf-108",
+  "topic": "dcf",
+  "difficulty": "Medium",
+  "type": "multiple_choice",
+  "question_text": "Why do we use Unlevered Free Cash Flow rather than Levered Free Cash Flow in a standard DCF?",
+  "options": [
+    { "text": "Because UFCF is always higher than LFCF", "isCorrect": false },
+    { "text": "Because UFCF represents cash flow to all capital providers and is discounted at WACC to get Enterprise Value", "isCorrect": true },
+    { "text": "Because LFCF is too difficult to calculate", "isCorrect": false },
+    { "text": "Because UFCF accounts for the company's tax benefits from debt", "isCorrect": false }
+  ],
+  "correct_answer": "Because UFCF represents cash flow to all capital providers and is discounted at WACC to get Enterprise Value",
+  "explanation": "In a standard DCF, we discount Unlevered FCF at WACC to arrive at Enterprise Value, which represents the value of the entire business regardless of how it's financed. UFCF excludes interest payments, so it captures cash flows available to both debt and equity holders -- matching the WACC discount rate which blends the cost of both. If you used Levered FCF instead, you'd need to discount at the cost of equity to get Equity Value directly (this is the Levered DCF approach, which is common in financial institutions but less standard in corporate finance).",
+  "tags": ["unlevered-fcf"]
+}

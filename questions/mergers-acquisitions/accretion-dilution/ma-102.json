@@ -1,0 +1,16 @@
+{
+  "id": "ma-102",
+  "topic": "mergers-acquisitions",
+  "difficulty": "Medium",
+  "type": "multiple_choice",
+  "question_text": "In an all-stock acquisition, what is the primary factor that determines whether the deal is accretive or dilutive?",
+  "options": [
+    { "text": "The size of the target relative to the acquirer", "isCorrect": false },
+    { "text": "The relative P/E ratios of the acquirer and target", "isCorrect": true },
+    { "text": "The amount of goodwill created", "isCorrect": false },
+    { "text": "The target's revenue growth rate", "isCorrect": false }
+  ],
+  "correct_answer": "The relative P/E ratios of the acquirer and target",
+  "explanation": "In an all-stock deal, if the acquirer's P/E ratio is higher than the target's P/E (inclusive of the premium), the deal will generally be accretive. This is because a high-P/E acquirer is using 'expensive' shares to buy 'cheaper' earnings. Conversely, if the acquirer's P/E is lower than the target's effective P/E (after the premium), the deal is dilutive because the acquirer is trading expensive currency for less earnings per dollar. This is why high-growth, high-P/E companies historically preferred stock deals -- their expensive shares made acquisitions naturally accretive.",
+  "tags": ["accretion-dilution"]
+}

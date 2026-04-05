@@ -1,0 +1,16 @@
+{
+  "id": "lbo-102",
+  "topic": "lbo",
+  "difficulty": "Medium",
+  "type": "multiple_choice",
+  "question_text": "Which of the following is the interest coverage ratio?",
+  "options": [
+    { "text": "Total Debt / EBITDA", "isCorrect": false },
+    { "text": "EBITDA / Interest Expense", "isCorrect": true },
+    { "text": "Net Debt / Equity", "isCorrect": false },
+    { "text": "Free Cash Flow / Total Debt", "isCorrect": false }
+  ],
+  "correct_answer": "EBITDA / Interest Expense",
+  "explanation": "The interest coverage ratio (EBITDA / Interest Expense) measures how many times a company can cover its interest payments with its operating earnings. A higher ratio indicates greater ability to service debt. For example, 3.0x coverage means EBITDA is three times larger than interest expense. Lenders typically require a minimum interest coverage ratio (often 2.0-3.0x) as a debt covenant. In an LBO, coverage starts lower due to high leverage and should improve over time as EBITDA grows and debt is paid down. If coverage drops below 1.0x, the company cannot cover its interest payments from operations.",
+  "tags": ["leverage-ratios"]
+}

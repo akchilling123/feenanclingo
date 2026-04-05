@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import Practice from './pages/Practice'
 import Review from './pages/Review'
 import Progress from './pages/Progress'
+import DailyChallenge from './pages/DailyChallenge'
 import BottomNav from './components/navigation/BottomNav'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/practice" element={<Practice />} />
         <Route path="/review" element={<Review />} />
         <Route path="/progress" element={<Progress />} />
+        <Route path="/daily" element={<DailyChallenge />} />
       </Routes>
       <BottomNav />
     </div>

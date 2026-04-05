@@ -1,0 +1,16 @@
+{
+  "id": "ma-107",
+  "topic": "mergers-acquisitions",
+  "difficulty": "Easy",
+  "type": "multiple_choice",
+  "question_text": "What are the three primary forms of acquisition consideration?",
+  "options": [
+    { "text": "Cash, stock, and debt assumption", "isCorrect": true },
+    { "text": "Cash, bonds, and preferred stock", "isCorrect": false },
+    { "text": "Cash, earnouts, and escrow", "isCorrect": false },
+    { "text": "Common stock, preferred stock, and warrants", "isCorrect": false }
+  ],
+  "correct_answer": "Cash, stock, and debt assumption",
+  "explanation": "The three primary forms of M&A consideration are: (1) Cash -- the acquirer pays the target's shareholders in cash, which can come from cash on hand or new debt financing; (2) Stock -- the acquirer issues new shares to the target's shareholders at an agreed exchange ratio; (3) Debt assumption -- the acquirer assumes the target's existing debt as part of the transaction. Many deals use a mix of cash and stock. Cash deals are simpler and provide certainty to the seller, while stock deals allow the seller to participate in future upside and may have tax deferral advantages.",
+  "tags": ["deal-structures"]
+}

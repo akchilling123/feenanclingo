@@ -1,0 +1,16 @@
+{
+  "id": "ma-101",
+  "topic": "mergers-acquisitions",
+  "difficulty": "Easy",
+  "type": "multiple_choice",
+  "question_text": "An acquisition is considered 'accretive' when:",
+  "options": [
+    { "text": "The acquirer's stock price increases immediately after announcement", "isCorrect": false },
+    { "text": "The combined company's EPS is higher than the acquirer's standalone EPS", "isCorrect": true },
+    { "text": "The deal generates positive synergies", "isCorrect": false },
+    { "text": "The target is acquired at a discount to its book value", "isCorrect": false }
+  ],
+  "correct_answer": "The combined company's EPS is higher than the acquirer's standalone EPS",
+  "explanation": "An accretive deal increases the acquirer's earnings per share (EPS), while a dilutive deal decreases it. This is determined by comparing the acquirer's standalone EPS to the pro forma combined EPS after the deal. A deal can be accretive even if synergies are zero (if the target's P/E is lower than the acquirer's in a stock deal) and a deal can generate synergies but still be dilutive (if the premium paid is too high). Stock price reaction and book value are not directly relevant to accretion/dilution analysis.",
+  "tags": ["accretion-dilution"]
+}

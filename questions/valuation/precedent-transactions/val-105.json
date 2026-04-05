@@ -1,0 +1,10 @@
+{
+  "id": "val-105",
+  "topic": "valuation",
+  "difficulty": "Medium",
+  "type": "true_false",
+  "question_text": "True or False: When analyzing precedent transactions, more recent transactions are generally given greater weight than older ones.",
+  "correct_answer": "True",
+  "explanation": "More recent transactions better reflect current market conditions, interest rate environments, credit availability, and industry dynamics. A transaction from 5+ years ago may have occurred in a completely different M&A environment -- for example, pre-COVID vs. post-COVID, or during a period of cheap debt vs. higher rates. While older transactions still provide useful data points, analysts typically emphasize recent deals (last 2-3 years) when forming valuation conclusions. However, in industries with infrequent deal activity, you may need to look further back to build a sufficient sample.",
+  "tags": ["precedent-transactions"]
+}

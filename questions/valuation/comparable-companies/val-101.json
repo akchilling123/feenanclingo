@@ -1,0 +1,16 @@
+{
+  "id": "val-101",
+  "topic": "valuation",
+  "difficulty": "Easy",
+  "type": "multiple_choice",
+  "question_text": "Which of the following is the most commonly used multiple in a comparable companies analysis for valuing a company?",
+  "options": [
+    { "text": "Price / Book Value", "isCorrect": false },
+    { "text": "EV / EBITDA", "isCorrect": true },
+    { "text": "Price / Sales", "isCorrect": false },
+    { "text": "EV / Total Assets", "isCorrect": false }
+  ],
+  "correct_answer": "EV / EBITDA",
+  "explanation": "EV/EBITDA is the most widely used multiple in comparable companies analysis because EBITDA is capital-structure neutral (it's pre-interest and pre-tax) and excludes non-cash charges like D&A, making it useful for comparing companies with different capital structures and depreciation policies. Enterprise Value in the numerator pairs correctly with EBITDA since both are available to all capital providers (debt and equity holders).",
+  "tags": ["comparable-companies"]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "acct-104",
+  "topic": "accounting",
+  "difficulty": "Easy",
+  "type": "multiple_choice",
+  "question_text": "Which of the following is NOT typically included in working capital?",
+  "options": [
+    { "text": "Accounts receivable", "isCorrect": false },
+    { "text": "Inventory", "isCorrect": false },
+    { "text": "Property, plant & equipment", "isCorrect": true },
+    { "text": "Accounts payable", "isCorrect": false }
+  ],
+  "correct_answer": "Property, plant & equipment",
+  "explanation": "Working capital consists of current assets minus current liabilities. PP&E is a long-term (non-current) asset and is therefore excluded from working capital calculations. Accounts receivable and inventory are current assets, while accounts payable is a current liability -- all three are core components of working capital.",
+  "tags": ["working-capital"]
+}

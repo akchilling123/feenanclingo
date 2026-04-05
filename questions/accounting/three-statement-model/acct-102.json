@@ -1,0 +1,10 @@
+{
+  "id": "acct-102",
+  "topic": "accounting",
+  "difficulty": "Medium",
+  "type": "conceptual",
+  "question_text": "Walk through how a $100 inventory write-down flows through all three financial statements.",
+  "correct_answer": "Income Statement: COGS increases by $100, reducing pre-tax income by $100 and net income by $75 (at 25% tax). Balance Sheet: Inventory decreases by $100, cash increases by $25 (tax savings), retained earnings decreases by $75. Cash Flow Statement: Net income down $75, add back $100 non-cash charge, subtract $25 tax benefit already in operations = net $0 direct cash impact, but working capital changes reflect the inventory reduction.",
+  "explanation": "An inventory write-down is a non-cash charge that hits COGS on the income statement, reducing pre-tax income. After tax, net income falls by $75 (assuming 25% tax rate). On the balance sheet, inventory drops by $100 and retained earnings drops by $75, with the $25 difference reflected in lower taxes payable. On the cash flow statement, you start with lower net income but add back the non-cash write-down, and the tax savings flow through working capital changes. The key insight is that while the write-down itself is non-cash, it creates a real tax shield.",
+  "tags": ["three-statement-model"]
+}

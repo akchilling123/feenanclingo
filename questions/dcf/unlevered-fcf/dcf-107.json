@@ -1,0 +1,16 @@
+{
+  "id": "dcf-107",
+  "topic": "dcf",
+  "difficulty": "Easy",
+  "type": "multiple_choice",
+  "question_text": "What is the starting point for calculating Unlevered Free Cash Flow?",
+  "options": [
+    { "text": "Net Income", "isCorrect": false },
+    { "text": "EBIT (or EBITDA)", "isCorrect": true },
+    { "text": "Revenue", "isCorrect": false },
+    { "text": "Earnings Per Share", "isCorrect": false }
+  ],
+  "correct_answer": "EBIT (or EBITDA)",
+  "explanation": "Unlevered Free Cash Flow starts with EBIT (or EBITDA) because we want cash flows available to ALL capital providers (both debt and equity holders), not just equity holders. Starting from EBIT, the formula is: EBIT x (1 - Tax Rate) + D&A - CapEx - Changes in Working Capital. If starting from EBITDA, you skip the D&A add-back since it was never subtracted. Starting from net income would give you Levered FCF (available only to equity holders) since interest expense has already been deducted.",
+  "tags": ["unlevered-fcf"]
+}

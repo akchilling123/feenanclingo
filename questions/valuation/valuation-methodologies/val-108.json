@@ -1,0 +1,10 @@
+{
+  "id": "val-108",
+  "topic": "valuation",
+  "difficulty": "Easy",
+  "type": "true_false",
+  "question_text": "True or False: A DCF is considered an intrinsic valuation methodology, while comparable companies analysis is a relative valuation methodology.",
+  "correct_answer": "True",
+  "explanation": "A DCF values a company based on its projected future cash flows discounted back to present value, making it an intrinsic (or absolute) valuation method -- the value is derived from the company's own fundamentals, independent of how the market values other companies. Comparable companies analysis, by contrast, derives value from how similar public companies are priced by the market, making it a relative valuation method. In practice, bankers use both approaches to triangulate a valuation range, since each has strengths and weaknesses.",
+  "tags": ["valuation-methodologies"]
+}

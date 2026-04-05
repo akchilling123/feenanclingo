@@ -1,0 +1,10 @@
+{
+  "id": "val-107",
+  "topic": "valuation",
+  "difficulty": "Medium",
+  "type": "conceptual",
+  "question_text": "When would you use a Sum-of-the-Parts (SOTP) valuation instead of a standard comparable companies analysis?",
+  "correct_answer": "Use SOTP when a company operates in multiple distinct business segments that have different growth profiles, margins, and risk characteristics, making it inappropriate to apply a single set of multiples to the entire company.",
+  "explanation": "A Sum-of-the-Parts valuation is ideal for diversified conglomerates or companies with distinct business segments (e.g., a company with both a high-growth tech division and a mature industrial division). You value each segment separately using multiples from peers specific to that segment, then sum the values and subtract net debt to get equity value. This avoids the 'conglomerate discount' problem where applying a blended multiple undervalues high-growth segments and overvalues mature ones. Classic examples include companies like General Electric, Berkshire Hathaway, or any firm considering a spin-off.",
+  "tags": ["valuation-methodologies"]
+}

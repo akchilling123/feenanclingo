@@ -1,0 +1,16 @@
+{
+  "id": "acct-101",
+  "topic": "accounting",
+  "difficulty": "Easy",
+  "type": "multiple_choice",
+  "question_text": "If depreciation expense increases by $10, what is the net impact on cash flow from operations (assuming a 25% tax rate)?",
+  "options": [
+    { "text": "Decrease of $10", "isCorrect": false },
+    { "text": "Increase of $7.50", "isCorrect": true },
+    { "text": "Increase of $10", "isCorrect": false },
+    { "text": "No impact", "isCorrect": false }
+  ],
+  "correct_answer": "Increase of $7.50",
+  "explanation": "Depreciation is a non-cash expense that reduces pre-tax income by $10, saving $2.50 in taxes (25% x $10). Net income falls by $7.50, but depreciation of $10 is added back in cash flow from operations. The net effect is +$7.50 in operating cash flow ($10 add-back minus $2.50 lower net income adjustment). This is equivalent to the tax shield on depreciation.",
+  "tags": ["three-statement-model"]
+}

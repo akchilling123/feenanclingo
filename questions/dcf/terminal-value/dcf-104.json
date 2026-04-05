@@ -1,0 +1,16 @@
+{
+  "id": "dcf-104",
+  "topic": "dcf",
+  "difficulty": "Easy",
+  "type": "multiple_choice",
+  "question_text": "What are the two main approaches to calculating terminal value in a DCF?",
+  "options": [
+    { "text": "Gordon Growth Model and Liquidation Value", "isCorrect": false },
+    { "text": "Perpetuity Growth Method and Exit Multiple Method", "isCorrect": true },
+    { "text": "Dividend Discount Model and Residual Income Model", "isCorrect": false },
+    { "text": "Comparable Companies Method and Sum-of-the-Parts", "isCorrect": false }
+  ],
+  "correct_answer": "Perpetuity Growth Method and Exit Multiple Method",
+  "explanation": "The two standard approaches are: (1) Perpetuity Growth Method (Gordon Growth Model applied to FCF), which assumes cash flows grow at a constant rate forever: TV = Final Year FCF x (1+g) / (WACC - g); and (2) Exit Multiple Method, which applies a terminal EV/EBITDA multiple to the final year's EBITDA. In practice, bankers typically calculate both and cross-check the results. The perpetuity growth rate should be at or below long-term GDP growth (typically 2-3%), while the exit multiple should be consistent with current trading multiples for comparable companies.",
+  "tags": ["terminal-value"]
+}

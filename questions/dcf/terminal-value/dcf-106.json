@@ -1,0 +1,10 @@
+{
+  "id": "dcf-106",
+  "topic": "dcf",
+  "difficulty": "Medium",
+  "type": "true_false",
+  "question_text": "True or False: The perpetuity growth rate used in terminal value should generally not exceed the long-term GDP growth rate of the economy.",
+  "correct_answer": "True",
+  "explanation": "If a company's cash flows grew faster than GDP forever, it would eventually become larger than the entire economy, which is impossible. The perpetuity growth rate represents growth into perpetuity (literally forever), so it must be sustainable over an infinite time horizon. In practice, most analysts use 2-3% for US-based companies, roughly in line with long-term nominal GDP growth. Some argue you can use slightly higher rates for companies in faster-growing sectors, but exceeding GDP growth by more than 0.5-1% is generally considered aggressive and hard to defend.",
+  "tags": ["terminal-value"]
+}

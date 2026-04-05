@@ -1,0 +1,16 @@
+{
+  "id": "val-104",
+  "topic": "valuation",
+  "difficulty": "Easy",
+  "type": "multiple_choice",
+  "question_text": "Why do precedent transaction multiples tend to be higher than comparable company trading multiples?",
+  "options": [
+    { "text": "Precedent transactions use forward estimates while comps use trailing data", "isCorrect": false },
+    { "text": "Precedent transactions include a control premium paid by the acquirer", "isCorrect": true },
+    { "text": "Precedent transactions exclude synergies from the valuation", "isCorrect": false },
+    { "text": "Precedent transactions use equity value instead of enterprise value", "isCorrect": false }
+  ],
+  "correct_answer": "Precedent transactions include a control premium paid by the acquirer",
+  "explanation": "Acquirers typically pay a premium over the target's current trading price to gain control of the company. This control premium (usually 20-40%) reflects the value of being able to make strategic decisions, realize synergies, and capture 100% of the target's cash flows. Because the transaction prices already include this premium, the implied multiples from precedent transactions are almost always higher than where comparable companies trade in the public market on a standalone basis.",
+  "tags": ["precedent-transactions"]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "acct-106",
+  "topic": "accounting",
+  "difficulty": "Medium",
+  "type": "numeric",
+  "question_text": "A company has $50M in accounts receivable, $30M in inventory, $10M in prepaid expenses, $25M in accounts payable, and $15M in accrued liabilities. What is the company's net working capital (in $M)?",
+  "correct_answer": "50",
+  "explanation": "Net working capital = Current Assets - Current Liabilities. Current Assets = $50M (AR) + $30M (Inventory) + $10M (Prepaid) = $90M. Current Liabilities = $25M (AP) + $15M (Accrued Liabilities) = $40M. NWC = $90M - $40M = $50M. Note that in practice, bankers often focus on 'operating' working capital which excludes cash and short-term debt, but the basic formula uses all current assets and current liabilities.",
+  "tags": ["working-capital"]
+}

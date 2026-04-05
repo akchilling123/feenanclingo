@@ -1,0 +1,10 @@
+{
+  "id": "acct-109",
+  "topic": "accounting",
+  "difficulty": "Easy",
+  "type": "true_false",
+  "question_text": "True or False: Goodwill is amortized over its useful life under US GAAP.",
+  "correct_answer": "False",
+  "explanation": "Under US GAAP, goodwill is NOT amortized. Instead, it is tested for impairment at least annually. If the carrying value of a reporting unit exceeds its fair value, goodwill is written down (impaired). This is different from IFRS, which also does not amortize goodwill but uses a different impairment testing methodology. Note that other intangible assets with finite lives (like patents or customer relationships) ARE amortized under both GAAP and IFRS.",
+  "tags": ["depreciation-amortization"]
+}

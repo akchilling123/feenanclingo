@@ -1,0 +1,16 @@
+{
+  "id": "val-106",
+  "topic": "valuation",
+  "difficulty": "Easy",
+  "type": "multiple_choice",
+  "question_text": "Which valuation methodology typically yields the highest value for a company?",
+  "options": [
+    { "text": "Comparable companies analysis", "isCorrect": false },
+    { "text": "Precedent transactions analysis", "isCorrect": true },
+    { "text": "Discounted cash flow analysis", "isCorrect": false },
+    { "text": "Liquidation valuation", "isCorrect": false }
+  ],
+  "correct_answer": "Precedent transactions analysis",
+  "explanation": "Precedent transactions typically yield the highest valuation because the transaction prices include a control premium (usually 20-40% above the trading price). The typical hierarchy from lowest to highest is: liquidation value < 52-week trading range < comparable companies < DCF (which can vary widely depending on assumptions) < precedent transactions. However, this hierarchy is not absolute -- a DCF with aggressive assumptions could exceed precedent transaction values.",
+  "tags": ["valuation-methodologies"]
+}

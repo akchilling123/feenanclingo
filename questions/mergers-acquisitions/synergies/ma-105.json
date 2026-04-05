@@ -1,0 +1,10 @@
+{
+  "id": "ma-105",
+  "topic": "mergers-acquisitions",
+  "difficulty": "Medium",
+  "type": "true_false",
+  "question_text": "True or False: Cost synergies are generally considered more reliable and achievable than revenue synergies.",
+  "correct_answer": "True",
+  "explanation": "Cost synergies are more reliable because they are based on identifiable, actionable cost reductions: eliminating duplicate corporate functions, consolidating offices, reducing overlapping staff, and leveraging combined purchasing power. These can be specifically planned and tracked. Revenue synergies, by contrast, depend on external factors like customer behavior, competitive response, and market conditions. Studies consistently show that companies achieve 80-90% of projected cost synergies but only 50-60% of projected revenue synergies. This is why buyers and their advisors typically present cost synergies as the primary justification for a deal premium.",
+  "tags": ["synergies"]
+}

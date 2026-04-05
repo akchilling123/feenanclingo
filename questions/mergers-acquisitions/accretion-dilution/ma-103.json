@@ -1,0 +1,10 @@
+{
+  "id": "ma-103",
+  "topic": "mergers-acquisitions",
+  "difficulty": "Hard",
+  "type": "numeric",
+  "question_text": "An acquirer has net income of $100M and 50M shares outstanding. It acquires a target with $30M net income by issuing 20M new shares. Ignoring synergies and transaction adjustments, what is the pro forma EPS (to two decimal places)?",
+  "correct_answer": "1.86",
+  "explanation": "Acquirer standalone EPS = $100M / 50M shares = $2.00. Pro forma combined net income = $100M + $30M = $130M. Pro forma shares outstanding = 50M + 20M = 70M. Pro forma EPS = $130M / 70M = $1.857, which rounds to $1.86. Since pro forma EPS ($1.86) is less than standalone EPS ($2.00), this deal is dilutive -- the acquirer's EPS decreases by $0.14 per share. The target's effective P/E was higher than the acquirer's, meaning the acquirer issued too many shares relative to the earnings it acquired.",
+  "tags": ["accretion-dilution"]
+}

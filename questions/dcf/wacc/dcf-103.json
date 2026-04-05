@@ -1,0 +1,10 @@
+{
+  "id": "dcf-103",
+  "topic": "dcf",
+  "difficulty": "Hard",
+  "type": "conceptual",
+  "question_text": "Why do we use the Capital Asset Pricing Model (CAPM) to estimate the cost of equity, and what are its key limitations in practice?",
+  "correct_answer": "CAPM estimates cost of equity as Risk-Free Rate + Beta x Equity Risk Premium. It provides a systematic, market-based approach to estimating the return equity investors require. Key limitations include: beta instability over time, reliance on historical data to predict future returns, the assumption that beta captures all relevant risk, and difficulty estimating the equity risk premium.",
+  "explanation": "CAPM (Re = Rf + Beta x ERP) is the standard model because it provides a theoretically grounded, reproducible way to estimate cost of equity based on systematic (market) risk. However, it has well-known limitations: (1) Beta is calculated from historical stock returns and can vary significantly depending on the time period and index chosen; (2) CAPM assumes beta captures all relevant risk, ignoring company-specific factors like management quality or litigation risk; (3) The equity risk premium is itself an estimate with wide disagreement among practitioners (typically 5-7%); (4) For private companies, there is no observable beta, requiring you to unlever and relever betas from public comparables. Despite these flaws, CAPM remains the industry standard because alternatives (Fama-French, build-up method) introduce additional complexity without clearly superior results.",
+  "tags": ["wacc"]
+}

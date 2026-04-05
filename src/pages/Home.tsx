@@ -1,13 +1,32 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useProgress } from '../hooks/useProgress'
 import { useStreak } from '../hooks/useStreak'
 import { useReviewQueue } from '../hooks/useReviewQueue'
+import { useHearts } from '../hooks/useHearts'
+import { useDailyChallenge } from '../hooks/useDailyChallenge'
+import HeartsDisplay from '../components/ui/HeartsDisplay'
 import { ALL_TOPICS, getTopicDisplayName } from '../utils/questionEngine'
+
+function formatRegenTime(ms: number): string {
+  const totalSeconds = Math.ceil(ms / 1000)
+  const hours = Math.floor(totalSeconds / 3600)
+  const minutes = Math.floor((totalSeconds % 3600) / 60)
+  if (hours > 0) return `${hours}h ${minutes}m`
+  return `${minutes}m`
+}
 
 export default function Home() {
   const { currentLevel, xpToNextLevel, topicProgress } = useProgress()
   const { currentStreak } = useStreak()
   const { reviewCount, hasReviewItems } = useReviewQueue()
+  const { hearts, maxHearts, regenerateHearts, nextRegenTime } = useHearts()
+  const { challenge, isCompleted: dailyCompleted } = useDailyChallenge()
+
+  // Regenerate hearts on mount
+  useEffect(() => {
+    regenerateHearts()
+  }, [regenerateHearts])
 
   const topicAttempted = (topic: string) =>
     topicProgress.find(tp => tp.topic === topic)?.questions_attempted ?? 0
@@ -59,6 +78,57 @@ export default function Home() {
           </span>
           <span className="text-cream-dark text-sm">day streak</span>
         </div>
+
+        {/* Hearts */}
+        <div className="mt-4">
+          <div className="flex items-center gap-3">
+            <div className="w-[2px] h-6 bg-incorrect/60 rounded-full" />
+            <HeartsDisplay hearts={hearts} maxHearts={maxHearts} size="lg" />
+          </div>
+          {hearts < maxHearts && nextRegenTime !== null && (
+            <p className="text-cream-dark/40 text-xs mt-1.5 ml-[14px]">
+              Next heart in {formatRegenTime(nextRegenTime)}
+            </p>
+          )}
+        </div>
+      </div>
+
+      {/* Daily Challenge */}
+      <div className="mb-10">
+        {dailyCompleted ? (
+          <div className="border-l-2 border-gold/30 pl-4">
+            <div className="flex items-center gap-2">
+              <svg
+                className="w-4 h-4 text-correct"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              <span className="text-cream-dark/50 text-sm">Daily Challenge Completed</span>
+            </div>
+            <p className="text-cream-dark/30 text-xs mt-1">{challenge.title}</p>
+          </div>
+        ) : (
+          <Link to="/daily" className="block border-l-2 border-gold pl-4 group">
+            <h3 className="text-cream font-medium text-[15px] group-hover:text-gold transition-colors duration-200">
+              Daily Challenge
+            </h3>
+            <p className="text-cream-dark text-sm mt-0.5">
+              {challenge.title}
+            </p>
+            <div className="flex items-center gap-3 mt-2">
+              <span className="text-cream-dark/50 text-xs">{challenge.questionCount} questions</span>
+              <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-gold/15 text-gold border border-gold/25">
+                2x XP
+              </span>
+            </div>
+          </Link>
+        )}
       </div>
 
       {/* Quick Actions */}

@@ -1,0 +1,10 @@
+{
+  "id": "val-103",
+  "topic": "valuation",
+  "difficulty": "Hard",
+  "type": "conceptual",
+  "question_text": "Why might you use calendarized financials when performing a comparable companies analysis, and how does this affect the resulting multiples?",
+  "correct_answer": "Calendarization adjusts financial data for companies with different fiscal year-ends so that all metrics reflect the same time period, enabling an apples-to-apples comparison. Without calendarization, you might compare a company's January-December results against another's July-June results, distorting the multiples.",
+  "explanation": "Companies have different fiscal year-ends (e.g., Apple's FY ends in September, while most companies use December). If you compare LTM or forward multiples without adjusting for this, you're comparing financial performance across different time periods that may have different economic conditions. Calendarization typically involves pro-rating quarterly data to align all companies to the same period. For example, if Company A has a June FY-end, you might weight 50% of their FY2024 and 50% of FY2025 to approximate a December-end year. This is especially important in cyclical industries where seasonal patterns can significantly impact results.",
+  "tags": ["comparable-companies"]
+}

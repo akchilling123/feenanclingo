@@ -1,0 +1,16 @@
+{
+  "id": "val-102",
+  "topic": "valuation",
+  "difficulty": "Medium",
+  "type": "multiple_choice",
+  "question_text": "When selecting comparable companies, which factor is generally MOST important?",
+  "options": [
+    { "text": "Similar market capitalization", "isCorrect": false },
+    { "text": "Same industry and similar business model", "isCorrect": true },
+    { "text": "Same geographic headquarters", "isCorrect": false },
+    { "text": "Similar stock price", "isCorrect": false }
+  ],
+  "correct_answer": "Same industry and similar business model",
+  "explanation": "The most important criterion for selecting comparable companies is that they operate in the same industry with a similar business model, because this ensures similar growth prospects, margins, risk profiles, and capital requirements. Market cap matters but is secondary -- a small-cap software company is more comparable to a mid-cap software company than to a small-cap mining company. Geography and stock price are largely irrelevant for comparability purposes.",
+  "tags": ["comparable-companies"]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "lbo-101",
+  "topic": "lbo",
+  "difficulty": "Easy",
+  "type": "multiple_choice",
+  "question_text": "What does a Debt/EBITDA ratio of 5.0x mean?",
+  "options": [
+    { "text": "The company earns 5 times its debt in annual cash flow", "isCorrect": false },
+    { "text": "The company's total debt is 5 times its annual EBITDA", "isCorrect": true },
+    { "text": "The company can pay off all debt in 5 months", "isCorrect": false },
+    { "text": "The company's interest coverage ratio is 5.0x", "isCorrect": false }
+  ],
+  "correct_answer": "The company's total debt is 5 times its annual EBITDA",
+  "explanation": "A Debt/EBITDA ratio of 5.0x means that if a company has $500M in total debt and $100M in EBITDA, it would take approximately 5 years of EBITDA to pay off all the debt (ignoring interest, taxes, and other cash needs). This is the most commonly used leverage metric in LBOs and credit analysis. Lenders use this ratio to assess how much debt a company can safely support. In LBOs, typical leverage at entry is 4-6x Debt/EBITDA, though this varies significantly by industry, size, and credit market conditions.",
+  "tags": ["leverage-ratios"]
+}

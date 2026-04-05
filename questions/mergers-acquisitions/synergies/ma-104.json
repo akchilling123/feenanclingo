@@ -1,0 +1,16 @@
+{
+  "id": "ma-104",
+  "topic": "mergers-acquisitions",
+  "difficulty": "Easy",
+  "type": "multiple_choice",
+  "question_text": "What is the difference between revenue synergies and cost synergies in an M&A context?",
+  "options": [
+    { "text": "Revenue synergies come from the target; cost synergies come from the acquirer", "isCorrect": false },
+    { "text": "Revenue synergies increase the top line through cross-selling or new markets; cost synergies reduce expenses through eliminating redundancies", "isCorrect": true },
+    { "text": "Revenue synergies are realized immediately; cost synergies take years", "isCorrect": false },
+    { "text": "Revenue synergies are tax-deductible; cost synergies are not", "isCorrect": false }
+  ],
+  "correct_answer": "Revenue synergies increase the top line through cross-selling or new markets; cost synergies reduce expenses through eliminating redundancies",
+  "explanation": "Cost synergies come from eliminating duplicate functions (e.g., consolidating headquarters, reducing headcount, renegotiating supplier contracts) and are generally more predictable and easier to quantify. Revenue synergies come from the combined company generating more revenue than both companies could separately (e.g., cross-selling products, entering new markets, bundling services) and are harder to achieve and take longer to realize. In practice, the market gives more credit to cost synergies because they are more certain, while revenue synergies are often discounted by investors.",
+  "tags": ["synergies"]
+}

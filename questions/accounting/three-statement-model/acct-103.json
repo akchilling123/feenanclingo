@@ -1,0 +1,10 @@
+{
+  "id": "acct-103",
+  "topic": "accounting",
+  "difficulty": "Easy",
+  "type": "true_false",
+  "question_text": "True or False: An increase in accounts receivable represents a use of cash on the cash flow statement.",
+  "correct_answer": "True",
+  "explanation": "When accounts receivable increases, it means the company has recognized revenue (boosting net income) but has not yet collected the cash. On the cash flow statement, this increase in AR is subtracted from net income in the operating activities section because the cash has not actually been received. Think of it as: you made a sale on credit, so your income statement shows the revenue, but your bank account hasn't seen the money yet.",
+  "tags": ["three-statement-model"]
+}

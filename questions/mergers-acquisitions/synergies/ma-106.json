@@ -1,0 +1,10 @@
+{
+  "id": "ma-106",
+  "topic": "mergers-acquisitions",
+  "difficulty": "Medium",
+  "type": "numeric",
+  "question_text": "An acquirer expects $50M in annual pre-tax cost synergies from a merger. Assuming a 25% tax rate and a 10x after-tax synergy multiple, what is the present value of these synergies (in $M)?",
+  "correct_answer": "375",
+  "explanation": "First, calculate after-tax synergies: $50M x (1 - 0.25) = $37.5M. Then apply the synergy multiple: $37.5M x 10 = $375M. This represents the capitalized value of the synergies, which is how analysts estimate how much additional purchase price the synergies can justify. In practice, the buyer and seller negotiate over how much of this synergy value the seller captures (via a higher premium) versus how much the buyer retains. A common rule of thumb is that sellers capture 25-50% of synergy value in the deal premium.",
+  "tags": ["synergies"]
+}

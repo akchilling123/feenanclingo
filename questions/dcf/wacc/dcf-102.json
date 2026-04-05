@@ -1,0 +1,16 @@
+{
+  "id": "dcf-102",
+  "topic": "dcf",
+  "difficulty": "Medium",
+  "type": "multiple_choice",
+  "question_text": "A company has $500M of equity (cost of equity: 12%), $300M of debt (pre-tax cost: 6%), and a 25% tax rate. What is its WACC?",
+  "options": [
+    { "text": "8.44%", "isCorrect": false },
+    { "text": "9.19%", "isCorrect": true },
+    { "text": "9.75%", "isCorrect": false },
+    { "text": "10.00%", "isCorrect": false }
+  ],
+  "correct_answer": "9.19%",
+  "explanation": "WACC = (E/V x Re) + (D/V x Rd x (1-T)). Total Value (V) = $500M + $300M = $800M. Equity weight = 500/800 = 62.5%. Debt weight = 300/800 = 37.5%. WACC = (0.625 x 12%) + (0.375 x 6% x (1 - 0.25)) = 7.5% + (0.375 x 4.5%) = 7.5% + 1.6875% = 9.1875%, which rounds to 9.19%. Note we use market values of debt and equity, not book values, when calculating weights in practice.",
+  "tags": ["wacc"]
+}
