@@ -3,13 +3,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            Text("Home")
+            HomeView()
                 .tabItem { Text("HOME") }
-            Text("Practice")
+            PracticeView()
                 .tabItem { Text("PRACTICE") }
-            Text("Review")
+            ReviewView()
                 .tabItem { Text("REVIEW") }
-            Text("Progress")
+            ProgressDashboardView()
                 .tabItem { Text("PROGRESS") }
         }
         .tint(Color.gold)
