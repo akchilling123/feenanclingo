@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useProgress } from '../hooks/useProgress'
 import { useStreak } from '../hooks/useStreak'
+import { useAuth } from '../hooks/useAuth'
 import { ALL_TOPICS, getTopicDisplayName, getTopicStats } from '../utils/questionEngine'
 import ProgressBar from '../components/ui/ProgressBar'
 import type { Topic } from '../types'
@@ -81,6 +82,7 @@ function TopicRow({ topic, attempted, correct }: { topic: Topic; attempted: numb
 export default function Progress() {
   const { userProgress, topicProgress, currentLevel, xpToNextLevel, resetProgress } = useProgress()
   const { currentStreak, isStreakActive } = useStreak()
+  const { signOut } = useAuth()
 
   const totalAttempted = topicProgress.reduce((sum, tp) => sum + tp.questions_attempted, 0)
   const totalCorrect = topicProgress.reduce((sum, tp) => sum + tp.questions_correct, 0)
@@ -198,8 +200,8 @@ export default function Progress() {
           </div>
         </section>
 
-        {/* Reset */}
-        <div className="pt-8 pb-4">
+        {/* Reset & Sign Out */}
+        <div className="pt-8 pb-4 space-y-3">
           <button
             type="button"
             onClick={handleReset}
@@ -207,6 +209,15 @@ export default function Progress() {
           >
             Reset all progress
           </button>
+          <div>
+            <button
+              type="button"
+              onClick={() => signOut()}
+              className="text-sm text-cream-dark/40 hover:text-cream-dark transition-colors"
+            >
+              Sign out
+            </button>
+          </div>
         </div>
       </div>
     </div>
