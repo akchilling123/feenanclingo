@@ -1,256 +1,182 @@
 [
   {
-    "id": "ma-001",
+    "id": "ma-101",
     "topic": "mergers-acquisitions",
     "difficulty": "Easy",
     "type": "multiple_choice",
-    "question_text": "In an M&A context, what does 'accretion' mean with respect to EPS?",
+    "question_text": "An acquisition is considered 'accretive' when:",
     "options": [
-      { "text": "The acquirer's EPS increases post-deal", "isCorrect": true },
-      { "text": "The acquirer's EPS decreases post-deal", "isCorrect": false },
-      { "text": "The target's EPS increases post-deal", "isCorrect": false },
-      { "text": "The combined entity's revenue increases", "isCorrect": false }
+      {
+        "text": "The acquirer's stock price increases immediately after announcement",
+        "isCorrect": false
+      },
+      {
+        "text": "The combined company's EPS is higher than the acquirer's standalone EPS",
+        "isCorrect": true
+      },
+      {
+        "text": "The deal generates positive synergies",
+        "isCorrect": false
+      },
+      {
+        "text": "The target is acquired at a discount to its book value",
+        "isCorrect": false
+      }
     ],
-    "correct_answer": "The acquirer's EPS increases post-deal",
-    "explanation": "A deal is 'accretive' when the acquirer's pro forma EPS is higher than its standalone EPS. This happens when the earnings gained from the target more than offset the cost of financing the deal (interest expense on debt, foregone income on cash, or dilution from new shares). Accretion/dilution is one of the first things bankers check because public company CEOs face pressure not to dilute their shareholders' earnings.",
-    "tags": ["accretion-dilution", "eps"]
+    "correct_answer": "The combined company's EPS is higher than the acquirer's standalone EPS",
+    "explanation": "An accretive deal increases the acquirer's earnings per share (EPS), while a dilutive deal decreases it. This is determined by comparing the acquirer's standalone EPS to the pro forma combined EPS after the deal. A deal can be accretive even if synergies are zero (if the target's P/E is lower than the acquirer's in a stock deal) and a deal can generate synergies but still be dilutive (if the premium paid is too high). Stock price reaction and book value are not directly relevant to accretion/dilution analysis.",
+    "tags": [
+      "accretion-dilution"
+    ]
   },
   {
-    "id": "ma-002",
-    "topic": "mergers-acquisitions",
-    "difficulty": "Easy",
-    "type": "true_false",
-    "question_text": "True or False: An all-cash deal is always more accretive to EPS than an all-stock deal.",
-    "correct_answer": "False",
-    "explanation": "Not always. While cash deals avoid share dilution, they come with opportunity cost (foregone interest on cash) and interest expense if debt-financed. Whether cash is more accretive depends on the relative cost of each financing source. If the acquirer's P/E is very high relative to the target's P/E, a stock deal can actually be accretive because each new share issued 'buys' more earnings than it costs. The key comparison is: cost of debt (after tax) vs. foregone interest vs. the acquirer's earnings yield (E/P ratio).",
-    "tags": ["accretion-dilution", "deal-structure"]
-  },
-  {
-    "id": "ma-003",
-    "topic": "mergers-acquisitions",
-    "difficulty": "Easy",
-    "type": "conceptual",
-    "question_text": "What is goodwill in the context of an acquisition, and how is it created?",
-    "correct_answer": "Goodwill is the excess of the purchase price over the fair market value of the target's net identifiable assets. It represents intangible value like brand, customer relationships, and workforce that cannot be separately identified on the balance sheet.",
-    "explanation": "When an acquirer pays $500M for a company whose net identifiable assets (tangible assets + identifiable intangibles - liabilities) have a fair value of $350M, the $150M difference is booked as goodwill. Under current accounting rules (ASC 805), goodwill is not amortized but is tested annually for impairment. If the acquired business loses value, goodwill gets written down, hitting the income statement. This is why overpaying for acquisitions can haunt acquirers for years.",
-    "tags": ["goodwill", "purchase-price-allocation"]
-  },
-  {
-    "id": "ma-004",
+    "id": "ma-102",
     "topic": "mergers-acquisitions",
     "difficulty": "Medium",
     "type": "multiple_choice",
-    "question_text": "In purchase price allocation (PPA), which of the following is NOT a typical category of identifiable intangible assets?",
+    "question_text": "In an all-stock acquisition, what is the primary factor that determines whether the deal is accretive or dilutive?",
     "options": [
-      { "text": "Customer relationships", "isCorrect": false },
-      { "text": "Assembled workforce", "isCorrect": true },
-      { "text": "Trade names and trademarks", "isCorrect": false },
-      { "text": "Developed technology", "isCorrect": false }
+      {
+        "text": "The size of the target relative to the acquirer",
+        "isCorrect": false
+      },
+      {
+        "text": "The relative P/E ratios of the acquirer and target",
+        "isCorrect": true
+      },
+      {
+        "text": "The amount of goodwill created",
+        "isCorrect": false
+      },
+      {
+        "text": "The target's revenue growth rate",
+        "isCorrect": false
+      }
     ],
-    "correct_answer": "Assembled workforce",
-    "explanation": "Under ASC 805, an assembled workforce is explicitly excluded from being recognized as a separate identifiable intangible asset. Instead, the value of the workforce is subsumed into goodwill. The reasoning is that employees can leave at any time, so the workforce doesn't meet the 'contractual-legal' or 'separability' criteria required for a standalone intangible. Customer relationships, trade names, and developed technology all qualify because they can be contractually enforced or separately sold/licensed.",
-    "tags": ["purchase-price-allocation", "intangible-assets"]
+    "correct_answer": "The relative P/E ratios of the acquirer and target",
+    "explanation": "In an all-stock deal, if the acquirer's P/E ratio is higher than the target's P/E (inclusive of the premium), the deal will generally be accretive. This is because a high-P/E acquirer is using 'expensive' shares to buy 'cheaper' earnings. Conversely, if the acquirer's P/E is lower than the target's effective P/E (after the premium), the deal is dilutive because the acquirer is trading expensive currency for less earnings per dollar. This is why high-growth, high-P/E companies historically preferred stock deals -- their expensive shares made acquisitions naturally accretive.",
+    "tags": [
+      "accretion-dilution"
+    ]
   },
   {
-    "id": "ma-005",
-    "topic": "mergers-acquisitions",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "What is the primary difference between a strategic buyer and a financial buyer?",
-    "options": [
-      { "text": "Strategic buyers are operating companies seeking synergies; financial buyers are investors seeking returns through financial engineering", "isCorrect": true },
-      { "text": "Strategic buyers always pay less than financial buyers", "isCorrect": false },
-      { "text": "Financial buyers never use debt to fund acquisitions", "isCorrect": false },
-      { "text": "Strategic buyers only do hostile takeovers", "isCorrect": false }
-    ],
-    "correct_answer": "Strategic buyers are operating companies seeking synergies; financial buyers are investors seeking returns through financial engineering",
-    "explanation": "Strategic buyers (e.g., Google acquiring a tech startup) are operating companies that can realize synergies by integrating the target into their existing business. This often lets them pay higher prices because the target is worth more to them than to a standalone investor. Financial buyers (e.g., private equity firms) typically create value through leverage, operational improvements, and multiple expansion, then exit in 3-7 years. They rely heavily on debt financing to amplify equity returns.",
-    "tags": ["strategic-buyers", "financial-buyers"]
-  },
-  {
-    "id": "ma-006",
-    "topic": "mergers-acquisitions",
-    "difficulty": "Easy",
-    "type": "true_false",
-    "question_text": "True or False: In an accretion/dilution analysis, if the acquirer's P/E ratio is higher than the target's P/E ratio, an all-stock deal will generally be accretive to the acquirer's EPS.",
-    "correct_answer": "True",
-    "explanation": "When the acquirer's P/E is higher than the target's P/E, each share the acquirer issues 'costs' less in earnings terms than what it receives from the target. Think of it this way: a high-P/E acquirer's stock is expensive, so it needs to issue fewer shares to buy the target. Fewer new shares means less dilution, while the acquirer picks up all of the target's earnings. The math: the acquirer's earnings yield (E/P) is lower than the target's, meaning it's giving away less earnings per dollar of value than it's receiving. This is why high-P/E companies historically favored stock deals.",
-    "tags": ["accretion-dilution", "stock-deal", "pe-ratio"]
-  },
-  {
-    "id": "ma-007",
-    "topic": "mergers-acquisitions",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "Which of the following best describes a 'poison pill' defense?",
-    "options": [
-      { "text": "A provision that allows existing shareholders to buy shares at a steep discount if a hostile bidder acquires a threshold stake, massively diluting the bidder", "isCorrect": true },
-      { "text": "A clause that forces the target's CEO to resign if a takeover succeeds", "isCorrect": false },
-      { "text": "A legal filing that blocks the acquirer from obtaining regulatory approval", "isCorrect": false },
-      { "text": "A payment the target must make to the acquirer if the deal falls through", "isCorrect": false }
-    ],
-    "correct_answer": "A provision that allows existing shareholders to buy shares at a steep discount if a hostile bidder acquires a threshold stake, massively diluting the bidder",
-    "explanation": "A poison pill (formally a 'shareholder rights plan') is the most common anti-takeover defense. Typically, if any single shareholder crosses a threshold (often 15-20% ownership), all other shareholders can buy new shares at a 50% discount. This floods the market with cheap shares, massively diluting the hostile bidder's stake and making the takeover prohibitively expensive. The poison pill doesn't actually prevent a deal -- it forces the bidder to negotiate with the board rather than going directly to shareholders. Nearly all large public companies have a poison pill either in place or ready to deploy.",
-    "tags": ["hostile-takeover", "poison-pill", "defense-mechanisms"]
-  },
-  {
-    "id": "ma-008",
-    "topic": "mergers-acquisitions",
-    "difficulty": "Easy",
-    "type": "conceptual",
-    "question_text": "Explain the difference between cost synergies and revenue synergies. Which type do acquirers and investors typically give more credit to, and why?",
-    "correct_answer": "Cost synergies are savings from eliminating redundant expenses (e.g., duplicate headquarters, overlapping staff, consolidated procurement). Revenue synergies are incremental sales from cross-selling, expanded distribution, or combined product offerings. Investors give far more credit to cost synergies because they are more predictable and within management's control.",
-    "explanation": "Cost synergies are tangible and quantifiable -- you can count the number of redundant employees, duplicate leases, and overlapping vendor contracts. They're largely within management's control. Revenue synergies, on the other hand, depend on customer behavior: will customers actually cross-buy? Will the combined salesforce execute? History shows revenue synergies are overpromised and underdelivered. In practice, bankers typically model 75-100% of projected cost synergies but only 25-50% (or none) of revenue synergies in their base case. This is why cost synergies are often called 'hard' synergies and revenue synergies are called 'soft' synergies.",
-    "tags": ["synergies", "cost-synergies", "revenue-synergies"]
-  },
-  {
-    "id": "ma-009",
-    "topic": "mergers-acquisitions",
-    "difficulty": "Easy",
-    "type": "numeric",
-    "question_text": "An acquirer has 100 million shares outstanding and standalone EPS of $2.00. It acquires a target with $50M in net income using an all-stock deal, issuing 30 million new shares. What is the pro forma EPS (rounded to two decimal places)?",
-    "correct_answer": "1.92",
-    "explanation": "Pro forma EPS = Combined Net Income / Pro Forma Shares Outstanding. Combined net income = ($2.00 x 100M) + $50M = $200M + $50M = $250M. Pro forma shares = 100M + 30M = 130M. Pro forma EPS = $250M / 130M = $1.923, which rounds to $1.92. Since standalone EPS was $2.00 and pro forma is $1.92, this deal is dilutive by $0.08 per share (4% dilution). The acquirer is giving up too much ownership relative to the earnings it receives. This would raise red flags in the boardroom unless synergies or strategic rationale justify the dilution.",
-    "tags": ["accretion-dilution", "pro-forma", "eps"]
-  },
-  {
-    "id": "ma-010",
-    "topic": "mergers-acquisitions",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "What is a 'break-up fee' (termination fee) in an M&A transaction?",
-    "options": [
-      { "text": "A fee the target pays to the acquirer if the target walks away from the deal or accepts a superior offer", "isCorrect": true },
-      { "text": "A fee the acquirer pays to the target's shareholders as a signing bonus", "isCorrect": false },
-      { "text": "The cost of unwinding the combined entity if the merger fails post-closing", "isCorrect": false },
-      { "text": "A regulatory fine imposed when a deal is blocked by antitrust authorities", "isCorrect": false }
-    ],
-    "correct_answer": "A fee the target pays to the acquirer if the target walks away from the deal or accepts a superior offer",
-    "explanation": "Break-up fees compensate the acquirer for the time, money, and opportunity cost spent pursuing a deal that doesn't close. They typically range from 2-4% of the deal's equity value. For example, in a $10B deal, a 3% break-up fee would be $300M. The fee discourages the target from shopping the deal after signing (using the acquirer's offer to extract a higher price from someone else). There's also a 'reverse break-up fee' where the acquirer pays the target if the acquirer fails to close, often seen in PE deals where financing may fall through.",
-    "tags": ["break-up-fee", "deal-structure", "termination-fee"]
-  },
-  {
-    "id": "ma-011",
-    "topic": "mergers-acquisitions",
-    "difficulty": "Easy",
-    "type": "true_false",
-    "question_text": "True or False: In a friendly acquisition, the target company's board of directors recommends that shareholders approve the deal.",
-    "correct_answer": "True",
-    "explanation": "This is the defining characteristic of a friendly deal. The acquirer negotiates directly with the target's board and management, and if they reach agreeable terms, the board recommends the transaction to shareholders for a vote. In contrast, a hostile acquisition bypasses the board entirely -- the acquirer goes directly to shareholders via a tender offer or launches a proxy fight to replace the board with directors who will approve the deal. Most completed M&A deals are friendly because hostile bids are expensive, reputationally risky, and often trigger defensive measures like poison pills.",
-    "tags": ["friendly-acquisition", "hostile-takeover", "deal-structure"]
-  },
-  {
-    "id": "ma-012",
-    "topic": "mergers-acquisitions",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "What is an 'earnout' in an M&A deal?",
-    "options": [
-      { "text": "A portion of the purchase price contingent on the target meeting specified future performance milestones", "isCorrect": true },
-      { "text": "The premium paid above the target's current stock price", "isCorrect": false },
-      { "text": "The acquirer's projected return on invested capital from the deal", "isCorrect": false },
-      { "text": "A bonus paid to investment bankers upon deal completion", "isCorrect": false }
-    ],
-    "correct_answer": "A portion of the purchase price contingent on the target meeting specified future performance milestones",
-    "explanation": "Earnouts bridge valuation gaps between buyer and seller. If the seller believes the business is worth $500M but the buyer will only pay $400M, they might agree on $400M upfront plus up to $100M in earnouts tied to revenue or EBITDA targets over 1-3 years. This shifts risk to the seller: if the business performs as the seller claims, they get the full price. Earnouts are especially common in acquisitions of high-growth or early-stage companies where future performance is uncertain. The downside is they create misaligned incentives and accounting complexity, and they frequently lead to disputes.",
-    "tags": ["earnout", "deal-structure", "contingent-consideration"]
-  },
-  {
-    "id": "ma-013",
-    "topic": "mergers-acquisitions",
-    "difficulty": "Easy",
-    "type": "numeric",
-    "question_text": "A company is acquired for $800M. The fair market value of its identifiable tangible assets is $500M, identifiable intangible assets are $150M, and total liabilities assumed are $200M. How much goodwill is created (in $M)?",
-    "correct_answer": "350",
-    "explanation": "Goodwill = Purchase Price - Fair Value of Net Identifiable Assets. Net identifiable assets = Tangible assets ($500M) + Intangible assets ($150M) - Liabilities ($200M) = $450M. Goodwill = $800M - $450M = $350M. This $350M represents the premium paid for unidentifiable value: the target's assembled workforce, growth potential, competitive position, and other attributes that don't meet the accounting criteria for separate recognition. The goodwill sits on the acquirer's balance sheet and must be tested for impairment at least annually.",
-    "tags": ["goodwill", "purchase-price-allocation"]
-  },
-  {
-    "id": "ma-014",
-    "topic": "mergers-acquisitions",
-    "difficulty": "Medium",
-    "type": "conceptual",
-    "question_text": "Walk through the key steps of building a basic merger model (accretion/dilution analysis).",
-    "correct_answer": "Step 1: Project standalone financials for both acquirer and target. Step 2: Estimate the purchase price and determine the mix of cash, debt, and stock financing. Step 3: Calculate purchase price allocation (asset write-ups, new intangibles, goodwill). Step 4: Estimate synergies (cost and revenue) and phase-in timeline. Step 5: Calculate pro forma income statement adjustments (new interest expense, foregone interest income, D&A from asset write-ups, synergies). Step 6: Compute pro forma combined EPS and compare to acquirer's standalone EPS to determine accretion or dilution.",
-    "explanation": "A merger model is fundamentally about answering one question: what happens to the acquirer's EPS after the deal? You start with what each company earns on its own, then layer in the acquisition effects. The financing mix drives incremental costs (debt interest, lost cash income, share dilution). PPA creates non-cash charges (amortization of intangible write-ups) that reduce reported earnings. Synergies add back value. The net of all these adjustments determines whether the deal is accretive or dilutive. Senior bankers scrutinize the first-year and third-year accretion/dilution because that's what the acquirer's board and shareholders will focus on.",
-    "tags": ["merger-model", "accretion-dilution", "pro-forma"]
-  },
-  {
-    "id": "ma-015",
-    "topic": "mergers-acquisitions",
-    "difficulty": "Medium",
-    "type": "multiple_choice",
-    "question_text": "What is a 'collar' structure in a stock-for-stock M&A deal?",
-    "options": [
-      { "text": "A mechanism that adjusts the exchange ratio if the acquirer's stock price moves outside a specified range, protecting both parties from price volatility between signing and closing", "isCorrect": true },
-      { "text": "A requirement that the target's management team stay for a minimum period post-close", "isCorrect": false },
-      { "text": "A cap on the total synergies that can be included in the merger model", "isCorrect": false },
-      { "text": "A provision that limits the acquirer's ability to take on additional debt post-close", "isCorrect": false }
-    ],
-    "correct_answer": "A mechanism that adjusts the exchange ratio if the acquirer's stock price moves outside a specified range, protecting both parties from price volatility between signing and closing",
-    "explanation": "In a stock deal, there's typically a gap of 2-6 months between signing and closing (while awaiting regulatory approval and shareholder votes). During this time, the acquirer's stock price can swing significantly. A collar protects against this. In a 'fixed value' collar, the exchange ratio adjusts to maintain the agreed deal value if the stock moves within a band. Beyond the band, the deal may be renegotiated or terminated. In a 'fixed exchange ratio' deal with a walk-away collar, either party can terminate if the stock moves too far. Collars are a negotiation point -- sellers want protection against a declining acquirer stock, while acquirers want certainty on share count.",
-    "tags": ["collar", "stock-deal", "deal-structure"]
-  },
-  {
-    "id": "ma-016",
-    "topic": "mergers-acquisitions",
-    "difficulty": "Medium",
-    "type": "numeric",
-    "question_text": "An acquirer finances a $1 billion deal entirely with new debt at a 6% interest rate. The acquirer's tax rate is 25%. What is the annual after-tax cost of the debt financing (in $M)?",
-    "correct_answer": "45",
-    "explanation": "After-tax cost of debt = Principal x Interest Rate x (1 - Tax Rate) = $1,000M x 6% x (1 - 0.25) = $1,000M x 6% x 0.75 = $45M per year. Interest expense is tax-deductible, so the true cost is lower than the stated rate. This $45M annual cost is what you'd subtract from the target's earnings contribution in an accretion/dilution analysis. If the target contributes more than $45M in after-tax earnings, the deal is accretive on a debt-financed basis. This illustrates why debt is often the cheapest financing source for acquisitions -- the tax shield effectively subsidizes the cost.",
-    "tags": ["debt-financing", "after-tax-cost", "accretion-dilution"]
-  },
-  {
-    "id": "ma-017",
-    "topic": "mergers-acquisitions",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "In M&A due diligence, which of the following areas is typically examined?",
-    "options": [
-      { "text": "All of the below", "isCorrect": true },
-      { "text": "Financial statements, quality of earnings, and working capital trends", "isCorrect": false },
-      { "text": "Pending litigation, regulatory compliance, and contractual obligations", "isCorrect": false },
-      { "text": "Customer concentration, employee retention, and IT infrastructure", "isCorrect": false }
-    ],
-    "correct_answer": "All of the below",
-    "explanation": "Due diligence is a comprehensive investigation of the target before closing. Financial due diligence scrutinizes the quality of earnings (are profits sustainable or inflated by one-time items?), working capital needs, and CapEx requirements. Legal due diligence examines litigation risk, contracts, and IP. Commercial due diligence assesses market position, customer concentration, and competitive dynamics. Operational due diligence evaluates systems, processes, and people. The goal is to validate the assumptions in your model and uncover hidden risks. Findings can lead to purchase price adjustments, specific indemnities, or walking away from the deal entirely.",
-    "tags": ["due-diligence"]
-  },
-  {
-    "id": "ma-018",
+    "id": "ma-103",
     "topic": "mergers-acquisitions",
     "difficulty": "Hard",
-    "type": "conceptual",
-    "question_text": "Explain the Section 338(h)(10) election in M&A. Why would a buyer prefer it, why would a seller resist, and how do the parties typically resolve this tension?",
-    "correct_answer": "A 338(h)(10) election allows what is legally a stock purchase to be treated as an asset purchase for tax purposes. The buyer benefits because it can step up the tax basis of the target's assets to the purchase price, generating higher depreciation and amortization deductions that reduce future taxes. The seller typically resists because the transaction is taxed as an asset sale, which can trigger double taxation (corporate-level gains on asset write-ups plus shareholder-level gains). The tension is usually resolved by the buyer sharing some of the tax benefit with the seller through a higher purchase price.",
-    "explanation": "In a normal stock deal, the buyer inherits the target's existing (usually low) tax basis in its assets, meaning lower D&A deductions going forward. A 338(h)(10) election lets the buyer 'step up' the asset basis to what it actually paid, creating new D&A tax shields that can be worth hundreds of millions on large deals. The catch: the seller faces tax consequences as if it sold assets individually, which typically means a higher tax bill than a straight stock sale (especially for C-corps where you get corporate tax on the asset sale plus shareholder tax on the distribution). To make the seller whole, the buyer often increases the purchase price by some portion of its expected tax savings. This negotiation is a key part of private M&A deals and requires detailed tax modeling by both sides.",
-    "tags": ["338h10", "tax-election", "asset-purchase", "stock-purchase"]
+    "type": "numeric",
+    "question_text": "An acquirer has net income of $100M and 50M shares outstanding. It acquires a target with $30M net income by issuing 20M new shares. Ignoring synergies and transaction adjustments, what is the pro forma EPS (to two decimal places)?",
+    "correct_answer": "1.86",
+    "explanation": "Acquirer standalone EPS = $100M / 50M shares = $2.00. Pro forma combined net income = $100M + $30M = $130M. Pro forma shares outstanding = 50M + 20M = 70M. Pro forma EPS = $130M / 70M = $1.857, which rounds to $1.86. Since pro forma EPS ($1.86) is less than standalone EPS ($2.00), this deal is dilutive -- the acquirer's EPS decreases by $0.14 per share. The target's effective P/E was higher than the acquirer's, meaning the acquirer issued too many shares relative to the earnings it acquired.",
+    "tags": [
+      "accretion-dilution"
+    ]
   },
   {
-    "id": "ma-019",
+    "id": "ma-104",
+    "topic": "mergers-acquisitions",
+    "difficulty": "Easy",
+    "type": "multiple_choice",
+    "question_text": "What is the difference between revenue synergies and cost synergies in an M&A context?",
+    "options": [
+      {
+        "text": "Revenue synergies come from the target; cost synergies come from the acquirer",
+        "isCorrect": false
+      },
+      {
+        "text": "Revenue synergies increase the top line through cross-selling or new markets; cost synergies reduce expenses through eliminating redundancies",
+        "isCorrect": true
+      },
+      {
+        "text": "Revenue synergies are realized immediately; cost synergies take years",
+        "isCorrect": false
+      },
+      {
+        "text": "Revenue synergies are tax-deductible; cost synergies are not",
+        "isCorrect": false
+      }
+    ],
+    "correct_answer": "Revenue synergies increase the top line through cross-selling or new markets; cost synergies reduce expenses through eliminating redundancies",
+    "explanation": "Cost synergies come from eliminating duplicate functions (e.g., consolidating headquarters, reducing headcount, renegotiating supplier contracts) and are generally more predictable and easier to quantify. Revenue synergies come from the combined company generating more revenue than both companies could separately (e.g., cross-selling products, entering new markets, bundling services) and are harder to achieve and take longer to realize. In practice, the market gives more credit to cost synergies because they are more certain, while revenue synergies are often discounted by investors.",
+    "tags": [
+      "synergies"
+    ]
+  },
+  {
+    "id": "ma-105",
     "topic": "mergers-acquisitions",
     "difficulty": "Medium",
     "type": "true_false",
-    "question_text": "True or False: In a stock-for-stock merger, the target's shareholders are generally tax-deferred on their gains (they don't owe taxes at closing).",
+    "question_text": "True or False: Cost synergies are generally considered more reliable and achievable than revenue synergies.",
     "correct_answer": "True",
-    "explanation": "Under IRC Section 368 (tax-free reorganization provisions), if a deal qualifies as a reorganization -- which most all-stock mergers do -- the target's shareholders exchange their target shares for acquirer shares without recognizing a taxable gain at closing. They carry over their original cost basis into the acquirer's shares and only pay taxes when they eventually sell those shares. This is a major reason sellers sometimes prefer stock consideration: it allows them to defer a potentially massive capital gains tax bill. However, the trade-off is that they now hold the acquirer's stock and bear market risk. Mixed cash-and-stock deals are partially taxable, with the cash portion triggering immediate gain recognition.",
-    "tags": ["stock-deal", "tax-free-reorganization", "deal-structure"]
+    "explanation": "Cost synergies are more reliable because they are based on identifiable, actionable cost reductions: eliminating duplicate corporate functions, consolidating offices, reducing overlapping staff, and leveraging combined purchasing power. These can be specifically planned and tracked. Revenue synergies, by contrast, depend on external factors like customer behavior, competitive response, and market conditions. Studies consistently show that companies achieve 80-90% of projected cost synergies but only 50-60% of projected revenue synergies. This is why buyers and their advisors typically present cost synergies as the primary justification for a deal premium.",
+    "tags": [
+      "synergies"
+    ]
   },
   {
-    "id": "ma-020",
+    "id": "ma-106",
     "topic": "mergers-acquisitions",
-    "difficulty": "Hard",
+    "difficulty": "Medium",
+    "type": "numeric",
+    "question_text": "An acquirer expects $50M in annual pre-tax cost synergies from a merger. Assuming a 25% tax rate and a 10x after-tax synergy multiple, what is the present value of these synergies (in $M)?",
+    "correct_answer": "375",
+    "explanation": "First, calculate after-tax synergies: $50M x (1 - 0.25) = $37.5M. Then apply the synergy multiple: $37.5M x 10 = $375M. This represents the capitalized value of the synergies, which is how analysts estimate how much additional purchase price the synergies can justify. In practice, the buyer and seller negotiate over how much of this synergy value the seller captures (via a higher premium) versus how much the buyer retains. A common rule of thumb is that sellers capture 25-50% of synergy value in the deal premium.",
+    "tags": [
+      "synergies"
+    ]
+  },
+  {
+    "id": "ma-107",
+    "topic": "mergers-acquisitions",
+    "difficulty": "Easy",
     "type": "multiple_choice",
-    "question_text": "An acquirer with a P/E of 20x is considering an all-stock acquisition of a target at a P/E of 15x (based on the offer price). Before synergies, this deal is:",
+    "question_text": "What are the three primary forms of acquisition consideration?",
     "options": [
-      { "text": "Accretive, because the acquirer's P/E exceeds the target's P/E", "isCorrect": true },
-      { "text": "Dilutive, because the acquirer is paying a premium", "isCorrect": false },
-      { "text": "Neutral, because stock deals have no EPS impact", "isCorrect": false },
-      { "text": "Cannot be determined without knowing the exact number of shares issued", "isCorrect": false }
+      {
+        "text": "Cash, stock, and debt assumption",
+        "isCorrect": true
+      },
+      {
+        "text": "Cash, bonds, and preferred stock",
+        "isCorrect": false
+      },
+      {
+        "text": "Cash, earnouts, and escrow",
+        "isCorrect": false
+      },
+      {
+        "text": "Common stock, preferred stock, and warrants",
+        "isCorrect": false
+      }
     ],
-    "correct_answer": "Accretive, because the acquirer's P/E exceeds the target's P/E",
-    "explanation": "This is the fundamental P/E arbitrage rule in all-stock deals. The acquirer's earnings yield is 1/20 = 5%, meaning each dollar of its stock 'costs' 5 cents in earnings. The target's earnings yield at the offer price is 1/15 = 6.67%, meaning each dollar of target value 'delivers' 6.67 cents in earnings. Since the acquirer is buying earnings at a higher yield (6.67%) than it's giving up (5%), the deal is accretive before synergies. The rule: in all-stock deals, if acquirer P/E > target P/E (at the offer price, including any premium), the deal is accretive. If acquirer P/E < target P/E, it's dilutive. This is a must-know concept for IB interviews -- interviewers test this regularly.",
-    "tags": ["accretion-dilution", "pe-ratio", "stock-deal"]
+    "correct_answer": "Cash, stock, and debt assumption",
+    "explanation": "The three primary forms of M&A consideration are: (1) Cash -- the acquirer pays the target's shareholders in cash, which can come from cash on hand or new debt financing; (2) Stock -- the acquirer issues new shares to the target's shareholders at an agreed exchange ratio; (3) Debt assumption -- the acquirer assumes the target's existing debt as part of the transaction. Many deals use a mix of cash and stock. Cash deals are simpler and provide certainty to the seller, while stock deals allow the seller to participate in future upside and may have tax deferral advantages.",
+    "tags": [
+      "deal-structures"
+    ]
+  },
+  {
+    "id": "ma-108",
+    "topic": "mergers-acquisitions",
+    "difficulty": "Medium",
+    "type": "conceptual",
+    "question_text": "What is the difference between an asset deal and a stock deal, and when would a buyer prefer each?",
+    "correct_answer": "In a stock deal, the buyer acquires the target's equity (shares) and inherits all assets AND liabilities. In an asset deal, the buyer selects specific assets and liabilities to acquire. Buyers generally prefer asset deals because they can avoid unwanted liabilities and get a step-up in tax basis on the acquired assets.",
+    "explanation": "In a stock deal (or merger), the buyer acquires the target's shares and inherits everything -- all assets, liabilities, contracts, and potential legal claims. In an asset deal, the buyer cherry-picks which assets and liabilities to acquire, potentially leaving behind unwanted items like pending lawsuits or environmental liabilities. Buyers prefer asset deals for the liability protection and the tax step-up benefit (the acquired assets are revalued to fair market value, creating higher depreciation/amortization deductions). Sellers typically prefer stock deals for cleaner execution and potentially more favorable tax treatment (capital gains vs. ordinary income on asset sales). Most public company M&A is structured as stock deals or mergers for practical reasons, while private company deals are more often structured as asset purchases.",
+    "tags": [
+      "deal-structures"
+    ]
+  },
+  {
+    "id": "ma-109",
+    "topic": "mergers-acquisitions",
+    "difficulty": "Easy",
+    "type": "true_false",
+    "question_text": "True or False: In a stock-for-stock merger, the target's shareholders can defer taxes on the gain until they sell the acquirer's shares.",
+    "correct_answer": "True",
+    "explanation": "If a stock-for-stock merger qualifies as a tax-free reorganization under IRC Section 368, the target's shareholders receive acquirer stock and do not recognize a taxable gain at the time of the deal. Instead, they take a carryover basis in the acquirer's shares and only pay taxes when they eventually sell those shares. This tax deferral is one of the key advantages of stock consideration from the seller's perspective. In contrast, cash consideration is immediately taxable to the target's shareholders. Many deals use a mix of cash and stock, where the cash portion is taxable and the stock portion can be tax-deferred.",
+    "tags": [
+      "deal-structures"
+    ]
   }
 ]

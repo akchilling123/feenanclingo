@@ -1,332 +1,200 @@
 [
   {
-    "id": "acct-001",
+    "id": "acct-101",
     "topic": "accounting",
     "difficulty": "Easy",
     "type": "multiple_choice",
-    "question_text": "Which of the three financial statements would you look at first to assess a company's overall financial health, and why?",
+    "question_text": "If depreciation expense increases by $10, what is the net impact on cash flow from operations (assuming a 25% tax rate)?",
     "options": [
-      { "text": "Balance Sheet — it shows cumulative net worth at a point in time", "isCorrect": false },
-      { "text": "Income Statement — it shows profitability over a period", "isCorrect": true },
-      { "text": "Cash Flow Statement — it shows actual cash generated", "isCorrect": false },
-      { "text": "None — you must look at all three simultaneously", "isCorrect": false }
+      {
+        "text": "Decrease of $10",
+        "isCorrect": false
+      },
+      {
+        "text": "Increase of $7.50",
+        "isCorrect": true
+      },
+      {
+        "text": "Increase of $10",
+        "isCorrect": false
+      },
+      {
+        "text": "No impact",
+        "isCorrect": false
+      }
     ],
-    "correct_answer": "Income Statement — it shows profitability over a period",
-    "explanation": "While all three statements matter, the Income Statement is typically examined first because it reveals whether the company's core operations are profitable. Bankers start here to assess revenue growth, margins, and earnings trends before diving into cash flows and the balance sheet.",
-    "tags": ["three-statements", "income-statement"]
+    "correct_answer": "Increase of $7.50",
+    "explanation": "Depreciation is a non-cash expense that reduces pre-tax income by $10, saving $2.50 in taxes (25% x $10). Net income falls by $7.50, but depreciation of $10 is added back in cash flow from operations. The net effect is +$7.50 in operating cash flow ($10 add-back minus $2.50 lower net income adjustment). This is equivalent to the tax shield on depreciation.",
+    "tags": [
+      "three-statement-model"
+    ]
   },
   {
-    "id": "acct-002",
-    "topic": "accounting",
-    "difficulty": "Easy",
-    "type": "true_false",
-    "question_text": "Depreciation is a non-cash expense that appears on the Income Statement and reduces taxable income, but it does not directly reduce the company's cash balance when recorded.",
-    "options": [
-      { "text": "True", "isCorrect": true },
-      { "text": "False", "isCorrect": false }
-    ],
-    "correct_answer": "True",
-    "explanation": "Depreciation allocates the cost of a tangible asset over its useful life. It reduces net income (and therefore taxes), but no cash leaves the company when depreciation is recorded — the cash outflow happened when the asset was originally purchased. This is why depreciation is added back on the Cash Flow Statement under operating activities.",
-    "tags": ["depreciation", "non-cash-expense"]
-  },
-  {
-    "id": "acct-003",
-    "topic": "accounting",
-    "difficulty": "Easy",
-    "type": "conceptual",
-    "question_text": "Walk me through how the three financial statements are linked.",
-    "correct_answer": "Net Income from the Income Statement flows to the top of the Cash Flow Statement and into Retained Earnings on the Balance Sheet. The Cash Flow Statement reconciles net income to actual cash, and the ending cash balance flows to the Balance Sheet. Changes in Balance Sheet items (working capital, capex, debt) appear on the Cash Flow Statement.",
-    "explanation": "The linkage starts with Net Income on the Income Statement. That figure feeds into the Cash Flow Statement (top of CFO section) and into Shareholders' Equity via Retained Earnings on the Balance Sheet. The Cash Flow Statement adjusts net income for non-cash items and working capital changes, then accounts for investing and financing activities. The ending cash balance becomes the cash line on the Balance Sheet. This circular linkage is the single most important concept in IB interviews.",
-    "tags": ["three-statements", "linkages"]
-  },
-  {
-    "id": "acct-004",
-    "topic": "accounting",
-    "difficulty": "Medium",
-    "type": "numeric",
-    "question_text": "A company purchases a machine for $100,000 with a 10-year useful life and no salvage value using straight-line depreciation. If the tax rate is 25%, how much does this purchase reduce the company's cash balance in Year 1 (net of tax shield)?",
-    "correct_answer": "97500",
-    "explanation": "In Year 1, the company pays $100,000 cash for the machine (capex). Annual depreciation is $10,000 ($100,000 / 10 years), which provides a tax shield of $10,000 x 25% = $2,500. So the net cash impact in Year 1 is $100,000 - $2,500 = $97,500. The capex is the real cash outflow; the depreciation tax shield partially offsets it each year going forward.",
-    "tags": ["depreciation", "tax-shield", "capex"]
-  },
-  {
-    "id": "acct-005",
-    "topic": "accounting",
-    "difficulty": "Medium",
-    "type": "multiple_choice",
-    "question_text": "A company collects $60,000 in cash from a customer for a 12-month service contract starting today. How does this transaction affect the financial statements at the time of collection?",
-    "options": [
-      { "text": "Revenue increases by $60,000 and cash increases by $60,000", "isCorrect": false },
-      { "text": "Cash increases by $60,000 and deferred revenue (liability) increases by $60,000", "isCorrect": true },
-      { "text": "Revenue increases by $60,000 and accounts receivable increases by $60,000", "isCorrect": false },
-      { "text": "Cash increases by $60,000 and retained earnings increases by $60,000", "isCorrect": false }
-    ],
-    "correct_answer": "Cash increases by $60,000 and deferred revenue (liability) increases by $60,000",
-    "explanation": "Under accrual accounting, revenue is recognized when earned, not when cash is collected. Since the service hasn't been delivered yet, the $60,000 cannot be recognized as revenue. Instead, cash goes up on the asset side, and deferred revenue (a liability representing the obligation to deliver services) goes up by the same amount. Revenue is recognized ratably as the service is performed — $5,000 per month over 12 months.",
-    "tags": ["deferred-revenue", "revenue-recognition", "accrual-accounting"]
-  },
-  {
-    "id": "acct-006",
-    "topic": "accounting",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "What is working capital, and what does a negative working capital figure typically indicate?",
-    "options": [
-      { "text": "Total Assets minus Total Liabilities; negative means the company is insolvent", "isCorrect": false },
-      { "text": "Current Assets minus Current Liabilities; negative means the company may struggle to meet short-term obligations", "isCorrect": true },
-      { "text": "Cash minus Debt; negative means the company has net debt", "isCorrect": false },
-      { "text": "Revenue minus COGS; negative means the company sells at a loss", "isCorrect": false }
-    ],
-    "correct_answer": "Current Assets minus Current Liabilities; negative means the company may struggle to meet short-term obligations",
-    "explanation": "Working capital = Current Assets (cash, accounts receivable, inventory) minus Current Liabilities (accounts payable, accrued expenses, short-term debt). It measures a company's short-term liquidity. Negative working capital means current liabilities exceed current assets, which can signal liquidity risk — though some businesses like retailers operate with negative working capital by design because they collect cash from customers before paying suppliers.",
-    "tags": ["working-capital", "liquidity", "balance-sheet"]
-  },
-  {
-    "id": "acct-007",
-    "topic": "accounting",
-    "difficulty": "Easy",
-    "type": "true_false",
-    "question_text": "Under FIFO (First-In, First-Out) inventory accounting in a period of rising prices, Cost of Goods Sold will be lower and net income will be higher compared to LIFO (Last-In, First-Out).",
-    "options": [
-      { "text": "True", "isCorrect": true },
-      { "text": "False", "isCorrect": false }
-    ],
-    "correct_answer": "True",
-    "explanation": "When prices are rising, FIFO assumes the oldest (cheapest) inventory is sold first, resulting in lower COGS and higher net income. LIFO assumes the newest (most expensive) inventory is sold first, resulting in higher COGS and lower net income. LIFO creates a tax benefit in inflationary environments (lower taxable income), which is why some U.S. companies prefer it. Note that IFRS does not permit LIFO.",
-    "tags": ["inventory", "FIFO", "LIFO", "income-statement"]
-  },
-  {
-    "id": "acct-008",
-    "topic": "accounting",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "What is the difference between Capital Expenditures (CapEx) and Operating Expenses (OpEx)?",
-    "options": [
-      { "text": "CapEx is recorded on the Income Statement; OpEx is recorded on the Balance Sheet", "isCorrect": false },
-      { "text": "CapEx benefits future periods and is capitalized on the Balance Sheet; OpEx benefits the current period and is expensed immediately on the Income Statement", "isCorrect": true },
-      { "text": "CapEx relates only to equipment; OpEx relates only to salaries", "isCorrect": false },
-      { "text": "There is no accounting difference — both reduce net income in the same period", "isCorrect": false }
-    ],
-    "correct_answer": "CapEx benefits future periods and is capitalized on the Balance Sheet; OpEx benefits the current period and is expensed immediately on the Income Statement",
-    "explanation": "CapEx (e.g., purchasing a factory, buying servers) provides economic benefit over multiple years, so the cost is capitalized as an asset on the Balance Sheet and gradually expensed via depreciation. OpEx (e.g., rent, salaries, utilities) benefits only the current period and hits the Income Statement immediately. This distinction matters enormously in IB because capitalizing vs. expensing changes EBITDA, margins, and cash flow profiles.",
-    "tags": ["capex", "opex", "balance-sheet", "income-statement"]
-  },
-  {
-    "id": "acct-009",
-    "topic": "accounting",
-    "difficulty": "Easy",
-    "type": "conceptual",
-    "question_text": "Explain the difference between accrual accounting and cash accounting.",
-    "correct_answer": "Accrual accounting recognizes revenue when earned and expenses when incurred, regardless of when cash changes hands. Cash accounting recognizes revenue and expenses only when cash is received or paid. Public companies use accrual accounting under GAAP/IFRS.",
-    "explanation": "Accrual accounting matches revenues with the expenses incurred to generate them, providing a more accurate picture of economic activity. For example, if a company delivers goods in December but collects cash in January, accrual accounting records revenue in December. Cash accounting would record it in January. This distinction is why the Cash Flow Statement exists — it reconciles accrual-based net income back to actual cash movements. All publicly traded companies must use accrual accounting.",
-    "tags": ["accrual-accounting", "cash-accounting", "revenue-recognition"]
-  },
-  {
-    "id": "acct-010",
-    "topic": "accounting",
-    "difficulty": "Easy",
-    "type": "numeric",
-    "question_text": "A company has $500,000 in current assets (including $100,000 cash, $150,000 accounts receivable, and $250,000 inventory) and $300,000 in current liabilities. What is the company's working capital?",
-    "correct_answer": "200000",
-    "explanation": "Working Capital = Current Assets - Current Liabilities = $500,000 - $300,000 = $200,000. This means the company has $200,000 of short-term assets in excess of short-term obligations, indicating it can comfortably meet near-term liabilities. In IB, changes in working capital are critical for cash flow projections — an increase in working capital is a use of cash, while a decrease is a source of cash.",
-    "tags": ["working-capital", "balance-sheet", "liquidity"]
-  },
-  {
-    "id": "acct-011",
-    "topic": "accounting",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "Accounts Receivable increased by $20,000 during the quarter. What impact does this have on cash flow from operations?",
-    "options": [
-      { "text": "Cash flow from operations increases by $20,000", "isCorrect": false },
-      { "text": "Cash flow from operations decreases by $20,000", "isCorrect": true },
-      { "text": "No impact — accounts receivable changes only affect the balance sheet", "isCorrect": false },
-      { "text": "Cash flow from operations increases by $20,000, but only if the receivables are collected", "isCorrect": false }
-    ],
-    "correct_answer": "Cash flow from operations decreases by $20,000",
-    "explanation": "An increase in Accounts Receivable means the company recognized $20,000 more in revenue than it actually collected in cash — customers owe money that hasn't been received yet. Since net income includes this revenue, we must subtract the AR increase when calculating cash flow from operations to reflect that the cash hasn't actually arrived. This is a core working capital adjustment on the Cash Flow Statement.",
-    "tags": ["accounts-receivable", "working-capital", "cash-flow-statement"]
-  },
-  {
-    "id": "acct-012",
-    "topic": "accounting",
-    "difficulty": "Easy",
-    "type": "true_false",
-    "question_text": "Retained Earnings on the Balance Sheet increases by Net Income and decreases by dividends paid.",
-    "options": [
-      { "text": "True", "isCorrect": true },
-      { "text": "False", "isCorrect": false }
-    ],
-    "correct_answer": "True",
-    "explanation": "Retained Earnings represents the cumulative profits a company has kept rather than distributed to shareholders. The formula is: Ending Retained Earnings = Beginning Retained Earnings + Net Income - Dividends. This is the primary link between the Income Statement and Balance Sheet — net income flows into retained earnings each period, growing shareholders' equity. Share buybacks can also reduce retained earnings depending on how they're accounted for.",
-    "tags": ["retained-earnings", "balance-sheet", "shareholders-equity"]
-  },
-  {
-    "id": "acct-013",
-    "topic": "accounting",
-    "difficulty": "Easy",
-    "type": "conceptual",
-    "question_text": "What is goodwill, and how does it arise on the Balance Sheet?",
-    "correct_answer": "Goodwill is the excess of the purchase price over the fair market value of a target's identifiable net assets in an acquisition. It represents intangible value like brand, customer relationships, and synergies that can't be separately identified.",
-    "explanation": "Goodwill only arises from acquisitions — a company cannot create goodwill internally. If Company A buys Company B for $500M, and Company B's identifiable net assets (assets minus liabilities at fair value) are $350M, then $150M of goodwill is recorded on Company A's balance sheet. Under GAAP, goodwill is not amortized but is tested for impairment annually. If the acquired business loses value, goodwill is written down, creating a non-cash charge on the Income Statement.",
-    "tags": ["goodwill", "M&A", "balance-sheet", "impairment"]
-  },
-  {
-    "id": "acct-014",
-    "topic": "accounting",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "Where does depreciation expense appear across the three financial statements?",
-    "options": [
-      { "text": "Only on the Income Statement as an expense", "isCorrect": false },
-      { "text": "Income Statement as an expense, Cash Flow Statement as an add-back, Balance Sheet as a reduction to PP&E", "isCorrect": true },
-      { "text": "Only on the Cash Flow Statement as a non-cash adjustment", "isCorrect": false },
-      { "text": "Income Statement as an expense and Balance Sheet as a reduction to PP&E only", "isCorrect": false }
-    ],
-    "correct_answer": "Income Statement as an expense, Cash Flow Statement as an add-back, Balance Sheet as a reduction to PP&E",
-    "explanation": "Depreciation flows through all three statements. On the Income Statement, it reduces operating income and net income as an expense (often embedded in COGS or SG&A). On the Cash Flow Statement, it's added back to net income under operating activities because it's a non-cash charge. On the Balance Sheet, accumulated depreciation reduces the gross PP&E value, lowering total assets. The tax effect also reduces taxes payable (a liability).",
-    "tags": ["depreciation", "three-statements", "PP&E"]
-  },
-  {
-    "id": "acct-015",
-    "topic": "accounting",
-    "difficulty": "Easy",
-    "type": "true_false",
-    "question_text": "PP&E (Property, Plant & Equipment) is recorded at historical cost on the Balance Sheet and is reduced over time by accumulated depreciation, not by changes in market value.",
-    "options": [
-      { "text": "True", "isCorrect": true },
-      { "text": "False", "isCorrect": false }
-    ],
-    "correct_answer": "True",
-    "explanation": "Under U.S. GAAP, PP&E is carried at historical cost less accumulated depreciation — not at fair market value. Even if a factory doubles in value, the Balance Sheet still shows the original purchase price minus depreciation taken to date. The only adjustment occurs if the asset is impaired (its carrying value exceeds recoverable value), in which case it's written down. This is a key difference from IFRS, which allows revaluation of PP&E to fair value. The PP&E rollforward formula is: Ending PP&E = Beginning PP&E + CapEx - Depreciation - Disposals.",
-    "tags": ["PP&E", "depreciation", "balance-sheet", "historical-cost"]
-  },
-  {
-    "id": "acct-016",
-    "topic": "accounting",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "An increase in Accounts Payable from one period to the next represents what kind of adjustment on the Cash Flow Statement?",
-    "options": [
-      { "text": "A decrease to cash flow from operations — the company owes more money", "isCorrect": false },
-      { "text": "An increase to cash flow from operations — the company is delaying cash payments to suppliers", "isCorrect": true },
-      { "text": "No adjustment — accounts payable changes only affect the balance sheet", "isCorrect": false },
-      { "text": "An increase to cash flow from financing — it represents new borrowing", "isCorrect": false }
-    ],
-    "correct_answer": "An increase to cash flow from operations — the company is delaying cash payments to suppliers",
-    "explanation": "When Accounts Payable increases, the company has recognized expenses on the Income Statement (reducing net income) but hasn't yet paid the cash. Since the cash is still in the company's hands, we add the AP increase back when computing cash flow from operations. Think of it as: the company got the goods/services but hasn't paid yet, so it has more cash than net income would suggest. The opposite of an AR increase.",
-    "tags": ["accounts-payable", "working-capital", "cash-flow-statement"]
-  },
-  {
-    "id": "acct-017",
-    "topic": "accounting",
-    "difficulty": "Easy",
-    "type": "true_false",
-    "question_text": "Stock-based compensation is a non-cash expense that reduces net income on the Income Statement and is added back on the Cash Flow Statement, similar to depreciation.",
-    "options": [
-      { "text": "True", "isCorrect": true },
-      { "text": "False", "isCorrect": false }
-    ],
-    "correct_answer": "True",
-    "explanation": "Stock-based compensation (SBC) is expensed on the Income Statement, reducing operating income and net income. However, no cash actually leaves the company — employees receive equity, not cash. So on the Cash Flow Statement, SBC is added back to net income in the operating activities section, just like depreciation. On the Balance Sheet, the offset goes to Additional Paid-In Capital (equity increases). SBC is a major focus in tech company analysis because it can be a very large non-cash expense.",
-    "tags": ["stock-based-compensation", "non-cash-expense", "cash-flow-statement"]
-  },
-  {
-    "id": "acct-018",
+    "id": "acct-102",
     "topic": "accounting",
     "difficulty": "Medium",
     "type": "conceptual",
-    "question_text": "A company acquires 30% of another company's equity. How should it account for this investment, and where does the investee's income appear?",
-    "correct_answer": "Under the equity method, the investor records its proportional share of the investee's net income on its own Income Statement. The investment is carried on the Balance Sheet at cost, adjusted for the investor's share of earnings and dividends received.",
-    "explanation": "Ownership between 20-50% typically requires the equity method. The investor records its share of the investee's net income as a single line item (often below operating income). Dividends received from the investee reduce the investment balance on the Balance Sheet rather than being recorded as income (to avoid double counting). If the investee earns $100M in net income and you own 30%, you record $30M on your Income Statement and increase the investment asset by $30M. When the investee pays a $10M dividend (your share = $3M), you reduce the investment asset by $3M.",
-    "tags": ["equity-method", "investments", "income-statement", "balance-sheet"]
+    "question_text": "Walk through how a $100 inventory write-down flows through all three financial statements.",
+    "correct_answer": "Income Statement: COGS increases by $100, reducing pre-tax income by $100 and net income by $75 (at 25% tax). Balance Sheet: Inventory decreases by $100, cash increases by $25 (tax savings), retained earnings decreases by $75. Cash Flow Statement: Net income down $75, add back $100 non-cash charge, subtract $25 tax benefit already in operations = net $0 direct cash impact, but working capital changes reflect the inventory reduction.",
+    "explanation": "An inventory write-down is a non-cash charge that hits COGS on the income statement, reducing pre-tax income. After tax, net income falls by $75 (assuming 25% tax rate). On the balance sheet, inventory drops by $100 and retained earnings drops by $75, with the $25 difference reflected in lower taxes payable. On the cash flow statement, you start with lower net income but add back the non-cash write-down, and the tax savings flow through working capital changes. The key insight is that while the write-down itself is non-cash, it creates a real tax shield.",
+    "tags": [
+      "three-statement-model"
+    ]
   },
   {
-    "id": "acct-019",
+    "id": "acct-103",
+    "topic": "accounting",
+    "difficulty": "Easy",
+    "type": "true_false",
+    "question_text": "True or False: An increase in accounts receivable represents a use of cash on the cash flow statement.",
+    "correct_answer": "True",
+    "explanation": "When accounts receivable increases, it means the company has recognized revenue (boosting net income) but has not yet collected the cash. On the cash flow statement, this increase in AR is subtracted from net income in the operating activities section because the cash has not actually been received. Think of it as: you made a sale on credit, so your income statement shows the revenue, but your bank account hasn't seen the money yet.",
+    "tags": [
+      "three-statement-model"
+    ]
+  },
+  {
+    "id": "acct-104",
+    "topic": "accounting",
+    "difficulty": "Easy",
+    "type": "multiple_choice",
+    "question_text": "Which of the following is NOT typically included in working capital?",
+    "options": [
+      {
+        "text": "Accounts receivable",
+        "isCorrect": false
+      },
+      {
+        "text": "Inventory",
+        "isCorrect": false
+      },
+      {
+        "text": "Property, plant & equipment",
+        "isCorrect": true
+      },
+      {
+        "text": "Accounts payable",
+        "isCorrect": false
+      }
+    ],
+    "correct_answer": "Property, plant & equipment",
+    "explanation": "Working capital consists of current assets minus current liabilities. PP&E is a long-term (non-current) asset and is therefore excluded from working capital calculations. Accounts receivable and inventory are current assets, while accounts payable is a current liability -- all three are core components of working capital.",
+    "tags": [
+      "working-capital"
+    ]
+  },
+  {
+    "id": "acct-105",
     "topic": "accounting",
     "difficulty": "Medium",
     "type": "multiple_choice",
-    "question_text": "A company writes down goodwill by $50M due to impairment. Assuming a 25% tax rate, what is the impact on the three financial statements?",
+    "question_text": "A company's accounts payable increases by $20M while all other working capital items remain constant. What is the impact on free cash flow?",
     "options": [
-      { "text": "Net income falls by $37.5M; cash decreases by $37.5M; goodwill decreases by $50M", "isCorrect": false },
-      { "text": "Net income falls by $50M; no cash impact; goodwill decreases by $50M", "isCorrect": true },
-      { "text": "Net income falls by $50M; cash decreases by $50M; goodwill decreases by $50M", "isCorrect": false },
-      { "text": "Net income falls by $37.5M; no cash impact; goodwill decreases by $50M", "isCorrect": false }
+      {
+        "text": "FCF decreases by $20M",
+        "isCorrect": false
+      },
+      {
+        "text": "FCF increases by $20M",
+        "isCorrect": true
+      },
+      {
+        "text": "FCF is unchanged",
+        "isCorrect": false
+      },
+      {
+        "text": "FCF increases by $15M",
+        "isCorrect": false
+      }
     ],
-    "correct_answer": "Net income falls by $50M; no cash impact; goodwill decreases by $50M",
-    "explanation": "Goodwill impairment is a non-cash, non-tax-deductible charge under GAAP. On the Income Statement, the $50M write-down reduces pre-tax income and net income by $50M (no tax benefit because goodwill impairment is not deductible for tax purposes in most cases). On the Cash Flow Statement, the $50M is added back as a non-cash charge, so net cash impact is zero. On the Balance Sheet, goodwill (asset) decreases by $50M and retained earnings (equity) decreases by $50M. This is a classic IB interview trap — candidates often incorrectly apply a tax shield.",
-    "tags": ["goodwill", "impairment", "three-statements", "non-cash-expense"]
+    "correct_answer": "FCF increases by $20M",
+    "explanation": "An increase in accounts payable means the company owes more to its suppliers but hasn't paid the cash yet. This is a source of cash because the company is effectively borrowing from suppliers. On the cash flow statement, an increase in a current liability is added to operating cash flow. Since FCF = Operating Cash Flow - CapEx, and CapEx hasn't changed, FCF increases by the full $20M. There is no tax effect here because the expense was already recognized on the income statement.",
+    "tags": [
+      "working-capital"
+    ]
   },
   {
-    "id": "acct-020",
+    "id": "acct-106",
     "topic": "accounting",
     "difficulty": "Medium",
     "type": "numeric",
-    "question_text": "A company has revenue of $10M and recognizes $2M in deferred revenue at the start of the year. By year-end, deferred revenue has grown to $3.5M. How much cash did the company actually collect from customers during the year?",
-    "correct_answer": "11500000",
-    "explanation": "Cash collected = Revenue recognized + Increase in Deferred Revenue = $10M + ($3.5M - $2M) = $10M + $1.5M = $11.5M. The logic: revenue of $10M reflects what was earned and recognized, but deferred revenue grew by $1.5M, meaning the company collected $1.5M more in cash than it recognized as revenue (for services not yet delivered). This is why increases in deferred revenue are added back on the Cash Flow Statement — the company has more cash than net income suggests.",
-    "tags": ["deferred-revenue", "revenue-recognition", "cash-flow-statement"]
+    "question_text": "A company has $50M in accounts receivable, $30M in inventory, $10M in prepaid expenses, $25M in accounts payable, and $15M in accrued liabilities. What is the company's net working capital (in $M)?",
+    "correct_answer": "50",
+    "explanation": "Net working capital = Current Assets - Current Liabilities. Current Assets = $50M (AR) + $30M (Inventory) + $10M (Prepaid) = $90M. Current Liabilities = $25M (AP) + $15M (Accrued Liabilities) = $40M. NWC = $90M - $40M = $50M. Note that in practice, bankers often focus on 'operating' working capital which excludes cash and short-term debt, but the basic formula uses all current assets and current liabilities.",
+    "tags": [
+      "working-capital"
+    ]
   },
   {
-    "id": "acct-021",
+    "id": "acct-107",
+    "topic": "accounting",
+    "difficulty": "Easy",
+    "type": "multiple_choice",
+    "question_text": "What is the primary difference between depreciation and amortization?",
+    "options": [
+      {
+        "text": "Depreciation applies to tangible assets; amortization applies to intangible assets",
+        "isCorrect": true
+      },
+      {
+        "text": "Depreciation is a cash expense; amortization is non-cash",
+        "isCorrect": false
+      },
+      {
+        "text": "Depreciation is tax-deductible; amortization is not",
+        "isCorrect": false
+      },
+      {
+        "text": "Depreciation is reported on the balance sheet; amortization is not",
+        "isCorrect": false
+      }
+    ],
+    "correct_answer": "Depreciation applies to tangible assets; amortization applies to intangible assets",
+    "explanation": "Both depreciation and amortization are non-cash expenses that allocate the cost of an asset over its useful life. The difference is in what they apply to: depreciation is for tangible, physical assets like machinery, buildings, and equipment, while amortization is for intangible assets like patents, trademarks, and software. Both are tax-deductible and both reduce the carrying value of assets on the balance sheet.",
+    "tags": [
+      "depreciation-amortization"
+    ]
+  },
+  {
+    "id": "acct-108",
     "topic": "accounting",
     "difficulty": "Medium",
     "type": "multiple_choice",
-    "question_text": "What is minority interest (non-controlling interest), and why does it appear on the financial statements of a parent company?",
+    "question_text": "A company switches from straight-line to accelerated depreciation for tax purposes. In the first year after the switch, what happens to the deferred tax liability?",
     "options": [
-      { "text": "It represents debt owed to minority shareholders and appears as a liability", "isCorrect": false },
-      { "text": "It represents the portion of a subsidiary's equity not owned by the parent, appearing in shareholders' equity on the Balance Sheet; the subsidiary's full financials are consolidated but minority owners' share is backed out", "isCorrect": true },
-      { "text": "It represents the parent's ownership stake in companies where it owns less than 50%", "isCorrect": false },
-      { "text": "It is an off-balance-sheet item that only appears in footnotes", "isCorrect": false }
+      {
+        "text": "It decreases",
+        "isCorrect": false
+      },
+      {
+        "text": "It increases",
+        "isCorrect": true
+      },
+      {
+        "text": "It stays the same",
+        "isCorrect": false
+      },
+      {
+        "text": "It is eliminated",
+        "isCorrect": false
+      }
     ],
-    "correct_answer": "It represents the portion of a subsidiary's equity not owned by the parent, appearing in shareholders' equity on the Balance Sheet; the subsidiary's full financials are consolidated but minority owners' share is backed out",
-    "explanation": "When a parent owns more than 50% of a subsidiary, it consolidates 100% of the subsidiary's revenue, expenses, assets, and liabilities. But since the parent doesn't own 100%, the portion belonging to outside shareholders is shown as Minority Interest (Non-Controlling Interest) — in equity on the Balance Sheet, and as a deduction on the Income Statement to arrive at net income attributable to the parent. In Enterprise Value calculations, minority interest is added because the consolidated financials include 100% of the subsidiary's operations.",
-    "tags": ["minority-interest", "consolidation", "balance-sheet", "enterprise-value"]
+    "correct_answer": "It increases",
+    "explanation": "Accelerated depreciation front-loads more depreciation expense in the early years for tax purposes compared to straight-line on the book side. This means taxable income is lower than book income in the early years, so the company pays less tax now than its book tax expense suggests. The difference creates a deferred tax liability because the company will owe more taxes in later years when tax depreciation is lower. The DTL increases because the temporary difference between book and tax carrying values of the asset widens.",
+    "tags": [
+      "depreciation-amortization"
+    ]
   },
   {
-    "id": "acct-022",
+    "id": "acct-109",
     "topic": "accounting",
-    "difficulty": "Medium",
-    "type": "numeric",
-    "question_text": "A company has beginning retained earnings of $250M, net income of $80M, and pays $15M in dividends. It also repurchases $30M in stock (recorded against APIC/treasury stock, not retained earnings). What is ending retained earnings?",
-    "correct_answer": "315000000",
-    "explanation": "Ending Retained Earnings = Beginning RE + Net Income - Dividends = $250M + $80M - $15M = $315M. The $30M stock repurchase does not affect retained earnings in this case — it is recorded as an increase to Treasury Stock (a contra-equity account) or a reduction in APIC, depending on the accounting method. The key retained earnings drivers are net income (increases it) and dividends (decreases it). Some companies also record share buybacks against retained earnings once APIC is exhausted, but the question specifies it goes against APIC/treasury stock.",
-    "tags": ["retained-earnings", "shareholders-equity", "dividends"]
-  },
-  {
-    "id": "acct-023",
-    "topic": "accounting",
-    "difficulty": "Medium",
-    "type": "conceptual",
-    "question_text": "Walk me through the impact on all three financial statements when a company recognizes $10M of stock-based compensation expense. Assume a 25% tax rate.",
-    "correct_answer": "Income Statement: SBC expense of $10M reduces operating income by $10M and net income by $7.5M (after $2.5M tax benefit). Cash Flow Statement: start with lower net income (-$7.5M), add back $10M SBC non-cash expense, subtract $2.5M for the deferred tax asset change — net zero cash impact. Balance Sheet: cash unchanged, APIC increases by $10M, retained earnings decreases by $7.5M, deferred tax asset increases by $2.5M.",
-    "explanation": "SBC creates a tax deduction (a temporary difference that creates a deferred tax asset). The Income Statement shows $10M expense, reducing pre-tax income, and a $2.5M tax benefit (25% x $10M), so net income drops by $7.5M. On the Cash Flow Statement, the $7.5M lower net income is offset by the $10M SBC add-back, but the $2.5M change in deferred tax assets is a use of cash, so net cash effect is zero. On the Balance Sheet, APIC increases by $10M (the equity given to employees), retained earnings drops by $7.5M (from lower net income), and a deferred tax asset of $2.5M is created. Assets and equity both net to a balanced increase.",
-    "tags": ["stock-based-compensation", "three-statements", "deferred-tax"]
-  },
-  {
-    "id": "acct-024",
-    "topic": "accounting",
-    "difficulty": "Hard",
-    "type": "multiple_choice",
-    "question_text": "Company A acquires Company B for $200M in cash. Company B has $50M in assets and $20M in liabilities at fair value, plus $30M in identifiable intangible assets (customer lists, patents). How much goodwill is created, and what is the full Balance Sheet impact on Company A at closing?",
-    "options": [
-      { "text": "Goodwill of $170M; cash down $200M, assets up $50M and goodwill up $170M, liabilities up $20M", "isCorrect": false },
-      { "text": "Goodwill of $140M; cash down $200M, tangible assets up $50M, intangibles up $30M, goodwill up $140M, liabilities up $20M", "isCorrect": true },
-      { "text": "Goodwill of $150M; cash down $200M, assets up $80M, goodwill up $150M, liabilities up $20M", "isCorrect": false },
-      { "text": "Goodwill of $120M; cash down $200M, tangible assets up $50M, intangibles up $30M, goodwill up $120M, liabilities up $20M", "isCorrect": false }
-    ],
-    "correct_answer": "Goodwill of $140M; cash down $200M, tangible assets up $50M, intangibles up $30M, goodwill up $140M, liabilities up $20M",
-    "explanation": "Goodwill = Purchase Price - Fair Value of Net Identifiable Assets. Net identifiable assets = $50M tangible assets + $30M identifiable intangibles - $20M liabilities = $60M. Goodwill = $200M - $60M = $140M. On Company A's Balance Sheet: cash decreases by $200M, tangible assets increase by $50M, identifiable intangible assets increase by $30M, goodwill increases by $140M, and liabilities increase by $20M. Net asset change = -$200M + $50M + $30M + $140M - $20M = $0, which makes sense — the purchase price exactly equals what was acquired. This is a standard M&A purchase price allocation question.",
-    "tags": ["goodwill", "M&A", "purchase-price-allocation", "balance-sheet"]
-  },
-  {
-    "id": "acct-025",
-    "topic": "accounting",
-    "difficulty": "Hard",
-    "type": "numeric",
-    "question_text": "A company has $5M in revenue under a long-term contract using percentage-of-completion accounting. Total estimated project costs are $3M, and $1.2M in costs have been incurred to date. What revenue should be recognized to date?",
-    "correct_answer": "2000000",
-    "explanation": "Under percentage-of-completion, revenue recognized = (Costs Incurred to Date / Total Estimated Costs) x Total Contract Revenue = ($1.2M / $3M) x $5M = 40% x $5M = $2M. This method recognizes revenue proportionally as work progresses, rather than waiting until the project is complete. The percentage complete is measured by costs incurred relative to total expected costs. Gross profit recognized to date = $2M revenue - $1.2M costs = $0.8M. This method is common in construction, defense contracting, and enterprise software, and is a frequent IB interview topic because it illustrates how revenue recognition rules affect reported financials.",
-    "tags": ["revenue-recognition", "percentage-of-completion", "income-statement"]
+    "difficulty": "Easy",
+    "type": "true_false",
+    "question_text": "True or False: Goodwill is amortized over its useful life under US GAAP.",
+    "correct_answer": "False",
+    "explanation": "Under US GAAP, goodwill is NOT amortized. Instead, it is tested for impairment at least annually. If the carrying value of a reporting unit exceeds its fair value, goodwill is written down (impaired). This is different from IFRS, which also does not amortize goodwill but uses a different impairment testing methodology. Note that other intangible assets with finite lives (like patents or customer relationships) ARE amortized under both GAAP and IFRS.",
+    "tags": [
+      "depreciation-amortization"
+    ]
   }
 ]

@@ -1,332 +1,170 @@
 [
   {
-    "id": "val-001",
+    "id": "val-101",
     "topic": "valuation",
     "difficulty": "Easy",
     "type": "multiple_choice",
-    "question_text": "What are the three most common valuation methodologies used in investment banking?",
+    "question_text": "Which of the following is the most commonly used multiple in a comparable companies analysis for valuing a company?",
     "options": [
-      { "text": "Comparable company analysis, precedent transactions, and DCF", "isCorrect": true },
-      { "text": "Book value, liquidation value, and replacement cost", "isCorrect": false },
-      { "text": "DCF, Black-Scholes, and Monte Carlo simulation", "isCorrect": false },
-      { "text": "CAPM, APV, and dividend discount model", "isCorrect": false }
+      {
+        "text": "Price / Book Value",
+        "isCorrect": false
+      },
+      {
+        "text": "EV / EBITDA",
+        "isCorrect": true
+      },
+      {
+        "text": "Price / Sales",
+        "isCorrect": false
+      },
+      {
+        "text": "EV / Total Assets",
+        "isCorrect": false
+      }
     ],
-    "correct_answer": "Comparable company analysis, precedent transactions, and DCF",
-    "explanation": "The three core valuation methodologies in IB are: (1) Comparable company analysis (trading multiples of similar public companies), (2) Precedent transactions (multiples paid in past M&A deals for similar companies), and (3) Discounted cash flow analysis (intrinsic value based on projected future cash flows). These form the foundation of almost every valuation analysis in banking.",
-    "tags": ["valuation_methodologies", "comps", "precedent_transactions", "dcf"]
+    "correct_answer": "EV / EBITDA",
+    "explanation": "EV/EBITDA is the most widely used multiple in comparable companies analysis because EBITDA is capital-structure neutral (it's pre-interest and pre-tax) and excludes non-cash charges like D&A, making it useful for comparing companies with different capital structures and depreciation policies. Enterprise Value in the numerator pairs correctly with EBITDA since both are available to all capital providers (debt and equity holders).",
+    "tags": [
+      "comparable-companies"
+    ]
   },
   {
-    "id": "val-002",
-    "topic": "valuation",
-    "difficulty": "Easy",
-    "type": "true_false",
-    "question_text": "Enterprise Value / EBITDA is considered a more useful valuation multiple than P/E ratio when comparing companies with different capital structures.",
-    "options": [
-      { "text": "True", "isCorrect": true },
-      { "text": "False", "isCorrect": false }
-    ],
-    "correct_answer": "True",
-    "explanation": "EV/EBITDA is capital-structure neutral because Enterprise Value includes both debt and equity, and EBITDA is a pre-interest metric (available to all capital providers). P/E ratio, by contrast, is an equity metric that is directly affected by how much debt a company carries — more leverage means more interest expense, which depresses net income and inflates P/E. This makes EV/EBITDA far more appropriate for apples-to-apples comparisons across companies with different leverage levels.",
-    "tags": ["ev_ebitda", "pe_ratio", "capital_structure", "multiples"]
-  },
-  {
-    "id": "val-003",
-    "topic": "valuation",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "Which valuation methodology typically produces the highest value for a target company?",
-    "options": [
-      { "text": "Comparable company analysis", "isCorrect": false },
-      { "text": "Precedent transactions", "isCorrect": true },
-      { "text": "Discounted cash flow analysis", "isCorrect": false },
-      { "text": "Liquidation value", "isCorrect": false }
-    ],
-    "correct_answer": "Precedent transactions",
-    "explanation": "Precedent transactions typically yield the highest valuation because the transaction multiples include a control premium — the extra amount an acquirer pays above the current trading price to gain control of the target. This premium typically ranges from 20-40% and reflects synergies the buyer expects to realize, strategic value, and the premium needed to convince shareholders to sell. Comps reflect the trading price without a control premium, so they tend to be lower.",
-    "tags": ["precedent_transactions", "control_premium", "valuation_methodologies"]
-  },
-  {
-    "id": "val-004",
-    "topic": "valuation",
-    "difficulty": "Medium",
-    "type": "conceptual",
-    "question_text": "Explain what a 'football field' chart is and why bankers use it in valuation presentations.",
-    "correct_answer": "A football field chart is a horizontal bar chart that displays the valuation range from each methodology side by side, showing how different approaches produce overlapping or diverging ranges. Bankers use it to triangulate a fair value range and communicate valuation conclusions visually to clients.",
-    "explanation": "The football field chart (named because it resembles a football field with yard lines) plots the implied valuation range from each methodology — typically comps, precedent transactions, DCF, and sometimes LBO analysis — as horizontal bars on the same scale. This lets you quickly see where the ranges overlap (suggesting a consensus value zone) and where they diverge (flagging assumptions worth scrutinizing). Bankers use it because no single methodology is perfect; the football field shows clients how multiple approaches triangulate toward a defensible value range, making it the standard summary page in pitch books and fairness opinions.",
-    "tags": ["football_field", "valuation_range", "pitch_book", "presentation"]
-  },
-  {
-    "id": "val-005",
-    "topic": "valuation",
-    "difficulty": "Medium",
-    "type": "numeric",
-    "question_text": "A company has an Enterprise Value of $500 million and LTM EBITDA of $50 million. What is its EV/EBITDA multiple?",
-    "correct_answer": "10.0x",
-    "explanation": "EV/EBITDA = Enterprise Value / EBITDA = $500M / $50M = 10.0x. This means the market is valuing the company at 10 times its trailing twelve-month EBITDA. Whether 10x is 'cheap' or 'expensive' depends on the industry, growth profile, and margins — for example, 10x might be high for a mature industrial company but low for a fast-growing software company.",
-    "tags": ["ev_ebitda", "multiples", "calculation"]
-  },
-  {
-    "id": "val-006",
-    "topic": "valuation",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "When selecting comparable companies for a trading comps analysis, which of the following is the MOST important criterion?",
-    "options": [
-      { "text": "Same stock exchange listing", "isCorrect": false },
-      { "text": "Similar industry, size, growth, and margin profile", "isCorrect": true },
-      { "text": "Same country of incorporation", "isCorrect": false },
-      { "text": "Same fiscal year end date", "isCorrect": false }
-    ],
-    "correct_answer": "Similar industry, size, growth, and margin profile",
-    "explanation": "The goal of comps is to find companies the market values similarly because they share similar business characteristics. Industry, size, growth rate, and profitability (margins) are the primary drivers of valuation multiples. A high-growth 40%-margin SaaS company will trade at a very different multiple than a low-growth 10%-margin hardware company, even if they are on the same exchange. While geography and listing venue can matter at the margin, the fundamental business profile is what drives comparable valuations.",
-    "tags": ["comps", "peer_selection", "comparable_companies"]
-  },
-  {
-    "id": "val-007",
-    "topic": "valuation",
-    "difficulty": "Easy",
-    "type": "true_false",
-    "question_text": "LTM (Last Twelve Months) multiples are backward-looking, while NTM (Next Twelve Months) multiples are forward-looking based on consensus analyst estimates.",
-    "options": [
-      { "text": "True", "isCorrect": true },
-      { "text": "False", "isCorrect": false }
-    ],
-    "correct_answer": "True",
-    "explanation": "LTM (also called TTM — trailing twelve months) multiples use historical financial data from the most recent twelve-month period, making them backward-looking but based on actual reported results. NTM multiples use consensus analyst forecasts for the next twelve months, making them forward-looking. NTM multiples are generally preferred in practice because investors value companies based on future earnings power, not past performance. However, LTM multiples have the advantage of being based on actual data rather than estimates that may prove wrong.",
-    "tags": ["ltm", "ntm", "multiples", "forward_looking"]
-  },
-  {
-    "id": "val-008",
-    "topic": "valuation",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "What does 'calendarization' mean in the context of comparable company analysis?",
-    "options": [
-      { "text": "Scheduling the dates for a roadshow", "isCorrect": false },
-      { "text": "Adjusting financial data so that all companies reflect the same fiscal period", "isCorrect": true },
-      { "text": "Converting annual data to monthly data", "isCorrect": false },
-      { "text": "Projecting financials forward to a future calendar date", "isCorrect": false }
-    ],
-    "correct_answer": "Adjusting financial data so that all companies reflect the same fiscal period",
-    "explanation": "Calendarization is the process of adjusting the financial data of comparable companies so they all align to the same time period — typically a calendar year end (December 31). This is necessary because companies can have different fiscal year ends (e.g., one might end in June, another in March). Without calendarization, you would be comparing multiples based on different time periods, which distorts the analysis. The adjustment typically involves pro-rating quarterly data to construct a common twelve-month period.",
-    "tags": ["calendarization", "comps", "fiscal_year", "adjustment"]
-  },
-  {
-    "id": "val-009",
-    "topic": "valuation",
-    "difficulty": "Easy",
-    "type": "numeric",
-    "question_text": "A SaaS company has an Enterprise Value of $3 billion and LTM revenue of $500 million. Its EBITDA is -$50 million. Since EV/EBITDA is not meaningful for an unprofitable company, what is its EV/Revenue multiple?",
-    "correct_answer": "6.0x",
-    "explanation": "EV/Revenue = Enterprise Value / Revenue = $3,000M / $500M = 6.0x. EV/Revenue is the go-to multiple when a company has negative or negligible EBITDA, which makes EV/EBITDA meaningless (a negative denominator produces a nonsensical result). This is common for high-growth SaaS companies, early-stage tech, and biotech firms that are investing heavily and burning cash. The tradeoff is that EV/Revenue ignores profitability entirely — a company with 80% margins and one with 5% margins could have the same revenue but wildly different intrinsic values. So EV/Revenue works best when comparing companies with similar margin profiles or when profitability is expected to normalize over time.",
-    "tags": ["ev_revenue", "unprofitable_companies", "high_growth", "multiples", "calculation"]
-  },
-  {
-    "id": "val-010",
-    "topic": "valuation",
-    "difficulty": "Easy",
-    "type": "true_false",
-    "question_text": "In a precedent transaction analysis, you should only include transactions where the acquirer purchased 100% of the target company.",
-    "options": [
-      { "text": "True", "isCorrect": false },
-      { "text": "False", "isCorrect": true }
-    ],
-    "correct_answer": "False",
-    "explanation": "While 100% acquisitions are the most common and cleanest data points, you do not need to exclude all partial acquisitions. Transactions where a controlling stake (typically >50%) was acquired are often included because they still reflect a control premium. The key is understanding what each transaction represents and adjusting accordingly. For example, a deal for a 51% stake might carry a lower control premium than a 100% buyout. That said, small minority stake purchases (e.g., 5-10%) are typically excluded because they do not reflect control value and the pricing dynamics are fundamentally different.",
-    "tags": ["precedent_transactions", "control_premium", "partial_acquisition"]
-  },
-  {
-    "id": "val-011",
-    "topic": "valuation",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "A company trades at 8x EV/EBITDA based on trading comps. A comparable company was recently acquired at 11x EV/EBITDA. The difference is most likely attributable to:",
-    "options": [
-      { "text": "An error in the comps analysis", "isCorrect": false },
-      { "text": "The control premium and expected synergies embedded in the acquisition price", "isCorrect": true },
-      { "text": "The acquired company having lower EBITDA margins", "isCorrect": false },
-      { "text": "Different accounting standards between the two companies", "isCorrect": false }
-    ],
-    "correct_answer": "The control premium and expected synergies embedded in the acquisition price",
-    "explanation": "The gap between trading multiples (comps) and transaction multiples (precedent transactions) is primarily explained by the control premium. When an acquirer buys a company, they pay above the current market price to: (1) convince shareholders to tender their shares, (2) reflect the value of controlling the business (e.g., replacing management, changing strategy), and (3) capture expected synergies (cost savings, revenue enhancement). This premium typically runs 20-40%, which explains why 11x transaction multiple vs. 8x trading multiple (a ~37.5% premium) is entirely normal.",
-    "tags": ["control_premium", "trading_vs_transaction", "synergies", "multiples"]
-  },
-  {
-    "id": "val-012",
-    "topic": "valuation",
-    "difficulty": "Easy",
-    "type": "numeric",
-    "question_text": "A company has a share price of $40, 100 million diluted shares outstanding, $2 billion in net debt, and LTM EBITDA of $800 million. What is its EV/EBITDA multiple?",
-    "correct_answer": "7.5x",
-    "explanation": "First, calculate equity value: $40 x 100M shares = $4,000M ($4B). Then Enterprise Value = Equity Value + Net Debt = $4,000M + $2,000M = $6,000M ($6B). Finally, EV/EBITDA = $6,000M / $800M = 7.5x. This is a straightforward but important calculation — interviewers test whether you can build from share price to equity value to enterprise value before computing the multiple.",
-    "tags": ["ev_ebitda", "enterprise_value", "calculation", "multiples"]
-  },
-  {
-    "id": "val-013",
-    "topic": "valuation",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "Which valuation multiple is most commonly used to value Real Estate Investment Trusts (REITs)?",
-    "options": [
-      { "text": "EV/EBITDA", "isCorrect": false },
-      { "text": "P/E ratio", "isCorrect": false },
-      { "text": "Price/FFO or Price/AFFO", "isCorrect": true },
-      { "text": "EV/Revenue", "isCorrect": false }
-    ],
-    "correct_answer": "Price/FFO or Price/AFFO",
-    "explanation": "REITs are valued using Price/FFO (Funds From Operations) or Price/AFFO (Adjusted Funds From Operations) rather than P/E because standard net income is misleading for REITs. REITs own real estate that gets depreciated under GAAP, but property values often appreciate over time. Depreciation is a huge non-cash charge that crushes reported earnings without reflecting economic reality. FFO adds back real estate depreciation to net income, giving a much better picture of recurring cash earnings. AFFO goes further by deducting maintenance capex and straight-lining of rents, making it even closer to true cash flow. Additionally, Net Asset Value (NAV) based on appraised property values is another key valuation approach for REITs.",
-    "tags": ["reits", "ffo", "affo", "sector_specific_multiples", "nav"]
-  },
-  {
-    "id": "val-014",
-    "topic": "valuation",
-    "difficulty": "Easy",
-    "type": "conceptual",
-    "question_text": "What is the difference between a 'control premium' and a 'minority discount' in valuation?",
-    "correct_answer": "A control premium is the amount above the current market price that an acquirer pays to gain a controlling interest in a company. A minority discount is the reduction in value applied to a non-controlling ownership stake because the holder cannot direct company decisions. They are two sides of the same coin — one adds value for control, the other subtracts value for its absence.",
-    "explanation": "These concepts are mirror images. A control premium (typically 20-40%) reflects what a buyer will pay over the unaffected share price to own enough of a company to control its strategy, capital allocation, management, and operations. A minority discount (typically 15-30%) reflects the reduced value of a stake that cannot exert such control — a minority owner is essentially along for the ride and subject to the decisions of whoever does control the company. In practice, public trading prices already reflect a minority discount (each share is a tiny piece with no control), so transaction multiples include the control premium on top. Understanding this relationship is crucial for explaining why comps produce lower valuations than precedent transactions.",
-    "tags": ["control_premium", "minority_discount", "valuation_adjustment"]
-  },
-  {
-    "id": "val-015",
-    "topic": "valuation",
-    "difficulty": "Easy",
-    "type": "true_false",
-    "question_text": "A DCF analysis is considered an 'intrinsic' valuation methodology, while comparable company analysis is considered a 'relative' valuation methodology.",
-    "options": [
-      { "text": "True", "isCorrect": true },
-      { "text": "False", "isCorrect": false }
-    ],
-    "correct_answer": "True",
-    "explanation": "A DCF is intrinsic because it values a company based on its own fundamentals — projected free cash flows and the discount rate — independent of what other companies trade at. Comps (and precedent transactions) are relative because they value a company based on how the market values similar companies, using multiples as the benchmark. The key distinction: a DCF can theoretically tell you a company is undervalued even if every peer is also undervalued, because it does not depend on market pricing. Relative valuation assumes the market is pricing peers correctly and applies those benchmarks to your company. Both have strengths — intrinsic valuation requires many assumptions about the future, while relative valuation can be distorted if the entire sector is mispriced.",
-    "tags": ["dcf", "intrinsic_valuation", "relative_valuation", "comps"]
-  },
-  {
-    "id": "val-016",
-    "topic": "valuation",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "When is EV/EBITDA a poor valuation multiple to use?",
-    "options": [
-      { "text": "When comparing companies in the same industry", "isCorrect": false },
-      { "text": "When valuing financial institutions like banks and insurance companies", "isCorrect": true },
-      { "text": "When valuing companies with different tax rates", "isCorrect": false },
-      { "text": "When comparing domestic and international companies", "isCorrect": false }
-    ],
-    "correct_answer": "When valuing financial institutions like banks and insurance companies",
-    "explanation": "EV/EBITDA is a poor fit for financial institutions (banks, insurance companies, asset managers) for two key reasons. First, debt is not a financing choice for banks — it is their core operating asset (deposits, borrowings that get lent out). So Enterprise Value, which adds net debt to equity value, does not make sense when debt is the raw material of the business. Second, EBITDA is not meaningful for financials because interest expense is an operating cost, not a financing cost. Instead, banks are valued using P/E, Price/Tangible Book Value (P/TBV), and Price/Book Value (P/BV), which are equity-level metrics that properly reflect how financial institutions operate.",
-    "tags": ["ev_ebitda", "financial_institutions", "banks", "sector_specific_multiples"]
-  },
-  {
-    "id": "val-017",
-    "topic": "valuation",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "In a comparable company analysis, you calculate the following EV/EBITDA multiples for a peer group: 7.0x, 8.5x, 9.0x, 9.5x, and 22.0x. What should you do with the 22.0x outlier?",
-    "options": [
-      { "text": "Include it because all data points matter", "isCorrect": false },
-      { "text": "Replace it with the average of the other multiples", "isCorrect": false },
-      { "text": "Investigate why it is an outlier and consider excluding it or using median instead of mean", "isCorrect": true },
-      { "text": "Automatically exclude any multiple above 15.0x", "isCorrect": false }
-    ],
-    "correct_answer": "Investigate why it is an outlier and consider excluding it or using median instead of mean",
-    "explanation": "You should never blindly include or exclude outliers. First, investigate why the multiple is so high — it could be a temporary EBITDA depression (e.g., one-time charges, cyclical trough), a recent transformative acquisition, or the company might genuinely deserve a premium (e.g., much higher growth). If the outlier is driven by non-recurring factors, you may exclude it or adjust the financials. Using the median instead of the mean is a common approach that naturally reduces the impact of outliers. The key interview point: always explain your reasoning for including or excluding data — never apply arbitrary cutoffs.",
-    "tags": ["comps", "outliers", "median", "peer_analysis"]
-  },
-  {
-    "id": "val-018",
-    "topic": "valuation",
-    "difficulty": "Medium",
-    "type": "conceptual",
-    "question_text": "Explain sum-of-the-parts (SOTP) valuation and when you would use it.",
-    "correct_answer": "SOTP valuation values each business segment of a diversified company separately using the most appropriate methodology and peer group for each segment, then sums the values. You use it when a company operates in multiple distinct industries where a single blended multiple would be misleading.",
-    "explanation": "Sum-of-the-parts is essential for conglomerates and diversified companies because applying one multiple to the entire business would be inaccurate. For example, consider a company with a software division (high growth, 15x EBITDA comps) and a manufacturing division (low growth, 7x EBITDA comps). Using a blended 11x for the whole company misprices both segments. SOTP values each segment independently — you identify the right peer group and appropriate multiples for each division, calculate each segment's value, then sum them (subtracting corporate overhead and net debt at the parent level). SOTP can also reveal a 'conglomerate discount' — when the combined trading value is less than the sum of the parts, which sometimes motivates activist investors to push for a breakup or spinoff.",
-    "tags": ["sotp", "sum_of_parts", "conglomerate", "segment_valuation"]
-  },
-  {
-    "id": "val-019",
-    "topic": "valuation",
-    "difficulty": "Medium",
-    "type": "numeric",
-    "question_text": "A target company was acquired for $1.5 billion. Its unaffected share price (before any acquisition rumors) implied an equity value of $1.1 billion. What was the control premium paid, expressed as a percentage?",
-    "correct_answer": "36.4%",
-    "explanation": "Control premium = (Acquisition Price - Unaffected Equity Value) / Unaffected Equity Value = ($1.5B - $1.1B) / $1.1B = $0.4B / $1.1B = 36.4%. The 'unaffected' price is critical — you need the share price before acquisition rumors leaked and pushed the stock up. Using the post-rumor price would understate the true premium. A 36.4% premium is within the typical 20-40% range for change-of-control transactions, suggesting this deal was priced in line with market norms. Interviewers want you to know to use unaffected price and to have a sense of what a 'normal' premium range looks like.",
-    "tags": ["control_premium", "acquisition_premium", "calculation"]
-  },
-  {
-    "id": "val-020",
+    "id": "val-102",
     "topic": "valuation",
     "difficulty": "Medium",
     "type": "multiple_choice",
-    "question_text": "You are valuing a distressed company that may not survive as a going concern. Which valuation approach is LEAST appropriate?",
+    "question_text": "When selecting comparable companies, which factor is generally MOST important?",
     "options": [
-      { "text": "Liquidation value analysis", "isCorrect": false },
-      { "text": "DCF based on a turnaround plan", "isCorrect": false },
-      { "text": "Trading comps based on healthy peer companies", "isCorrect": true },
-      { "text": "Asset-based valuation", "isCorrect": false }
+      {
+        "text": "Similar market capitalization",
+        "isCorrect": false
+      },
+      {
+        "text": "Same industry and similar business model",
+        "isCorrect": true
+      },
+      {
+        "text": "Same geographic headquarters",
+        "isCorrect": false
+      },
+      {
+        "text": "Similar stock price",
+        "isCorrect": false
+      }
     ],
-    "correct_answer": "Trading comps based on healthy peer companies",
-    "explanation": "Applying multiples from healthy, normally-operating peer companies to a distressed company is misleading because those multiples assume normal profitability, growth, and going-concern value that a distressed company may never achieve. A distressed company might have depressed or negative EBITDA, face bankruptcy risk, and carry an unsustainable debt load. More appropriate approaches include: (1) liquidation value — what the assets fetch in a sale, (2) asset-based valuation — NAV of the underlying assets, (3) a DCF based on a realistic turnaround plan that models the path back to health, or (4) comps using other distressed companies or restructuring-specific metrics. The key insight is that standard valuation tools assume the company is a going concern — when that assumption breaks, you need different tools.",
-    "tags": ["distressed_valuation", "going_concern", "liquidation", "restructuring"]
+    "correct_answer": "Same industry and similar business model",
+    "explanation": "The most important criterion for selecting comparable companies is that they operate in the same industry with a similar business model, because this ensures similar growth prospects, margins, risk profiles, and capital requirements. Market cap matters but is secondary -- a small-cap software company is more comparable to a mid-cap software company than to a small-cap mining company. Geography and stock price are largely irrelevant for comparability purposes.",
+    "tags": [
+      "comparable-companies"
+    ]
   },
   {
-    "id": "val-021",
-    "topic": "valuation",
-    "difficulty": "Medium",
-    "type": "true_false",
-    "question_text": "When conducting a precedent transaction analysis, you should use the target's financial metrics at the time of the deal announcement, not at the time the deal closes.",
-    "options": [
-      { "text": "True", "isCorrect": true },
-      { "text": "False", "isCorrect": false }
-    ],
-    "correct_answer": "True",
-    "explanation": "You use the target's financial metrics as of the deal announcement date because that is when the acquirer and target agreed on the price. The acquirer's offer was based on the financial profile of the company at announcement — they did not know how the company would perform during the months between signing and closing. Using financials at close would create a mismatch: the price was set based on one set of numbers, but you would be computing multiples using a different set. For LTM multiples, you use the most recently reported financials available at announcement; for forward multiples, you use the consensus estimates at announcement. This timing distinction is a common interview question that tests your understanding of how deals actually work.",
-    "tags": ["precedent_transactions", "announcement_date", "deal_timing"]
-  },
-  {
-    "id": "val-022",
-    "topic": "valuation",
-    "difficulty": "Medium",
-    "type": "numeric",
-    "question_text": "A company has three business segments: Software (EBITDA: $200M, peer EV/EBITDA: 15x), Consulting (EBITDA: $100M, peer EV/EBITDA: 10x), and Hardware (EBITDA: $50M, peer EV/EBITDA: 6x). Corporate overhead is $30M annually valued at 8x. Net debt is $500M. What is the SOTP equity value in millions?",
-    "correct_answer": "$3,560M",
-    "explanation": "SOTP equity value = Sum of segment enterprise values - Capitalized corporate overhead - Net debt. Step 1 — Segment values: Software ($200M x 15x = $3,000M) + Consulting ($100M x 10x = $1,000M) + Hardware ($50M x 6x = $300M) = $4,300M total segment EV. Step 2 — Subtract corporate overhead: Corporate costs of $30M capitalized at 8x = $240M. This represents the cost center that does not generate revenue but supports the segments. Net EV = $4,300M - $240M = $4,060M. Step 3 — Bridge to equity: Equity Value = Enterprise Value - Net Debt = $4,060M - $500M = $3,560M. The key SOTP concepts tested here: (1) value each segment with its own appropriate multiple, (2) subtract corporate overhead as a cost center, and (3) subtract net debt at the consolidated level to arrive at equity value.",
-    "tags": ["sotp", "sum_of_parts", "segment_valuation", "calculation"]
-  },
-  {
-    "id": "val-023",
-    "topic": "valuation",
-    "difficulty": "Medium",
-    "type": "conceptual",
-    "question_text": "Why do transaction multiples from precedent transactions tend to become less relevant over time? When should you place less weight on older transactions?",
-    "correct_answer": "Transaction multiples become less relevant because market conditions, industry dynamics, interest rates, and buyer appetite change over time. Multiples paid during a credit boom are not comparable to those during a recession. Generally, transactions older than 3-5 years receive less weight, and you should be especially cautious with deals done in markedly different economic environments.",
-    "explanation": "Precedent transactions are snapshots of what buyers were willing to pay at a specific moment in time, and that willingness is heavily influenced by macro conditions. During periods of cheap debt and high market confidence (like 2006-2007 or 2021), acquisition multiples were inflated by easy financing and aggressive bidding. During downturns or tight credit markets, multiples contract. Industry dynamics also shift — regulatory changes, technological disruption, or shifts in consumer behavior can fundamentally alter what businesses are worth. A 2015 media transaction multiple may be irrelevant to a 2025 media deal given the rise of streaming. In practice, bankers typically focus on transactions from the last 2-3 years and note the economic context for any older deals included. If there are not enough recent transactions, you may expand the window but should adjust or flag the older data points.",
-    "tags": ["precedent_transactions", "staleness", "market_conditions", "deal_vintage"]
-  },
-  {
-    "id": "val-024",
-    "topic": "valuation",
-    "difficulty": "Hard",
-    "type": "multiple_choice",
-    "question_text": "A technology company has a core operating business valued at $5 billion EV using comps, plus $800 million in cash, $300 million in debt, a 15% stake in a publicly traded company worth $600 million (market value), and a money-losing startup subsidiary with $200 million invested to date. In a sum-of-the-parts framework, what is the most defensible equity value?",
-    "options": [
-      { "text": "$5,500 million — core EV minus net debt only", "isCorrect": false },
-      { "text": "$6,100 million — core EV minus net debt plus equity investment at market value", "isCorrect": true },
-      { "text": "$6,300 million — core EV minus net debt plus equity investment plus startup at cost", "isCorrect": false },
-      { "text": "$5,900 million — core EV minus net debt plus equity investment at a 20% liquidity discount", "isCorrect": false }
-    ],
-    "correct_answer": "$6,100 million — core EV minus net debt plus equity investment at market value",
-    "explanation": "Core operating EV: $5,000M. Net debt: $300M debt - $800M cash = -$500M (i.e., $500M net cash). Core equity value = $5,000M + $500M = $5,500M. The 15% stake in a public company has an observable market value of $600M and should be added at that value (it is a non-operating asset not captured in the comps-derived EV). So equity value = $5,500M + $600M = $6,100M. The money-losing startup is trickier: valuing it at the $200M invested (cost basis) is aggressive because cost does not equal value, especially for an unprofitable venture. A conservative approach would assign it $0 or a heavily discounted value pending evidence of progress. The most defensible approach excludes speculative value, making $6,100M the best answer. A liquidity discount on the public stake is possible for very large or restricted positions, but the question specifies a 15% stake without restrictions, so market value is appropriate.",
-    "tags": ["sotp", "non_operating_assets", "equity_value", "minority_investment"]
-  },
-  {
-    "id": "val-025",
+    "id": "val-103",
     "topic": "valuation",
     "difficulty": "Hard",
     "type": "conceptual",
-    "question_text": "A client asks you to value a REIT using NAV methodology. Walk through how you would calculate Net Asset Value and explain why NAV is preferred over DCF or earnings multiples for REITs.",
-    "correct_answer": "To calculate REIT NAV: (1) value each property individually using capitalization rates (NOI / cap rate) or comparable property transactions, (2) add other assets like cash, receivables, and development projects at fair value, (3) subtract all liabilities including debt at market value. NAV is preferred because REIT value is driven by the appraised value of tangible real estate assets, and both DCF and earnings multiples are distorted by non-cash depreciation charges that do not reflect real estate economics.",
-    "explanation": "REIT NAV methodology works bottom-up from the property level. For each property, you estimate Net Operating Income (NOI = rental income minus operating expenses) and divide by an appropriate capitalization rate sourced from comparable property sales in the same market and property type. For example, a Class A office building in Manhattan generating $10M NOI with a 5% cap rate is worth $200M. You repeat this for every property, then add other tangible assets (cash, land held for development, receivables) and subtract liabilities (mortgage debt, unsecured bonds, preferably at market rather than book value). NAV is preferred over DCF because real estate assets have observable market values through active property transaction markets, making the bottom-up approach more grounded than a top-down forecast. Traditional earnings multiples like P/E fail because GAAP depreciation on real estate is essentially meaningless — buildings rarely lose value the way GAAP assumes, and in many markets they appreciate. Even FFO-based multiples, while useful, do not capture the embedded value of properties purchased long ago at much lower prices. NAV reveals this hidden value, which is why activist investors in REITs often reference NAV when arguing a REIT is undervalued.",
-    "tags": ["reits", "nav", "net_asset_value", "cap_rate", "noi", "sector_specific"]
+    "question_text": "Why might you use calendarized financials when performing a comparable companies analysis, and how does this affect the resulting multiples?",
+    "correct_answer": "Calendarization adjusts financial data for companies with different fiscal year-ends so that all metrics reflect the same time period, enabling an apples-to-apples comparison. Without calendarization, you might compare a company's January-December results against another's July-June results, distorting the multiples.",
+    "explanation": "Companies have different fiscal year-ends (e.g., Apple's FY ends in September, while most companies use December). If you compare LTM or forward multiples without adjusting for this, you're comparing financial performance across different time periods that may have different economic conditions. Calendarization typically involves pro-rating quarterly data to align all companies to the same period. For example, if Company A has a June FY-end, you might weight 50% of their FY2024 and 50% of FY2025 to approximate a December-end year. This is especially important in cyclical industries where seasonal patterns can significantly impact results.",
+    "tags": [
+      "comparable-companies"
+    ]
+  },
+  {
+    "id": "val-104",
+    "topic": "valuation",
+    "difficulty": "Easy",
+    "type": "multiple_choice",
+    "question_text": "Why do precedent transaction multiples tend to be higher than comparable company trading multiples?",
+    "options": [
+      {
+        "text": "Precedent transactions use forward estimates while comps use trailing data",
+        "isCorrect": false
+      },
+      {
+        "text": "Precedent transactions include a control premium paid by the acquirer",
+        "isCorrect": true
+      },
+      {
+        "text": "Precedent transactions exclude synergies from the valuation",
+        "isCorrect": false
+      },
+      {
+        "text": "Precedent transactions use equity value instead of enterprise value",
+        "isCorrect": false
+      }
+    ],
+    "correct_answer": "Precedent transactions include a control premium paid by the acquirer",
+    "explanation": "Acquirers typically pay a premium over the target's current trading price to gain control of the company. This control premium (usually 20-40%) reflects the value of being able to make strategic decisions, realize synergies, and capture 100% of the target's cash flows. Because the transaction prices already include this premium, the implied multiples from precedent transactions are almost always higher than where comparable companies trade in the public market on a standalone basis.",
+    "tags": [
+      "precedent-transactions"
+    ]
+  },
+  {
+    "id": "val-105",
+    "topic": "valuation",
+    "difficulty": "Medium",
+    "type": "true_false",
+    "question_text": "True or False: When analyzing precedent transactions, more recent transactions are generally given greater weight than older ones.",
+    "correct_answer": "True",
+    "explanation": "More recent transactions better reflect current market conditions, interest rate environments, credit availability, and industry dynamics. A transaction from 5+ years ago may have occurred in a completely different M&A environment -- for example, pre-COVID vs. post-COVID, or during a period of cheap debt vs. higher rates. While older transactions still provide useful data points, analysts typically emphasize recent deals (last 2-3 years) when forming valuation conclusions. However, in industries with infrequent deal activity, you may need to look further back to build a sufficient sample.",
+    "tags": [
+      "precedent-transactions"
+    ]
+  },
+  {
+    "id": "val-106",
+    "topic": "valuation",
+    "difficulty": "Easy",
+    "type": "multiple_choice",
+    "question_text": "Which valuation methodology typically yields the highest value for a company?",
+    "options": [
+      {
+        "text": "Comparable companies analysis",
+        "isCorrect": false
+      },
+      {
+        "text": "Precedent transactions analysis",
+        "isCorrect": true
+      },
+      {
+        "text": "Discounted cash flow analysis",
+        "isCorrect": false
+      },
+      {
+        "text": "Liquidation valuation",
+        "isCorrect": false
+      }
+    ],
+    "correct_answer": "Precedent transactions analysis",
+    "explanation": "Precedent transactions typically yield the highest valuation because the transaction prices include a control premium (usually 20-40% above the trading price). The typical hierarchy from lowest to highest is: liquidation value < 52-week trading range < comparable companies < DCF (which can vary widely depending on assumptions) < precedent transactions. However, this hierarchy is not absolute -- a DCF with aggressive assumptions could exceed precedent transaction values.",
+    "tags": [
+      "valuation-methodologies"
+    ]
+  },
+  {
+    "id": "val-107",
+    "topic": "valuation",
+    "difficulty": "Medium",
+    "type": "conceptual",
+    "question_text": "When would you use a Sum-of-the-Parts (SOTP) valuation instead of a standard comparable companies analysis?",
+    "correct_answer": "Use SOTP when a company operates in multiple distinct business segments that have different growth profiles, margins, and risk characteristics, making it inappropriate to apply a single set of multiples to the entire company.",
+    "explanation": "A Sum-of-the-Parts valuation is ideal for diversified conglomerates or companies with distinct business segments (e.g., a company with both a high-growth tech division and a mature industrial division). You value each segment separately using multiples from peers specific to that segment, then sum the values and subtract net debt to get equity value. This avoids the 'conglomerate discount' problem where applying a blended multiple undervalues high-growth segments and overvalues mature ones. Classic examples include companies like General Electric, Berkshire Hathaway, or any firm considering a spin-off.",
+    "tags": [
+      "valuation-methodologies"
+    ]
+  },
+  {
+    "id": "val-108",
+    "topic": "valuation",
+    "difficulty": "Easy",
+    "type": "true_false",
+    "question_text": "True or False: A DCF is considered an intrinsic valuation methodology, while comparable companies analysis is a relative valuation methodology.",
+    "correct_answer": "True",
+    "explanation": "A DCF values a company based on its projected future cash flows discounted back to present value, making it an intrinsic (or absolute) valuation method -- the value is derived from the company's own fundamentals, independent of how the market values other companies. Comparable companies analysis, by contrast, derives value from how similar public companies are priced by the market, making it a relative valuation method. In practice, bankers use both approaches to triangulate a valuation range, since each has strengths and weaknesses.",
+    "tags": [
+      "valuation-methodologies"
+    ]
   }
 ]

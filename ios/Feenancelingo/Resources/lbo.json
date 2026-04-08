@@ -1,250 +1,170 @@
 [
   {
-    "id": "lbo-001",
-    "topic": "lbo",
-    "difficulty": "Easy",
-    "type": "conceptual",
-    "question_text": "What is a leveraged buyout (LBO)?",
-    "correct_answer": "An LBO is the acquisition of a company using a significant amount of borrowed money (debt) to fund the purchase price, with the target company's assets and cash flows serving as collateral and repayment source for the debt.",
-    "explanation": "In an LBO, a financial sponsor (private equity firm) typically contributes 30-50% equity and finances the rest with debt. The key insight is that the sponsor uses the target company's own cash flows to pay down the acquisition debt over time, which amplifies equity returns through leverage. This is analogous to buying a house with a mortgage — you put down 20% but capture 100% of the appreciation.",
-    "tags": ["lbo-mechanics", "fundamentals"]
-  },
-  {
-    "id": "lbo-002",
+    "id": "lbo-101",
     "topic": "lbo",
     "difficulty": "Easy",
     "type": "multiple_choice",
-    "question_text": "Which of the following is NOT a characteristic of an ideal LBO candidate?",
+    "question_text": "What does a Debt/EBITDA ratio of 5.0x mean?",
     "options": [
-      { "text": "Strong, predictable cash flows", "isCorrect": false },
-      { "text": "High existing leverage with limited debt capacity", "isCorrect": true },
-      { "text": "Market-leading position with defensible moat", "isCorrect": false },
-      { "text": "Low capital expenditure requirements", "isCorrect": false }
+      {
+        "text": "The company earns 5 times its debt in annual cash flow",
+        "isCorrect": false
+      },
+      {
+        "text": "The company's total debt is 5 times its annual EBITDA",
+        "isCorrect": true
+      },
+      {
+        "text": "The company can pay off all debt in 5 months",
+        "isCorrect": false
+      },
+      {
+        "text": "The company's interest coverage ratio is 5.0x",
+        "isCorrect": false
+      }
     ],
-    "correct_answer": "High existing leverage with limited debt capacity",
-    "explanation": "An ideal LBO candidate needs room to take on substantial new debt. High existing leverage means the company already has limited ability to service additional debt, making it a poor LBO target. The other characteristics — predictable cash flows (to service debt), market leadership (revenue stability), and low capex (maximizes free cash flow for debt paydown) — are all hallmarks of a strong LBO candidate.",
-    "tags": ["ideal-candidate", "fundamentals"]
+    "correct_answer": "The company's total debt is 5 times its annual EBITDA",
+    "explanation": "A Debt/EBITDA ratio of 5.0x means that if a company has $500M in total debt and $100M in EBITDA, it would take approximately 5 years of EBITDA to pay off all the debt (ignoring interest, taxes, and other cash needs). This is the most commonly used leverage metric in LBOs and credit analysis. Lenders use this ratio to assess how much debt a company can safely support. In LBOs, typical leverage at entry is 4-6x Debt/EBITDA, though this varies significantly by industry, size, and credit market conditions.",
+    "tags": [
+      "leverage-ratios"
+    ]
   },
   {
-    "id": "lbo-003",
-    "topic": "lbo",
-    "difficulty": "Easy",
-    "type": "true_false",
-    "question_text": "In an LBO, the private equity sponsor typically funds the majority of the purchase price with equity.",
-    "correct_answer": "False",
-    "explanation": "The defining feature of an LBO is that the majority of the purchase price is funded with debt, not equity. A typical LBO capital structure uses 50-70% debt and 30-50% equity. The whole point of 'leveraged' in leveraged buyout is that the sponsor is leveraging a relatively small equity check to control a much larger asset, amplifying returns if things go well.",
-    "tags": ["lbo-mechanics", "sources-and-uses"]
-  },
-  {
-    "id": "lbo-004",
-    "topic": "lbo",
-    "difficulty": "Medium",
-    "type": "numeric",
-    "question_text": "A PE firm acquires a company for $500M using $200M of equity and $300M of debt. After 5 years, the firm exits at $800M enterprise value with $100M of debt remaining. What is the multiple of invested capital (MOIC)?",
-    "correct_answer": "3.5x",
-    "explanation": "MOIC = Exit Equity Value / Initial Equity Investment. At exit, Enterprise Value is $800M and remaining debt is $100M, so equity value = $800M - $100M = $700M. MOIC = $700M / $200M = 3.5x. The sponsor's return comes from two sources: (1) the increase in enterprise value from $500M to $800M (growth/multiple expansion), and (2) debt paydown from $300M to $100M, which converts $200M of enterprise value into equity value. Both effects accrue entirely to the equity holders.",
-    "tags": ["moic", "sponsor-returns"]
-  },
-  {
-    "id": "lbo-005",
+    "id": "lbo-102",
     "topic": "lbo",
     "difficulty": "Medium",
     "type": "multiple_choice",
-    "question_text": "What are the three primary drivers of returns in an LBO?",
+    "question_text": "Which of the following is the interest coverage ratio?",
     "options": [
-      { "text": "Revenue growth, cost cutting, and tax optimization", "isCorrect": false },
-      { "text": "EBITDA growth, multiple expansion, and debt paydown", "isCorrect": true },
-      { "text": "Leverage, dividends, and IPO timing", "isCorrect": false },
-      { "text": "Asset sales, refinancing, and operational improvements", "isCorrect": false }
+      {
+        "text": "Total Debt / EBITDA",
+        "isCorrect": false
+      },
+      {
+        "text": "EBITDA / Interest Expense",
+        "isCorrect": true
+      },
+      {
+        "text": "Net Debt / Equity",
+        "isCorrect": false
+      },
+      {
+        "text": "Free Cash Flow / Total Debt",
+        "isCorrect": false
+      }
+    ],
+    "correct_answer": "EBITDA / Interest Expense",
+    "explanation": "The interest coverage ratio (EBITDA / Interest Expense) measures how many times a company can cover its interest payments with its operating earnings. A higher ratio indicates greater ability to service debt. For example, 3.0x coverage means EBITDA is three times larger than interest expense. Lenders typically require a minimum interest coverage ratio (often 2.0-3.0x) as a debt covenant. In an LBO, coverage starts lower due to high leverage and should improve over time as EBITDA grows and debt is paid down. If coverage drops below 1.0x, the company cannot cover its interest payments from operations.",
+    "tags": [
+      "leverage-ratios"
+    ]
+  },
+  {
+    "id": "lbo-103",
+    "topic": "lbo",
+    "difficulty": "Hard",
+    "type": "conceptual",
+    "question_text": "Explain the difference between senior secured debt, senior unsecured debt, and subordinated debt in an LBO capital structure, and how their interest rates typically compare.",
+    "correct_answer": "Senior secured debt has the highest priority claim and is backed by company assets (collateral), so it carries the lowest interest rate. Senior unsecured debt has the same legal priority as secured but lacks collateral, carrying a higher rate. Subordinated debt ranks below senior debt in repayment priority and carries the highest interest rate to compensate for greater risk.",
+    "explanation": "In an LBO capital structure, debt is layered by seniority: (1) Senior Secured (e.g., revolving credit facility, Term Loan A/B) is backed by the company's assets and gets paid first in bankruptcy -- typical rates are SOFR + 200-400bps; (2) Senior Unsecured (e.g., high-yield bonds) ranks equally with secured debt legally but has no collateral backing, so rates are higher at roughly 6-10%; (3) Subordinated/Mezzanine debt explicitly ranks below senior debt and is paid last, commanding rates of 10-15% and sometimes including equity kickers (warrants). This priority structure means that in a bankruptcy, senior secured lenders recover the most (often 70-90%), unsecured lenders recover less (40-60%), and subordinated lenders recover the least (10-30%). The interest rate spread compensates each tier for its incremental risk.",
+    "tags": [
+      "leverage-ratios"
+    ]
+  },
+  {
+    "id": "lbo-104",
+    "topic": "lbo",
+    "difficulty": "Easy",
+    "type": "multiple_choice",
+    "question_text": "What are the three primary drivers of returns in a leveraged buyout?",
+    "options": [
+      {
+        "text": "Revenue growth, margin expansion, and multiple expansion",
+        "isCorrect": false
+      },
+      {
+        "text": "EBITDA growth, multiple expansion, and debt paydown",
+        "isCorrect": true
+      },
+      {
+        "text": "Cost cutting, asset sales, and dividends",
+        "isCorrect": false
+      },
+      {
+        "text": "Leverage, synergies, and tax optimization",
+        "isCorrect": false
+      }
     ],
     "correct_answer": "EBITDA growth, multiple expansion, and debt paydown",
-    "explanation": "The three core return levers in an LBO are: (1) EBITDA growth — increasing the company's earnings through revenue growth and margin expansion; (2) Multiple expansion — selling at a higher EV/EBITDA multiple than the purchase multiple; and (3) Debt paydown — using free cash flow to reduce debt, which transfers value from debtholders to equity holders. Revenue growth and cost cutting are ways to achieve EBITDA growth, but they are sub-drivers, not the primary framework.",
-    "tags": ["sponsor-returns", "return-drivers"]
+    "explanation": "LBO returns are driven by three levers: (1) EBITDA growth -- growing the company's earnings through revenue growth and/or margin expansion; (2) Multiple expansion -- selling the company at a higher EV/EBITDA multiple than the purchase multiple, often achieved by improving growth profile, reducing risk, or selling into a better market; (3) Debt paydown -- using the company's cash flows to repay debt over the hold period, increasing the equity value since Enterprise Value = Equity + Debt. The PE firm's skill lies in maximizing all three levers simultaneously over a typical 3-7 year hold period.",
+    "tags": [
+      "irr-drivers"
+    ]
   },
   {
-    "id": "lbo-006",
+    "id": "lbo-105",
     "topic": "lbo",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "In an LBO sources & uses table, which of the following would appear on the 'Uses' side?",
-    "options": [
-      { "text": "Revolving credit facility drawn at close", "isCorrect": false },
-      { "text": "Sponsor equity contribution", "isCorrect": false },
-      { "text": "Refinancing of existing target debt", "isCorrect": true },
-      { "text": "Senior secured term loan", "isCorrect": false }
-    ],
-    "correct_answer": "Refinancing of existing target debt",
-    "explanation": "The sources & uses table must balance: Sources = Uses. Sources are where the money comes from (debt tranches, equity contribution, management rollover). Uses are where the money goes: the equity purchase price, refinancing of existing debt, and transaction fees/expenses. Refinancing existing target debt is a use because the acquirer must pay off (or assume) the target's outstanding obligations at close. The revolving facility, term loan, and sponsor equity are all sources of funding.",
-    "tags": ["sources-and-uses", "lbo-mechanics"]
-  },
-  {
-    "id": "lbo-007",
-    "topic": "lbo",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "type": "true_false",
-    "question_text": "Senior secured debt in an LBO carries a higher interest rate than mezzanine debt because it has first claim on the company's assets.",
-    "correct_answer": "False",
-    "explanation": "This is backwards. Senior secured debt carries a LOWER interest rate precisely because it has first claim (priority) on the company's assets in a default scenario. Mezzanine debt is subordinated — it sits below senior debt in the capital structure and gets paid only after senior lenders are made whole. Because mezzanine lenders take on more risk, they demand a higher interest rate to compensate. The risk-return tradeoff is fundamental: more risk = higher required return.",
-    "tags": ["debt-tranches", "senior-debt", "mezzanine"]
-  },
-  {
-    "id": "lbo-008",
-    "topic": "lbo",
-    "difficulty": "Easy",
-    "type": "conceptual",
-    "question_text": "What is PIK (payment-in-kind) interest and why would a company use it in an LBO?",
-    "correct_answer": "PIK interest is interest that accrues and is added to the principal balance of the debt rather than being paid in cash each period. Companies use it in LBOs to preserve cash flow for operations and senior debt service.",
-    "explanation": "PIK interest effectively defers cash payments by letting the debt balance grow. For example, $100M of PIK debt at 12% becomes $112M after one year with no cash outflow. This is valuable in LBOs where the company's free cash flow is already stretched thin servicing senior debt. The tradeoff is clear: PIK preserves near-term cash flow, but the total debt burden compounds over time, making the eventual repayment larger. PIK is typically found in subordinated or mezzanine layers of the capital structure because senior lenders want their cash interest.",
-    "tags": ["pik", "debt-tranches", "cash-flow"]
-  },
-  {
-    "id": "lbo-009",
-    "topic": "lbo",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "What does a 'cash sweep' provision in an LBO credit agreement require?",
-    "options": [
-      { "text": "The company must maintain a minimum cash balance at all times", "isCorrect": false },
-      { "text": "Excess free cash flow above a threshold must be used to prepay debt", "isCorrect": true },
-      { "text": "All operating cash must be deposited into a lender-controlled account", "isCorrect": false },
-      { "text": "The sponsor must inject additional equity if cash falls below a floor", "isCorrect": false }
-    ],
-    "correct_answer": "Excess free cash flow above a threshold must be used to prepay debt",
-    "explanation": "A cash sweep (or excess cash flow sweep) requires the borrower to use a specified percentage (commonly 50-75%) of excess free cash flow to mandatorily prepay outstanding debt. Lenders include this provision to accelerate deleveraging and reduce their credit exposure. From the sponsor's perspective, cash sweeps reduce flexibility but also accelerate debt paydown, which is one of the three key return drivers. Sweep percentages often step down as leverage ratios improve (e.g., 75% above 4.0x, 50% between 3.0-4.0x, 25% below 3.0x).",
-    "tags": ["cash-sweep", "debt-covenants", "debt-paydown"]
-  },
-  {
-    "id": "lbo-010",
-    "topic": "lbo",
-    "difficulty": "Easy",
-    "type": "numeric",
-    "question_text": "A company has $150M of EBITDA and total debt of $600M at the time of an LBO. What is the Total Debt / EBITDA leverage ratio?",
-    "correct_answer": "4.0x",
-    "explanation": "Total Debt / EBITDA = $600M / $150M = 4.0x. This means the company owes 4 times its annual EBITDA in total debt. Leverage ratios are the most important credit statistic in LBOs — they tell lenders how many years of earnings it would theoretically take to repay all debt (ignoring interest, taxes, and capex). Typical LBO leverage at entry ranges from 4.0x to 6.0x+ depending on market conditions and the quality of the business. Lenders use this ratio as a key underwriting metric and often set maximum leverage covenants.",
-    "tags": ["leverage-ratios", "credit-statistics"]
-  },
-  {
-    "id": "lbo-011",
-    "topic": "lbo",
-    "difficulty": "Easy",
-    "type": "true_false",
-    "question_text": "Management rollover in an LBO refers to existing management investing their own equity alongside the private equity sponsor in the new entity.",
+    "question_text": "True or False: A shorter hold period generally results in a higher IRR (assuming the same MOIC).",
     "correct_answer": "True",
-    "explanation": "Management rollover means the target company's executives 'roll' a portion of their existing equity into the new post-LBO entity rather than cashing out entirely. This serves two purposes: (1) it aligns management's incentives with the sponsor since management now has meaningful skin in the game for the go-forward business, and (2) it reduces the total equity check the sponsor needs to write, effectively acting as an additional source of funding. Typical rollover amounts range from 10-30% of management's existing equity stake.",
-    "tags": ["management-rollover", "equity-contribution"]
+    "explanation": "IRR is a time-weighted return metric. If you invest $100M and receive $250M back (2.5x MOIC), achieving that in 3 years yields a ~36% IRR, while achieving it in 5 years yields a ~20% IRR. The same dollar return compressed into a shorter time frame produces a higher annualized return. This is why PE firms sometimes pursue quick exits (dividend recaps, secondary sales) when possible. However, IRR alone can be misleading -- a 50% IRR on a small, quick deal may generate less total profit than a 20% IRR on a larger, longer deal. This is why PE firms also track MOIC (multiple on invested capital) alongside IRR.",
+    "tags": [
+      "irr-drivers"
+    ]
   },
   {
-    "id": "lbo-012",
-    "topic": "lbo",
-    "difficulty": "Easy",
-    "type": "multiple_choice",
-    "question_text": "Which of the following best describes a dividend recapitalization?",
-    "options": [
-      { "text": "The company issues new equity to pay a special dividend to all shareholders", "isCorrect": false },
-      { "text": "The company raises new debt to fund a dividend payment to the private equity sponsor", "isCorrect": true },
-      { "text": "The sponsor reinvests its dividend proceeds back into the company as equity", "isCorrect": false },
-      { "text": "The company uses operating cash flow to pay down debt and then distributes the savings to shareholders", "isCorrect": false }
-    ],
-    "correct_answer": "The company raises new debt to fund a dividend payment to the private equity sponsor",
-    "explanation": "A dividend recapitalization ('dividend recap') is when the portfolio company takes on additional debt to pay a special cash dividend to the PE sponsor. It lets the sponsor extract cash and de-risk its investment before a full exit. For example, if a sponsor put in $300M of equity and does a $150M dividend recap in Year 2, they have already recovered half their investment, dramatically reducing downside risk. The tradeoff is that the company now carries more debt, which increases financial risk and may limit future strategic flexibility.",
-    "tags": ["dividend-recapitalization", "exit-strategies", "sponsor-returns"]
-  },
-  {
-    "id": "lbo-013",
-    "topic": "lbo",
-    "difficulty": "Medium",
-    "type": "multiple_choice",
-    "question_text": "A financial covenant in an LBO credit agreement that requires Total Debt / EBITDA to remain below a specified level is an example of which type of covenant?",
-    "options": [
-      { "text": "Negative covenant", "isCorrect": false },
-      { "text": "Affirmative covenant", "isCorrect": false },
-      { "text": "Maintenance covenant", "isCorrect": true },
-      { "text": "Incurrence covenant", "isCorrect": false }
-    ],
-    "correct_answer": "Maintenance covenant",
-    "explanation": "A maintenance covenant must be satisfied at all times (typically tested quarterly) regardless of whether the company takes any action. A leverage ratio ceiling is the classic example — the company must stay below the specified level every quarter. By contrast, an incurrence covenant is only tested when the company takes a specific action (like issuing new debt or making an acquisition). Maintenance covenants provide lenders with an early warning system: if the business deteriorates, the covenant trips before the situation becomes dire, giving lenders the right to renegotiate terms or accelerate repayment.",
-    "tags": ["debt-covenants", "credit-statistics"]
-  },
-  {
-    "id": "lbo-014",
-    "topic": "lbo",
-    "difficulty": "Easy",
-    "type": "conceptual",
-    "question_text": "What is a debt paydown schedule and why is it important in an LBO model?",
-    "correct_answer": "A debt paydown schedule tracks mandatory and optional principal repayments across all debt tranches over the projection period. It is critical because it determines how quickly leverage decreases, which directly impacts equity returns at exit.",
-    "explanation": "The debt paydown schedule is the backbone of the LBO model. It maps out: (1) mandatory amortization (e.g., 1% per year for a Term Loan B), (2) cash sweep payments based on excess free cash flow, and (3) optional prepayments. Each dollar of debt repaid transfers value from lenders to equity holders. The schedule must respect the debt waterfall — senior tranches are repaid first. The faster debt is repaid, the more equity value the sponsor captures at exit, even if the enterprise value doesn't change. This is why debt paydown is one of the three core LBO return drivers.",
-    "tags": ["debt-paydown", "lbo-mechanics", "modeling"]
-  },
-  {
-    "id": "lbo-015",
+    "id": "lbo-106",
     "topic": "lbo",
     "difficulty": "Medium",
     "type": "numeric",
-    "question_text": "A PE firm invests $250M in equity. After exactly 4 years, the firm exits and receives $625M. What is the approximate IRR?",
-    "correct_answer": "26%",
-    "explanation": "IRR is the discount rate that makes the NPV of cash flows equal to zero. Here: -$250M at time 0, +$625M at time 4. So $250M x (1 + IRR)^4 = $625M, meaning (1 + IRR)^4 = 2.5. Solving: 1 + IRR = 2.5^(1/4) = 2.5^0.25 ≈ 1.257, so IRR ≈ 25.7%, approximately 26%. The MOIC here is 2.5x ($625M / $250M). A useful mental benchmark: a 2.5x MOIC over 4 years corresponds to roughly a 26% IRR. In PE, a 20%+ IRR is generally considered strong performance and typically clears the hurdle rate needed to earn carried interest.",
-    "tags": ["irr", "sponsor-returns", "moic"]
+    "question_text": "A PE firm invests $200M in equity for an LBO. After 5 years, it exits and receives $600M in equity proceeds. What is the approximate MOIC?",
+    "correct_answer": "3.0",
+    "explanation": "MOIC (Multiple on Invested Capital) = Exit Equity Proceeds / Initial Equity Investment = $600M / $200M = 3.0x. This means the PE firm tripled its money over the 5-year hold period. MOIC is a simple and intuitive return metric that complements IRR. A 3.0x MOIC over 5 years translates to approximately a 25% IRR. PE firms typically target a minimum of 2.0-2.5x MOIC and 20%+ IRR on their investments, though actual returns vary widely based on the deal, market conditions, and the firm's operational capabilities.",
+    "tags": [
+      "irr-drivers"
+    ]
   },
   {
-    "id": "lbo-016",
-    "topic": "lbo",
-    "difficulty": "Medium",
-    "type": "multiple_choice",
-    "question_text": "All else being equal, which exit strategy typically results in the highest valuation for a PE sponsor's portfolio company?",
-    "options": [
-      { "text": "Sale to a strategic acquirer", "isCorrect": true },
-      { "text": "Initial public offering (IPO)", "isCorrect": false },
-      { "text": "Secondary buyout (sale to another PE firm)", "isCorrect": false },
-      { "text": "Dividend recapitalization", "isCorrect": false }
-    ],
-    "correct_answer": "Sale to a strategic acquirer",
-    "explanation": "Strategic acquirers (operating companies in the same or adjacent industries) can typically pay the highest prices because they can realize revenue and cost synergies that financial buyers cannot. A strategic buyer might pay a 'control premium' plus a 'synergy premium' because the combined entity is worth more than the sum of its parts. IPOs can achieve high valuations but come with execution risk, underwriting fees, and lock-up periods that delay the sponsor's full exit. Secondary buyouts are priced based on financial returns alone (no synergies), so multiples tend to be lower. A dividend recap is not a true exit — the sponsor retains ownership.",
-    "tags": ["exit-strategies", "sponsor-returns"]
-  },
-  {
-    "id": "lbo-017",
-    "topic": "lbo",
-    "difficulty": "Medium",
-    "type": "true_false",
-    "question_text": "A PIK toggle note allows the borrower to choose each period whether to pay interest in cash or let it accrue as additional principal.",
-    "correct_answer": "True",
-    "explanation": "A PIK toggle gives the borrower flexibility to switch between cash interest and payment-in-kind interest each period. When cash flow is strong, the company can pay cash interest (keeping the principal balance flat). When cash flow is tight, it can elect PIK (adding the interest to the principal balance). This optionality is valuable because it provides a built-in safety valve during periods of underperformance. Lenders charge a premium for this flexibility — the PIK interest rate is typically higher than the cash pay rate (e.g., 8% cash or 9% PIK) to compensate for the deferred cash receipt and growing credit exposure.",
-    "tags": ["pik", "pik-toggle", "debt-tranches"]
-  },
-  {
-    "id": "lbo-018",
-    "topic": "lbo",
-    "difficulty": "Hard",
-    "type": "numeric",
-    "question_text": "A PE firm acquires a company for 8.0x LTM EBITDA of $100M. The capital structure is 5.0x Total Debt / EBITDA and the remainder is equity. After 5 years, EBITDA has grown to $130M, $200M of debt has been repaid, and the firm exits at 8.5x EBITDA. What is the exit equity value and the MOIC?",
-    "correct_answer": "Exit equity value is $805M and MOIC is 2.7x",
-    "explanation": "Entry: Purchase price = 8.0x x $100M = $800M. Debt = 5.0x x $100M = $500M. Equity = $800M - $500M = $300M. Exit: Enterprise Value = 8.5x x $130M = $1,105M. Remaining debt = $500M - $200M = $300M. Exit equity = $1,105M - $300M = $805M. MOIC = $805M / $300M = 2.68x, approximately 2.7x. Decomposing the $505M of equity value creation: (1) EBITDA growth at the entry multiple: ($130M - $100M) x 8.0x = $240M; (2) Multiple expansion: (8.5x - 8.0x) x $130M = $65M; (3) Debt paydown: $200M. Total = $505M. This shows all three LBO return levers at work.",
-    "tags": ["moic", "sponsor-returns", "multiple-expansion", "lbo-mechanics"]
-  },
-  {
-    "id": "lbo-019",
-    "topic": "lbo",
-    "difficulty": "Hard",
-    "type": "conceptual",
-    "question_text": "Explain how an LBO can generate strong equity returns even if the enterprise value of the company does not change between entry and exit.",
-    "correct_answer": "Through debt paydown. As the company uses its free cash flow to repay debt, each dollar of debt reduction increases equity value by exactly one dollar. The sponsor captures the entire enterprise value that shifts from lenders to equity holders, generating returns purely through deleveraging even with a flat enterprise value.",
-    "explanation": "Consider a concrete example: A company is acquired for $1B with $600M debt and $400M equity. Over 5 years, the company repays $300M of debt using operating cash flows. At exit, enterprise value is still $1B, but now debt is only $300M, so equity value is $700M. That is a 1.75x MOIC ($700M / $400M) with zero growth in enterprise value. This illustrates why leverage is so powerful in LBOs — the sponsor effectively uses the company's own cash flows to 'buy back' the business from lenders dollar-for-dollar. It also explains why PE firms prize businesses with strong, stable free cash flow generation even if they have limited growth prospects.",
-    "tags": ["debt-paydown", "sponsor-returns", "leverage", "return-drivers"]
-  },
-  {
-    "id": "lbo-020",
+    "id": "lbo-107",
     "topic": "lbo",
     "difficulty": "Easy",
     "type": "multiple_choice",
-    "question_text": "In a typical LBO debt structure, what is the correct order of repayment priority from first to last in a default scenario?",
+    "question_text": "In an LBO, mandatory debt repayment is typically funded by:",
     "options": [
-      { "text": "Mezzanine, Senior Secured, Subordinated, Equity", "isCorrect": false },
-      { "text": "Senior Secured, Senior Unsecured, Mezzanine/Subordinated, Equity", "isCorrect": true },
-      { "text": "Equity, Mezzanine, Senior Unsecured, Senior Secured", "isCorrect": false },
-      { "text": "Senior Unsecured, Senior Secured, Equity, Mezzanine", "isCorrect": false }
+      {
+        "text": "Additional equity contributions from the PE sponsor",
+        "isCorrect": false
+      },
+      {
+        "text": "The company's free cash flow",
+        "isCorrect": true
+      },
+      {
+        "text": "Issuing additional debt",
+        "isCorrect": false
+      },
+      {
+        "text": "Selling the company's equity stake in other businesses",
+        "isCorrect": false
+      }
     ],
-    "correct_answer": "Senior Secured, Senior Unsecured, Mezzanine/Subordinated, Equity",
-    "explanation": "The capital structure waterfall determines who gets paid first in a default. Senior secured debt (backed by collateral like assets or stock pledges) has the highest priority and the best recovery rates. Next comes senior unsecured debt, followed by mezzanine or subordinated debt, and finally equity holders, who are last in line and often receive nothing in a default. This priority order is exactly why interest rates increase as you move down the capital structure — lenders lower in the stack demand higher returns because they bear more default risk and expect lower recoveries.",
-    "tags": ["debt-tranches", "senior-debt", "mezzanine", "capital-structure"]
+    "correct_answer": "The company's free cash flow",
+    "explanation": "In an LBO, the acquired company uses its own operating cash flows to service and repay the debt taken on to fund the acquisition. This is the fundamental mechanism of an LBO: the PE firm contributes equity (typically 30-50% of the purchase price), the rest is funded by debt, and the company's cash flows are used to pay down that debt over time. As debt decreases, the equity value increases (since EV = Equity + Net Debt), creating returns for the PE sponsor without needing EBITDA growth or multiple expansion. This is why LBO candidates need stable, predictable cash flows.",
+    "tags": [
+      "debt-paydown"
+    ]
+  },
+  {
+    "id": "lbo-108",
+    "topic": "lbo",
+    "difficulty": "Medium",
+    "type": "conceptual",
+    "question_text": "What is the difference between mandatory and optional (voluntary) debt repayment in an LBO, and how does a cash flow sweep work?",
+    "correct_answer": "Mandatory repayment (amortization) is a fixed scheduled payment required by the loan agreement. Optional repayment is additional paydown the company chooses to make. A cash flow sweep requires a percentage of excess cash flow to be used for debt repayment, sitting between mandatory and fully optional.",
+    "explanation": "LBO debt typically has three repayment mechanisms: (1) Mandatory amortization -- fixed quarterly or annual payments (e.g., 1-5% of original principal per year for Term Loans); (2) Cash flow sweeps -- a contractual requirement to apply a percentage (often 50-75%) of excess cash flow (FCF after mandatory payments, CapEx, and other permitted uses) to additional debt repayment; (3) Optional prepayment -- voluntary paydown from any available cash, sometimes subject to prepayment penalties in the first 1-2 years. The cash flow sweep is particularly important because it automatically accelerates repayment in good years when the company generates excess cash. Banks structure these provisions to ensure debt deleveraging while still allowing the company to retain some cash for operations and growth.",
+    "tags": [
+      "debt-paydown"
+    ]
   }
 ]

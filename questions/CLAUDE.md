@@ -41,11 +41,11 @@ All questions must conform to `schema.json` in this directory. Key rules:
 
 ## Compiling Questions
 
-Run `node scripts/compile-questions.cjs` to:
-1. Read all question JSON files from topic folders
-2. Validate each against `schema.json`
+From the repo root, run `node scripts/compile-questions.cjs` to:
+1. Read all question JSON files from topic folders in `questions/`
+2. Validate each against `questions/schema.json`
 3. Group by topic
-4. Write compiled output to `../src/data/{topic}.json`
+4. Write compiled output to BOTH `web/src/data/{topic}.json` AND `ios/Feenancelingo/Resources/{topic}.json`
 5. Print summary with counts per topic/difficulty/type
 
-Always compile after adding or editing questions to keep the app data in sync.
+Always compile after adding or editing questions to keep both platforms in sync.
