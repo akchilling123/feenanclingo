@@ -3,8 +3,9 @@
 const fs = require('fs')
 const path = require('path')
 
-const QUESTIONS_DIR = path.resolve(__dirname, '..')
-const OUTPUT_DIR = path.resolve(QUESTIONS_DIR, '..', 'src', 'data')
+const QUESTIONS_DIR = path.resolve(__dirname, '..', 'questions')
+const WEB_OUTPUT_DIR = path.resolve(__dirname, '..', 'web', 'src', 'data')
+const IOS_OUTPUT_DIR = path.resolve(__dirname, '..', 'ios', 'Feenancelingo', 'Resources')
 const SCHEMA_PATH = path.join(QUESTIONS_DIR, 'schema.json')
 
 const TOPICS = [
@@ -116,11 +117,19 @@ for (const topic of TOPICS) {
     .sort((a, b) => a.id.localeCompare(b.id))
 }
 
-fs.mkdirSync(OUTPUT_DIR, { recursive: true })
+// Write to all output directories that exist
+const outputDirs = [WEB_OUTPUT_DIR]
+if (fs.existsSync(path.resolve(IOS_OUTPUT_DIR, '..'))) {
+  outputDirs.push(IOS_OUTPUT_DIR)
+}
 
-for (const [topic, questions] of Object.entries(grouped)) {
-  const outFile = path.join(OUTPUT_DIR, TOPIC_FILE_MAP[topic])
-  fs.writeFileSync(outFile, JSON.stringify(questions, null, 2) + '\n')
+for (const outputDir of outputDirs) {
+  fs.mkdirSync(outputDir, { recursive: true })
+  for (const [topic, questions] of Object.entries(grouped)) {
+    const outFile = path.join(outputDir, TOPIC_FILE_MAP[topic])
+    fs.writeFileSync(outFile, JSON.stringify(questions, null, 2) + '\n')
+  }
+  console.log(`Wrote to: ${outputDir}`)
 }
 
 // Summary
