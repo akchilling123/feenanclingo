@@ -18,8 +18,9 @@ targets:
       - path: Feenancelingo
         excludes:
           - Resources
-    resources:
       - path: Feenancelingo/Resources
+        type: resource
+        buildPhase: resources
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.amirkhod.feenancelingo

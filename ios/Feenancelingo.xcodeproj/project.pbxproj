@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0492C8A322F26CDFA47CFC59 /* valuation.json in Resources */ = {isa = PBXBuildFile; fileRef = AE4520414E0AC6360B840857 /* valuation.json */; };
 		09B57641EFC4800867CBEC59 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BDD6431287BFC52D02D61D /* Typography.swift */; };
 		0D5A5D294A2F97386D988392 /* LevelCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE96529E8663C4291B91FE3 /* LevelCalculator.swift */; };
 		0E27988873D32331B2A9BFB0 /* DailyChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C34C1C8EF7270C287A3226 /* DailyChallengeService.swift */; };
@@ -16,16 +17,19 @@
 		2C095A548EB974857E2CCE11 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEC8411270B3481F4B20D22 /* Progress.swift */; };
 		2D0391AA03F4D3B93BECEF70 /* QuestionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8687C5C248A205F55477F769 /* QuestionCardView.swift */; };
 		350C3513775B251BF9F525A7 /* RoundCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C893D798E3B782A570FB8E /* RoundCompleteView.swift */; };
+		3A6772459603C8ECA78E9DCB /* lbo.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D6CD438CA920BE8C2779FD9 /* lbo.json */; };
 		3BA9D8964314415570A63C02 /* ConceptualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5276EE83291B1D5D44C4F64 /* ConceptualView.swift */; };
 		401C5846732A80AA84C06C17 /* QuestionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F264A9A8565FC86FA6D08F0 /* QuestionEngine.swift */; };
 		49FB4B1FFA46FE4AA153E4DE /* ProgressService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6C09966D0890C51A3BB833 /* ProgressService.swift */; };
 		50586903C3E0BC8550512FC3 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 4D69A181A1EDB5D738FC4D67 /* Supabase */; };
 		5AEDB5F64F817DBF151285DA /* SyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6637F7697739973CADAAA32 /* SyncService.swift */; };
+		5BDEFC7E9A11F7423E764E1E /* ev-equity-value.json in Resources */ = {isa = PBXBuildFile; fileRef = 23F44ED3F833AAF2C5459404 /* ev-equity-value.json */; };
 		5CA4C899FA37A997A0396E15 /* TopicSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE70C891A7BC65C51BD49B69 /* TopicSelectView.swift */; };
 		5D9132DEA22F5495E048B923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B0FE55FE2216EB7F2EBB2D1 /* Assets.xcassets */; };
 		5E02DDDCDB28BF690EC1E67D /* NumericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB1BD37B90FCD9CF04D0552 /* NumericView.swift */; };
 		653B1ACDA1D2B596D7F37C5F /* DailyChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688DF4D909C4F7444B98056D /* DailyChallengeView.swift */; };
 		6A0DD600B642CCF1110434C9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740D74C4E1966FC6AAFC24B /* AuthService.swift */; };
+		6D97F70C3E29326F1CCFFB5C /* mergers-acquisitions.json in Resources */ = {isa = PBXBuildFile; fileRef = 83535ED4C4C1026565CF819E /* mergers-acquisitions.json */; };
 		6EDE3056E5490CED850E76D4 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA935E95F3157697DB0E7485 /* Round.swift */; };
 		8BBEB3CF3E447B773F8F41CB /* XPCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117988A2E63D6A5B9E5E053A /* XPCalculator.swift */; };
 		920AE25947B7DC5330DD5442 /* HeartsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584D351AE244BEDC0F3C280 /* HeartsState.swift */; };
@@ -33,6 +37,7 @@
 		97D0D1BFC7CA1C38A5A0E678 /* SpacedRepetitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0B0A7163DE6EBA20E100ED /* SpacedRepetitionService.swift */; };
 		9E879AFF44879ADFCFCC4339 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367ED1C3083C438D43DD1237 /* ProgressBarView.swift */; };
 		A061F0594FA0AF17447B3AD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC9AEDD816C29D3CA751EF /* ContentView.swift */; };
+		AE64C2BF5C6F4A681F72BB41 /* dcf.json in Resources */ = {isa = PBXBuildFile; fileRef = D9F233140722F6DA14A239C8 /* dcf.json */; };
 		B06FAFD63A6BE548E7AAEB44 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221EE49001205201820C065 /* HomeView.swift */; };
 		B91BC899CBAB0009D4CFB7B0 /* ProgressDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78467BEAB8E38F17D6BF9211 /* ProgressDashboardView.swift */; };
 		BD34F0D26F46390ED6D787CF /* HeartsDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99465BDCA2131461AC8FBDD3 /* HeartsDisplayView.swift */; };
@@ -45,6 +50,7 @@
 		EB88B4D1B8F86CD9BEA62CFE /* MultipleChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C3831778E76BBF355BB6DF /* MultipleChoiceView.swift */; };
 		F29A657FDD142816AFF5AA27 /* HeartsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1AA7184C61F856988A0D7A /* HeartsService.swift */; };
 		F38DAD6228723758D4867C36 /* FeenancelingoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA87A5FD20B68E795E504C6 /* FeenancelingoApp.swift */; };
+		F6BBC3B31E45CC4252BCE3F8 /* accounting.json in Resources */ = {isa = PBXBuildFile; fileRef = 55105D37A866324E17CFB15D /* accounting.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,9 +59,12 @@
 		117988A2E63D6A5B9E5E053A /* XPCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCalculator.swift; sourceTree = "<group>"; };
 		1C6C09966D0890C51A3BB833 /* ProgressService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressService.swift; sourceTree = "<group>"; };
 		1EEC8411270B3481F4B20D22 /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
+		23F44ED3F833AAF2C5459404 /* ev-equity-value.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ev-equity-value.json"; sourceTree = "<group>"; };
 		367ED1C3083C438D43DD1237 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		4221EE49001205201820C065 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4D6CD438CA920BE8C2779FD9 /* lbo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lbo.json; sourceTree = "<group>"; };
 		4EEC9AEDD816C29D3CA751EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		55105D37A866324E17CFB15D /* accounting.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = accounting.json; sourceTree = "<group>"; };
 		5B9B3190734C191276D3DB13 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		5BE96529E8663C4291B91FE3 /* LevelCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelCalculator.swift; sourceTree = "<group>"; };
 		5D24EC033E608C473972E0A0 /* RoundConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundConfigView.swift; sourceTree = "<group>"; };
@@ -65,6 +74,7 @@
 		70890077EF8A12A1A9418950 /* Feenancelingo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Feenancelingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78467BEAB8E38F17D6BF9211 /* ProgressDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDashboardView.swift; sourceTree = "<group>"; };
 		7B0FE55FE2216EB7F2EBB2D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83535ED4C4C1026565CF819E /* mergers-acquisitions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "mergers-acquisitions.json"; sourceTree = "<group>"; };
 		855C9E3DD02FE663B06A3464 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		8687C5C248A205F55477F769 /* QuestionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCardView.swift; sourceTree = "<group>"; };
 		8F39DEBDC62C6A2BB8362F2C /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
@@ -73,6 +83,7 @@
 		9584D351AE244BEDC0F3C280 /* HeartsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartsState.swift; sourceTree = "<group>"; };
 		99465BDCA2131461AC8FBDD3 /* HeartsDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartsDisplayView.swift; sourceTree = "<group>"; };
 		9BB1BD37B90FCD9CF04D0552 /* NumericView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericView.swift; sourceTree = "<group>"; };
+		AE4520414E0AC6360B840857 /* valuation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = valuation.json; sourceTree = "<group>"; };
 		AF1AA7184C61F856988A0D7A /* HeartsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartsService.swift; sourceTree = "<group>"; };
 		B6637F7697739973CADAAA32 /* SyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncService.swift; sourceTree = "<group>"; };
 		B9E3045DEFEFC5FACD12ABA2 /* ActiveRoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveRoundView.swift; sourceTree = "<group>"; };
@@ -80,6 +91,7 @@
 		C2D890394519E7F5745C9B2E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		CBA87A5FD20B68E795E504C6 /* FeenancelingoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeenancelingoApp.swift; sourceTree = "<group>"; };
 		D0C34C1C8EF7270C287A3226 /* DailyChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChallengeService.swift; sourceTree = "<group>"; };
+		D9F233140722F6DA14A239C8 /* dcf.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dcf.json; sourceTree = "<group>"; };
 		E5276EE83291B1D5D44C4F64 /* ConceptualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptualView.swift; sourceTree = "<group>"; };
 		E740D74C4E1966FC6AAFC24B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E95C0C065DC3EE40CFDC39BD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -188,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				457631FE77819ABECEEE3C4E /* Feenancelingo */,
+				EDC208B3FF8822DC78EC4F0D /* Resources */,
 				A1B4E5E57C36906635AB81B2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -250,6 +263,20 @@
 				06986C6085F58455737F7C01 /* Review */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		EDC208B3FF8822DC78EC4F0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55105D37A866324E17CFB15D /* accounting.json */,
+				D9F233140722F6DA14A239C8 /* dcf.json */,
+				23F44ED3F833AAF2C5459404 /* ev-equity-value.json */,
+				4D6CD438CA920BE8C2779FD9 /* lbo.json */,
+				83535ED4C4C1026565CF819E /* mergers-acquisitions.json */,
+				AE4520414E0AC6360B840857 /* valuation.json */,
+			);
+			name = Resources;
+			path = Feenancelingo/Resources;
 			sourceTree = "<group>";
 		};
 		FC28378D240EC2E3ACD0DD4F /* Practice */ = {
@@ -330,6 +357,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D9132DEA22F5495E048B923 /* Assets.xcassets in Resources */,
+				F6BBC3B31E45CC4252BCE3F8 /* accounting.json in Resources */,
+				AE64C2BF5C6F4A681F72BB41 /* dcf.json in Resources */,
+				5BDEFC7E9A11F7423E764E1E /* ev-equity-value.json in Resources */,
+				3A6772459603C8ECA78E9DCB /* lbo.json in Resources */,
+				6D97F70C3E29326F1CCFFB5C /* mergers-acquisitions.json in Resources */,
+				0492C8A322F26CDFA47CFC59 /* valuation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
